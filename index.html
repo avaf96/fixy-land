@@ -1,41 +1,138 @@
 <!doctype html>
-<html>
+<html lang="fa" dir="rtl">
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
 <link href="style/css1.css" rel="stylesheet" type="text/css">
+	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">	
+	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />	
+	<style>
+		
+	
+		
+		
+		
+		
+	</style>
+	
+
+	
 </head>
 
 <body>
+	
 
-     
-    <div class="div1">
-        <img id="img1"   src="image/menu-button.png" alt="menu">
-        <nav class="nav1">
-    <ul class="ul1">
-        <li class="li1"><a href="index.html" class="a1 active">Home</a></li>
-        <li class="li1"><a href="about.html" class="a1">About</a></li>
-        <li class="li1"><a href="#" class="a1">omid</a>
-        <ul class="ul2">
-          <li class="li2"><a href="#" class="a1">item1</a></li>
-          <li class="li2"><a href="#" class="a1">item2</a></li>
-        </ul>
-        </li>
-        <li class="li1"><a href="#" class="a1">reza</a></li>
-        <li class="li1"><a href="#" class="a1">ava</a></li>
-        </ul>
-    </nav>
-    
-    </div>
-    
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h1>Home</h1>
-    
+	<header class="navbar navbar-expand-lg container-fluid header pt-2 pb-2" id="header">
+	<div class="row d-flex justify-content-between">
+		
+		
+			
+		<div class="navbar-toggler col-2 text-center mt-md-3" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" id="button-toggler-menu">
+				
+			<i class="fa-solid fa-bars text-white" id="i-menu"></i>
+		</div>
+		
+		<img class="navbar-toggler col-4 " src="image/fixyLandMenuIcon.png" alt=""  id="logo-menu">	
+			
+	</div>
+	
+		
+		
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		
+		
+		<div class="row d-flex justify-content-center pt-2 pb-1 flex-fill">
+		
+		<div class="col-sm-2 row">
+			
+		<div class="col-12 d-flex justify-content-center">
+			
+			<img src="image/fixyLandMenuIcon.png" alt="" width="100" height="50">
+			
+			</div>	
+		
+			
+		<div class="col-12" dir="ltr">
+		
+<select class="form-select form-select-lang" id="form-select-lang" aria-label="Default select example">
+  <option selected>Fa</option>
+  <option  value="1">En</option>
+  <option  value="2">Ar</option>
+</select>
+		
+		</div>	
+			
+			
+		</div>
+		
+		
+	  <div class="col-sm-7 d-flex justify-content-center row">
+		
+	  <form class="col-11 d-flex d-flex-border pe-2 ps-2">
+		  
+	   <button class="btn " type="submit">
+		  
+		   <i class="fa-solid fa-magnifying-glass"></i>
+		  
+		  </button>
+       <input class="form-control" id="form-control" type="search" placeholder="Search" aria-label="Search">
+      
+       </form>
+		
+<div class="col-11 d-flex  ">
+		
+<nav class="navbar d-flex  flex-fill">
+    <ul class="navbar-nav flex-row d-flex flex-fill justify-content-between">
+      <li class="nav-item ">
+        <a class=" nav-link-hover" href="#">
+			<i class="fa-solid fa-caret-down"></i>
+			دسته بندی خدمات
+		  </a>
+      </li>
+     <li class="nav-item ">
+        <a class=" nav-link-hover" href="#">خانه</a>
+      </li>
+      <li class="nav-item ">
+        <a class=" nav-link-hover" href="#">مقالات</a>
+      </li>
+      <li class="nav-item ">
+        <a class=" nav-link-hover" href="#">تماس با ما</a>
+      </li>
+	
+	<li class="nav-item ">
+        <a class=" nav-link-hover" href="#">درباره ما</a>
+      </li>
+    </ul>
+</nav>
+		
+		
+		
+		</div>
+		  
+		  
+		
+		</div>
+		
+		<div class="col-sm-3">
+			<div class="d-flex gap-3">
+			<button class="btn outline-yellow flex-fill" id="button-menu1">  ورود </button>
+			<button class="btn flex-fill" id="button-menu2"> ثبت نام</button>
+			
+		    </div>
+		</div>
+		
+	</div></div>
+
+	
+	
+	
+	</header>
+	
+	
+
+
     
     
   <script>
@@ -70,7 +167,21 @@
     
     
     
-    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+	
+	
+	<script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("header").style.top = "0";
+          } else {
+            document.getElementById("header").style.top = "-200px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
     
     
     
