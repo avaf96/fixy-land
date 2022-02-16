@@ -9,7 +9,7 @@
 
 
 body{
-    height: 2000px;
+    height: 5000px;
   
 }
 
@@ -37,7 +37,6 @@ body{
 		.header{
 			
 			background-color: #054E4E;
-			position: fixed;
 			top: 0;
 			display: block;
 			transition: top 0.3s;
@@ -47,7 +46,8 @@ body{
 		#form-select-lang {
 			border: none;
 			border-radius: 12px;
-			background-color: #FFB82F
+			background-color: #FFB82F;
+/*			width: 200px;*/
 		}
 		
 		.form-select-lang:focus{
@@ -69,10 +69,65 @@ body{
 			margin: 10px;
 			text-decoration: none;
 		}
+
+        .nav-link-hover-black{
+	        color: #000;
+			margin: 10px;
+			text-decoration: none;
+          }
 	
 		.nav-link-hover:hover{
 			color: #FFB82F ;
 		}
+
+       .nav-link-hover-black:hover{
+	       color: #FFB82F ;
+          }
+
+     .sub-menu{
+		 list-style-type: none;
+	
+     }
+     
+     .sub-menu li{
+	
+		 margin-top: 3px; 
+		 
+      }
+
+.sub-menu-hover li{
+	
+	margin-top: 10px;
+	
+}
+.sub-menu-hover li i{
+	
+	display: none;
+	
+	
+	
+}
+
+.sub-menu-hover li div:hover{
+	
+	background-color: #FFB82F;
+	border-radius: 10px;
+	padding: 2px;
+	
+}
+
+.sub-menu-hover li:hover i{
+	
+	display: inline-block;
+	margin-right: 2px;
+	margin-left: 2px;
+	
+	
+   /*	english*/
+/*	transform: rotate(180deg);*/
+   /*	english*/
+	
+}
 
 
   #button-menu1{
@@ -101,10 +156,15 @@ body{
 
 #button-toggler-menu{
 	
-	padding: 1px !important;
+	padding: 1px;
 	
+	margin-top: 1%;
 	
-	
+}
+
+
+.sub-menu-show{
+	display: none;
 }
 
 /*end header*/
@@ -112,7 +172,12 @@ body{
 
 @media screen and (max-width:600px){
     
- 
+ #button-toggler-menu{
+	
+	
+	margin-top: 2%;
+	
+}
     
     
 }
