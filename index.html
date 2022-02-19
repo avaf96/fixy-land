@@ -12,6 +12,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	
+	
+	<!--	jquery breakpoints-->
+	<script src="./scripts/jquery.min.js"></script>
+  	<script type="text/javascript" src="./scripts/jquery.breakpoints.min.js"></script>
+	
+	
 </head>
 
 <body>
@@ -98,18 +104,18 @@
       </li>
 		
 	  <li class="nav-item pb-2" id="khadamat">
-       <p class="nav-link-hover d-inline-block p-0 m-0 li-responsive">دسته بندی خدمات
+       <p class="nav-link-hover d-inline-block p-0 m-0 li-responsive" id="khadamat-p">دسته بندی خدمات
 		  
 		  <i class="fa-solid fa-caret-down "></i> 
 		  </p>
 		  
 	   
-		<ul class="sub-menu text-white me-4 d-lg-none">
-          <li class="nav-item  nav-link-click li-responsive  nav-link-hover-white">
-			  نظافت و پذیرایی
-			  <i class="fa-solid fa-caret-down"></i>
+		<ul class="sub-menu  text-white me-4 d-lg-none d-none" id="sub-menu-responsive">
+          <li class="nav-item   li-responsive">
+			  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">نظافت و پذیرایی
+			  <i class="fa-solid fa-caret-down"></i></p>
 		
-        <div class="text-white me-3">
+        <div class="text-white me-3 li-responsive-submenu-3 d-none">
 			<ul style="list-style-type: none">
 			  <li class="nav-item">
 				<a class="nav-link-hover-white" href="#">نظافت و پذیرایی2</a>
@@ -122,11 +128,11 @@
       
 			</li>
 		  
-          <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
-            دکوراسیون و بازسازی
-         <i class="fa-solid fa-caret-down "></i> 
+          <li class="nav-item  li-responsive">
+           <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0"> دکوراسیون و بازسازی
+         <i class="fa-solid fa-caret-down "></i> </p>
 			  
-			   <div class="text-white me-3">
+			   <div class="text-white me-3 li-responsive-submenu-3 d-none">
 			<ul style="list-style-type: none">
 			  <li class="nav-item">
 				<a class="nav-link-hover-white" href="#">نظافت و پذیرایی2</a>
@@ -477,30 +483,7 @@
 		
 		
 		
-	
-//				let subMenu1 = document.getElementsByClassName("sub-menu-1-li");
-//	    let subMenu2 = document.getElementsByClassName("sub-menu-show");
-//	   
-//	    for(let i = 0 ; i < subMenu1.length ; i++){
-//			subMenu1[i].addEventListener("click",function(){
-//			for(let j = 0 ; j < subMenu2.length ; j++){
-//				subMenu2[j].classList.add("d-none");	
-//			}
-//				console.log(i);
-//				subMenu2[i].classList.remove("d-none");					 
-//			});
-//		}
-//		
-//		 for(let i = 0 ; i < subMenu1.length ; i++){
-//			subMenu1[i].addEventListener("mouseover",function(){
-//			for(let j = 0 ; j < subMenu2.length ; j++){
-//				subMenu2[j].classList.add("d-none");	
-//			}
-//				console.log(i);
-//				subMenu2[i].classList.remove("d-none");					 
-//			});
-//		}
-	
+
 		
 	
     </script>
@@ -528,34 +511,70 @@
 		
 		
 		
-		let bl_menu = true;
 		$(document).ready(function(){
 			
 			
-			$("#khadamat").click(function(){
+			$("#khadamat-p").click(function(){
+				if ($(window).width() < 992){
 				
-				$("#second-level-menu").toggleClass("d-none");
+					$("#sub-menu-responsive").toggleClass("d-none");
+				}
+				
 				
 			});
 			
-			
-
-			
 				$("#khadamat").hover(function(){
-				
+				if ($(window).width() > 992){
 				$("#second-level-menu").toggleClass("d-none");
-				
-			   			
+				}	
+					
 		    	});
 			
 			
-			
-			
-			let bl_menu2 = true;
-			
-			$("#second-level-menu").hover(function(){
+		    	$("#second-level-menu").hover(function(){
+				
 				$("#second-level-menu").toggleClass("d-none");
-			});
+						
+		    	});
+			
+			    let li_responsive_3 = $(".li-responsive-3");
+		      	let li_responsive_submenu_3 = $(".li-responsive-submenu-3");
+			
+
+		    	
+				
+					for(let i = 0 ; i < li_responsive_3.length ; i++ ){
+						$(li_responsive_3[i]).click(function(){
+							
+					     	$(li_responsive_submenu_3[i]).toggleClass("d-none");
+							
+						});
+					}
+				
+					
+				
+				
+			   
+			
+			
+			
+			
+			
+//				$("#khadamat").hover(function(){
+//				
+//				$("#second-level-menu").toggleClass("d-none");
+//				
+//			   			
+//		    	});
+//			
+//			
+//			
+//			
+//			let bl_menu2 = true;
+//			
+//			$("#second-level-menu").hover(function(){
+//				$("#second-level-menu").toggleClass("d-none");
+//			});
 			
 			
 			
@@ -597,8 +616,33 @@
 				
 			})	
             }
+		
+			
+			
+			
+
+			
+			
+			
 			
 		})
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
 	
 	
