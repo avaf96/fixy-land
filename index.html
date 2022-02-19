@@ -8,13 +8,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">	
 	
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />	
-	<style>
 	
-		
-		
-		
-	</style>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	
 </head>
@@ -22,9 +17,9 @@
 <body>
 	
 
-	<header class="  fixed-top navbar-expand-lg container-fluid header " id="header">
+	<header class="  fixed-top navbar-expand-lg container-fluid header  " id="header">
 		
-    <div class="position-relative border ">	  
+    <div class="position-relative   pb-0 ">	  
 	
 	
      	<div class="row d-flex justify-content-between">
@@ -45,10 +40,10 @@
 	
 		
 		
-	    <div class=" collapse navbar-collapse" id="collapsibleNavbar">
+	    <div class="collapse navbar-collapse" id="collapsibleNavbar">
 		
 		
-		<div class="row d-flex justify-content-center pt-2 pb-1 flex-fill">
+		<div class="row d-flex justify-content-center pt-2 flex-fill">
 			
 			
 			
@@ -62,7 +57,7 @@
 		</div>	
 		
 			
-<div class="col-lg-12 d-flex justify-content-center row" dir="ltr">
+<div class="col-lg-12 d-flex justify-content-center row mb-2" dir="ltr">
 
 <div class="col-lg-12 col-5">
 <select class="form-select form-select-lang col-4" id="form-select-lang" aria-label="Default select example">
@@ -92,31 +87,95 @@
 		
 <div class="col-12  justify-content-center d-flex  row">
 		
-<div class="col-10 col-sm-7 col-md-10 col-lg-12">
-	<nav class="navbar d-flex  flex-fill">
-    <ul class="navbar-nav  d-flex flex-fill justify-content-between">
-     <li class="nav-item ">
+<div class="col-10 col-sm-7 col-md-10 col-lg-12 m-0 p-0 d-flex align-items-end">
+	<nav class="navbar d-flex flex-fill m-0 p-0 ">
+    <ul class="navbar-nav  d-flex flex-fill justify-content-between m-0 p-0 ">
+     <li class="nav-item pb-2 ">
         <a class=" nav-link-hover" href="#">خانه</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item pb-2">
         <a class=" nav-link-hover" href="#">مقالات</a>
       </li>
 		
-	  <li class="nav-item" id="khadamat">
-        <a class=" nav-link-hover" href="#" >دسته بندی خدمات
+	  <li class="nav-item pb-2" id="khadamat">
+       <p class="nav-link-hover d-inline-block p-0 m-0 li-responsive">دسته بندی خدمات
 		  
-		  <i class="fa-solid fa-caret-down"></i> 
-		  </a>
-		 
+		  <i class="fa-solid fa-caret-down "></i> 
+		  </p>
+		  
+	   
+		<ul class="sub-menu text-white me-4 d-lg-none">
+          <li class="nav-item  nav-link-click li-responsive  nav-link-hover-white">
+			  نظافت و پذیرایی
+			  <i class="fa-solid fa-caret-down"></i>
+		
+        <div class="text-white me-3">
+			<ul style="list-style-type: none">
+			  <li class="nav-item">
+				<a class="nav-link-hover-white" href="#">نظافت و پذیرایی2</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link-hover-white" href="#">2نظافت و پذیرایی</a>
+			  </li>
+			</ul>
+		</div>
+      
+			</li>
+		  
+          <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+            دکوراسیون و بازسازی
+         <i class="fa-solid fa-caret-down "></i> 
+			  
+			   <div class="text-white me-3">
+			<ul style="list-style-type: none">
+			  <li class="nav-item">
+				<a class="nav-link-hover-white" href="#">نظافت و پذیرایی2</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link-hover-white" href="#">2نظافت و پذیرایی</a>
+			  </li>
+			</ul>
+		</div>
+			  
+			</li>
+			<li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+            نصب و تعمیر لوازم خانگی
+           <i class="fa-solid fa-caret-down"></i> 
+			</li>
+			<li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+            سرمایش و گرمایش
+          <i class="fa-solid fa-caret-down"></i> 
+			</li>
+			<li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+            باربری و جابه جایی
+          <i class="fa-solid fa-caret-down"></i> 
+			</li>
+			<li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+            برقکاری
+          <i class="fa-solid fa-caret-down"></i> 
+			</li>
+			<li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+            لوله کشی
+         <i class="fa-solid fa-caret-down"></i> 
+			</li>
+			<li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+            زیبایی بانوان 
+          <i class="fa-solid fa-caret-down"></i> 
+			</li>
+			<li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+            تعمیرات خودرو
+          <i class="fa-solid fa-caret-down"></i> 
+			</li>
+        </ul>
       </li>
 	
 		
 		
-      <li class="nav-item ">
+      <li class="nav-item pb-2">
         <a class=" nav-link-hover" href="#">تماس با ما</a>
       </li>
 	
-	<li class="nav-item ">
+	<li class="nav-item pb-2">
         <a class=" nav-link-hover" href="#">درباره ما</a>
       </li>
     </ul>
@@ -157,7 +216,7 @@
 		</div>
 		
 		
-		<div class="position-absolute end-3 border border-dark w-75 d-none top-0" style="background-color: #f4f2f2" id="second-level-menu">
+		<div class="position-absolute end-3 border border-dark w-75 d-none" style="background-color: #f4f2f2" id="second-level-menu">
 		
 		
 	
@@ -411,11 +470,50 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 	
 	
+	
+	
+	
 	<script>
 		
 		
 		
-        var prevScrollpos = window.pageYOffset;
+	
+		//		let subMenu1 = document.getElementsByClassName("sub-menu-1-li");
+//	    let subMenu2 = document.getElementsByClassName("sub-menu-show");
+//	   
+//	    for(let i = 0 ; i < subMenu1.length ; i++){
+//			subMenu1[i].addEventListener("click",function(){
+//			for(let j = 0 ; j < subMenu2.length ; j++){
+//				subMenu2[j].classList.add("d-none");	
+//			}
+//				console.log(i);
+//				subMenu2[i].classList.remove("d-none");					 
+//			});
+//		}
+//		
+//		 for(let i = 0 ; i < subMenu1.length ; i++){
+//			subMenu1[i].addEventListener("mouseover",function(){
+//			for(let j = 0 ; j < subMenu2.length ; j++){
+//				subMenu2[j].classList.add("d-none");	
+//			}
+//				console.log(i);
+//				subMenu2[i].classList.remove("d-none");					 
+//			});
+//		}
+	
+		
+	
+    </script>
+	
+	
+	
+	
+	
+	
+	
+	<script>
+		
+		var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
           if (prevScrollpos > currentScrollPos) {
@@ -428,62 +526,70 @@
 		
 		
 		
-		let subMenu1 = document.getElementsByClassName("sub-menu-1-li");
-	    let subMenu2 = document.getElementsByClassName("sub-menu-show");
-	   
-	    for(let i = 0 ; i < subMenu1.length ; i++){
-			subMenu1[i].addEventListener("click",function(){
-			for(let j = 0 ; j < subMenu2.length ; j++){
-				subMenu2[j].classList.add("d-none");	
-			}
-				console.log(i);
-				subMenu2[i].classList.remove("d-none");					 
-			});
-		}
-		
-		 for(let i = 0 ; i < subMenu1.length ; i++){
-			subMenu1[i].addEventListener("mouseover",function(){
-			for(let j = 0 ; j < subMenu2.length ; j++){
-				subMenu2[j].classList.add("d-none");	
-			}
-				console.log(i);
-				subMenu2[i].classList.remove("d-none");					 
-			});
-		}
 		
 		
-		let khadamat = document.getElementById("khadamat");
-		let second_level_menu = document.getElementById("second-level-menu");
-		let bl_menu = true;
-		
-		khadamat.addEventListener("click",function(){
+		let bl_menu = false;
+		$(document).ready(function(){
 			
 			
-			if(bl_menu == true){
-				second_level_menu.classList.remove("d-none");
+			$("#khadamat").click(function(){
+				if(bl_menu == true){
+				$("#second-level-menu").removeClass("d-none");
 				bl_menu = false;
-			}else{
+			   }else{
 				bl_menu = true;
-				second_level_menu.classList.add("d-none");
-			}
-		
-		})
-		
-		khadamat.addEventListener("mouseover",function(){
+				$("#second-level-menu").addClass("d-none");
+			   }				
+			});
 			
 			
-			if(bl_menu == true){
-				second_level_menu.classList.remove("d-none");
+			
+			$("#khadamat").hover(function(){
+				if(bl_menu == true){
+				$("#second-level-menu").removeClass("d-none");
 				bl_menu = false;
-			}else{
+			   }else{
 				bl_menu = true;
-				second_level_menu.classList.add("d-none");
-			}
-		
+				$("#second-level-menu").addClass("d-none");
+			   }				
+			});
+			
+			
+			
+			
+			
+			$("#second-level-menu").hover(function(){
+				if(bl_menu == true){
+				$("#second-level-menu").removeClass("d-none");
+				bl_menu = false;
+			   }else{
+				bl_menu = true;
+				$("#second-level-menu").addClass("d-none");
+			   }
+			});
+			
+			
+			
+			
+			let li_responsive = $(".li-responsive");
+			li_respan = true;
+			console.log("ddddddd");	
+			li_responsive.each(function(){
+				$(this).click(function(){
+				 $(this).find("i").toggleClass("li-responsive-toggle");
+				 $(this).removeClass("nav-link-hover-white")
+				 $(this).toggleClass("nav-link-hover-white2"); 
+				})
+			 })
+			
+			
+			
+			
 		})
-		
-		
-    </script>
+	
+	
+	
+	</script>
     
     
 	

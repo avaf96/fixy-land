@@ -40,6 +40,7 @@ body{
 			top: 0;
 			display: block;
 			transition: top 0.3s;
+			padding-bottom: 0;
 			
 		}
 		
@@ -66,7 +67,6 @@ body{
 	
 		.nav-link-hover{
 			color: #fff;
-			margin: 10px;
 			text-decoration: none;
 		}
 
@@ -82,6 +82,22 @@ body{
 
        .nav-link-hover-black:hover{
 	       color: #FFB82F ;
+          }
+
+           .nav-link-hover-black{
+	        color: #000;
+			margin: 10px;
+			text-decoration: none;
+          }
+
+         .nav-link-hover-white{
+	        color: #fff;
+			text-decoration: none;
+          }
+
+          .nav-link-hover-white2{
+	       color: #FFB82F ;
+		   text-decoration: none;
           }
 
      .sub-menu{
@@ -165,6 +181,18 @@ body{
 
 .sub-menu-show{
 	display: none;
+}
+
+
+/*
+.li-responsive:active i{
+	transform: rotate(180deg);
+}
+*/
+
+.li-responsive-toggle{
+	transform: rotate(180deg);
+	
 }
 
 /*end header*/
