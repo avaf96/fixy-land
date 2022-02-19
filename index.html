@@ -478,7 +478,7 @@
 		
 		
 	
-		//		let subMenu1 = document.getElementsByClassName("sub-menu-1-li");
+//				let subMenu1 = document.getElementsByClassName("sub-menu-1-li");
 //	    let subMenu2 = document.getElementsByClassName("sub-menu-show");
 //	   
 //	    for(let i = 0 ; i < subMenu1.length ; i++){
@@ -528,44 +528,33 @@
 		
 		
 		
-		let bl_menu = false;
+		let bl_menu = true;
 		$(document).ready(function(){
 			
 			
 			$("#khadamat").click(function(){
-				if(bl_menu == true){
-				$("#second-level-menu").removeClass("d-none");
-				bl_menu = false;
-			   }else{
-				bl_menu = true;
-				$("#second-level-menu").addClass("d-none");
-			   }				
+				
+				$("#second-level-menu").toggleClass("d-none");
+				
 			});
 			
 			
+
 			
-			$("#khadamat").hover(function(){
-				if(bl_menu == true){
-				$("#second-level-menu").removeClass("d-none");
-				bl_menu = false;
-			   }else{
-				bl_menu = true;
-				$("#second-level-menu").addClass("d-none");
-			   }				
-			});
+				$("#khadamat").hover(function(){
+				
+				$("#second-level-menu").toggleClass("d-none");
+				
+			   			
+		    	});
 			
 			
 			
 			
+			let bl_menu2 = true;
 			
 			$("#second-level-menu").hover(function(){
-				if(bl_menu == true){
-				$("#second-level-menu").removeClass("d-none");
-				bl_menu = false;
-			   }else{
-				bl_menu = true;
-				$("#second-level-menu").addClass("d-none");
-			   }
+				$("#second-level-menu").toggleClass("d-none");
 			});
 			
 			
@@ -583,7 +572,31 @@
 			 })
 			
 			
+			let sub_menu_1_li = $(".sub-menu-1-li");
+			let sub_menu_show = $(".sub-menu-show");
+			for(let i = 0 ; i < sub_menu_1_li.length ; i++){
+			$(sub_menu_1_li[i]).hover(function(){
+				
+			 	
+				$(sub_menu_show[i]).toggleClass("d-none");	
+			 
+				
+			})
+				
+			}		
+			for(let i = 0 ; i < sub_menu_1_li.length ; i++){
+			$(sub_menu_1_li[i]).click(function(){
+				
+				
+					
+			 	for(let j = 0 ; j < sub_menu_1_li.length ; j++){
+					$(sub_menu_show[j]).addClass("d-none");
+				}
+				$(sub_menu_show[i]).removeClass("d-none");	
 			
+				
+			})	
+            }
 			
 		})
 	
