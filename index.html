@@ -20,7 +20,7 @@
 	
 </head>
 
-<body>
+<body class="body">
 	
 
 	<header class="  fixed-top navbar-expand-lg container-fluid header  " id="header">
@@ -34,7 +34,8 @@
 			
 		<div class="navbar-toggler col-2 text-center" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" id="button-toggler-menu">
 				
-			<i class="fa-solid fa-bars text-white " id="i-menu"></i>
+			<i class="fa-solid fa-bars text-white" id="i-menu"></i>
+            <i class="fa-solid fa-xmark text-white d-none" id="i-menu2"></i>
 		</div>
 		
 		<div class="navbar-toggler col-4 col-sm-2" >
@@ -457,6 +458,69 @@
 	
 	
 	</header>
+
+<!--	end header-->
+
+<!--	start main-->
+	
+	
+	<main class="container-fluid">
+	
+	 
+	<!-- strat Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/hair-BE-web.webp" alt="Los Angeles" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/makeup-BE-web.webp" alt="Chicago" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="image/sunscreen-BE-web.webp" alt="New York" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>  
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+	
+<!-- end Carousel -->
+	
+	</main>
+	
+	
+	
+	
+	
+	
+	
 	<br>
 <br>
 <br>
@@ -619,9 +683,15 @@
 		
 			
 			
-			
+			$("#i-menu").click(function(){
+					$("#i-menu").toggleClass("d-none");
+				    $("#i-menu2").toggleClass("d-none");
+			});
 
-			
+			$("#i-menu2").click(function(){
+					$("#i-menu").toggleClass("d-none");
+				    $("#i-menu2").toggleClass("d-none");
+			});
 			
 			
 			
