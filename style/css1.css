@@ -2,10 +2,10 @@
 
 *{padding: 0; margin: 0;}
 
-body{height: 5000px;}
+/*body{height: 5000px;}*/
 
 
-/*------------------------------start header---------------------------------*/
+/*--------------------------------header---------------------------------*/
 #form-control{
 	border-width: 0;
 	background-color: #D1DFFB;
@@ -152,14 +152,184 @@ transform: rotate(180deg);
 
 }
 
-/*------------------------------end header---------------------------------*/
+
+
+
+
+/*-----------------------------------main-----------------------------------*/
+
+
+
+/*-----------------sec2--------------------*/
+
+#sec2{
+	padding: 0 5%;
+}
+
+.features-box{
+	background: #FFF;
+	box-shadow: 0px 4px 10px 2.45534px rgba(156, 203, 248, 0.2);
+	border-radius: 34px;
+}
+
+.features-box-title{
+	color: #4077E2;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+
+/*-----------------sec3--------------------*/
+
+#sec3{
+	background-color: #E5E5E5;
+	padding: 1%;
+}
+
+.sub-menu2{
+	list-style-type: none;
+}
+
+
+.sub-menu-hover2{
+	margin-top: 20px;
+}
+
+
+.sub-menu-hover2 i{
+	display: none;
+}
+
+
+.sub-menu-hover2 div:hover{
+	background-color: #FFB82F;
+	border-radius: 10px;
+	padding: 5px 5px 7px 2px;
+}
+
+.sub-menu-hover2 div:hover i{
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;
+
+}
+
+
+#dastrasi-sari-formcontrol{
+	border-width: 0;
+	background-color: #fff;
+}
+
+
+ #dastrasi-sari-formcontrol:focus{
+	background-color: #fff;
+	box-shadow: 0 0 0;
+}
+
+.dastrasi-sari-form{
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.form-parag{
+	margin: 0;
+	font-weight: bolder;
+	margin-top: 15px;
+}
+
+.dastrasi-sari-grid , .dastrasi-sari-grid-active{margin: 0;padding: 0;}
+.dastrasi-sari-grid .col , .dastrasi-sari-grid-active .col{
+	background-color: #054E4E;
+	border-radius: 12px;
+	padding: 2px 1px;
+	color: #fff;
+	text-align: center;
+}
+
+
+.swiper {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.swiper-slide {
+	text-align: center;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+ }
+
+#swiper-slide div{
+	width: 20%;
+}
+
+.swiper-slide:hover {
+	background-color: #FFB82F;
+	border-radius: 12px;
+	padding: 1px 0 3px 0;
+}
 
 
 
 
 
+/*-----------------------------------footer-----------------------------------*/
+footer{
+	background-color: #054E4E;
+	color: #fff;
+}
+
+.footer-list , .footer-list-lg{list-style-type: none;}
+
+.footer-list-item{
+	margin-bottom: 20px;
+}
+
+.footer-list-item:hover{
+	color: #FFB82F;
+}
+
+.footer-list-item-link{
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer-list-item-link:hover{
+	color: #FFB82F;
+}
+
+.footer-list-title{
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding-bottom: 7px;
+}
 
 
+.fixyland-footer-logo{
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+
+.social-media-footer i {
+	font-size: 2rem;
+}
+
+
+.copyright-footer{
+	font-size: 0.7rem;
+}
+	
 
 /*-----------------------------responsive-------------------------------*/
 @media screen and (max-width:576px){
@@ -197,3 +367,15 @@ transform: rotate(180deg);
 @media screen and (min-width:1200px){
 
 }
+
+
+/*for sec3 swiper-start*/
+@media (max-width: 400px) and (min-width: 320px){
+	#swiper-slide div { width: 50%;}
+}
+
+@media (max-width: 768px) and (min-width: 400px){
+	#swiper-slide div { width: 30%;}
+}
+/*for sec3 swiper-end*/
+
