@@ -2,7 +2,6 @@
 
 *{padding: 0; margin: 0;}
 
-/*body{height: 5000px;}*/
 
 
 /*--------------------------------header---------------------------------*/
@@ -156,13 +155,13 @@ transform: rotate(180deg);
 
 
 
-/*-----------------------------------main-----------------------------------*/
+/*-----------------------------------index-----------------------------------*/
 
 
 
-/*-----------------sec2--------------------*/
+/*-----------------index-sec2--------------------*/
 
-#sec2{
+#index-sec2{
 	padding: 0 5%;
 }
 
@@ -179,11 +178,11 @@ transform: rotate(180deg);
 }
 
 
-/*-----------------sec3--------------------*/
+/*-----------------index-sec3--------------------*/
 
-#sec3{
+#index-sec3{
 	background-color: #E5E5E5;
-	padding: 1%;
+	padding: 1% 1% 5% 1%;
 }
 
 .sub-menu2{
@@ -278,6 +277,81 @@ transform: rotate(180deg);
 	border-radius: 12px;
 	padding: 1px 0 3px 0;
 }
+
+
+/*-----------------index-sec4--------------------*/
+#index-sec4{
+	padding: 1%;
+}
+
+.statistics-box{
+	background-color: #054E4E;
+	border: 5px solid #000;
+	color: #fff;
+	height: 200px;
+}
+
+.statistics-box p{
+	width: 150px;
+}
+
+
+
+/*-----------------index-sec5--------------------*/
+#index-sec5{
+	padding: 1% 1% 1% 1%;
+}
+
+.maghalat-box{
+	padding: 0;
+	border-radius: 12px;
+/*			position: relative;*/
+	width: 100%;
+}
+
+.maghalat-box img{
+	border-radius: 12px 12px 0 0 ;
+}
+
+.maghalat{
+	background-color: #FFD776;
+/*			position: absolute;*/
+/*			top: 150px;*/
+	width: 100%;
+	border-radius: 0 0 12px 12px;
+	padding: 3px 15px 2px 3px;
+}
+
+
+.maghalat p:nth-child(1){
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+
+
+/*-----------------index-sec6--------------------*/
+#index-sec6{
+	padding: 3% 1%;
+	margin: 5% 3%;
+	background-color: #F4F2F2;
+
+}
+
+
+/*-----------------index-sec7--------------------*/
+#index-sec7{
+	padding: 7% 5% 7% 1%;
+	margin: 2% 3%;
+	background-color: #F4F2F2;
+
+}
+
+#index-sec7 a{
+	background: #FFC947;
+	border-radius: 15px;
+}
+
 
 
 
