@@ -473,3 +473,31 @@ footer{
 			color: #FFB82F;
 		}
 
+	.darkYellow{
+	background-color: #FFB82F ;
+}
+
+    .darkYellow:hover{
+	background-color: #FFB82Faa ;
+    }
+
+   .border-redius-20{
+	border: solid 1px;
+	border-radius: 20px;
+   }
+		
+		.font-size32{
+			font-size: 32px;
+		}
+		
+		.lightblue{
+			background-color: #D1DFFB;
+		}
+		
+		.darkgreen-text{
+			color: #054E4E;
+		}
+		
+		.lightgreen-text{
+			color: #5FB051;
+		}
