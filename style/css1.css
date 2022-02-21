@@ -453,3 +453,23 @@ footer{
 }
 /*for sec3 swiper-end*/
 
+
+
+/*------------------------------------global classes-----------------------------------------*/
+
+.darkYellow-text{
+		color: #FFB82F ;
+	}
+
+    .darkYellow-text:hover{
+		color: #FFB82Faa ;
+    }
+	
+		.white-text{
+			color: #fff;
+		}
+		
+		.white-text:hover{
+			color: #FFB82F;
+		}
+
