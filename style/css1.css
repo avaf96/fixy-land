@@ -3,7 +3,6 @@
 *{padding: 0; margin: 0;}
 
 
-
 /*--------------------------------header---------------------------------*/
 #form-control{
 	border-width: 0;
@@ -303,7 +302,6 @@ transform: rotate(180deg);
 .maghalat-box{
 	padding: 0;
 	border-radius: 12px;
-/*			position: relative;*/
 	width: 100%;
 }
 
@@ -313,8 +311,6 @@ transform: rotate(180deg);
 
 .maghalat{
 	background-color: #FFD776;
-/*			position: absolute;*/
-/*			top: 150px;*/
 	width: 100%;
 	border-radius: 0 0 12px 12px;
 	padding: 3px 15px 2px 3px;
@@ -398,9 +394,8 @@ transform: rotate(180deg);
 #article-search-bar{
 	width: 90%;
 	border: none;
-	border-radius: 15px 0 0 15px;
+	border-radius: 15px;
 	padding-right: 7px;
-
 }
 
 #article-search-bar:focus{outline: none;}
@@ -411,17 +406,25 @@ transform: rotate(180deg);
 	padding-right: 0;
 }
 
-.article-search-btn{
+#article-search-btn{
 	background-color: #FFB82F;
 	border-radius: 0 15px 15px 25px;
 	color: #fff;
+	box-shadow: none;
 }
 
 .articles-link a{color: #000;}
 .articles-link a:hover{color: #FFB82F;}
 
 
-/*---------------------------------- 			----------------------------------*/
+/*----------------------------------------- 			-------------------------------------*/
+
+
+
+
+
+
+
 
 
 
