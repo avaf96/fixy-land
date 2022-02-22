@@ -51,7 +51,7 @@
 
 .nav-link-hover-black{
 	color: #000;
-	margin: 10px;
+/*	margin: 10px;*/
 	text-decoration: none;
   }
 
@@ -61,12 +61,6 @@
 
 .nav-link-hover-black:hover{
    color: #FFB82F ;
-}
-
-.nav-link-hover-black{
-	color: #000;
-	margin: 10px;
-	text-decoration: none;
 }
 
 .nav-link-hover-white{
@@ -95,7 +89,15 @@
 	display: none;
 }
 
-.sub-menu-hover li div:hover{
+/*
+.sub-menu-hover li:hover{
+	background-color: #FFB82F;
+	border-radius: 10px;
+	padding: 2px;
+}
+*/
+
+.sub-menu-hover-li{
 	background-color: #FFB82F;
 	border-radius: 10px;
 	padding: 2px;
@@ -141,9 +143,6 @@
 	margin-top: 1%;
 }
 
-.sub-menu-show{
-	display: none;
-}
 
 
 .li-responsive-toggle{

@@ -51,14 +51,35 @@
 			}
 			
 			
+//			background-color: #FFB82F;
+//	        border-radius: 10px;
+//	        padding: 2px;
+			
+			
+			
 //			submenu for each daste-bandi-khadamat menu items on laptop size (on hover)
 			let sub_menu_1_li = $(".sub-menu-1-li");
 			let sub_menu_show = $(".sub-menu-show");
+			
 			for(let i = 0 ; i < sub_menu_1_li.length ; i++){
 				$(sub_menu_1_li[i]).hover(function(){
-					$(sub_menu_show[i]).toggleClass("d-none");	
+					$(sub_menu_show[i]).toggleClass("d-none");
+					$(sub_menu_1_li[i]).toggleClass("sub-menu-hover-li");
+				
 				})	
+				$(sub_menu_show[i]).hover(function(){
+					$(sub_menu_show[i]).toggleClass("d-none");	
+					$(sub_menu_1_li[i]).toggleClass("sub-menu-hover-li");
+				});	
+				
+				$(sub_menu_1_li[i]).mouseout(function(){
+//					$(sub_menu_1_li[i]).css({"background-color": "#f4f2f2", "border-radius" : "0"});
+				})	
+				$(sub_menu_show[i]).mouseout(function(){
+//					$(sub_menu_1_li[i]).css({"background-color": "#f4f2f2", "border-radius" : "0"});
+				})
 			}
+			
 			
 			
 //			submenu for each daste-bandi-khadamat menu items on laptop size (on click)			
