@@ -26,15 +26,13 @@
 	<style>
 		
 		
-/*
-		#mobile-number-register-cutomer{
+		#imageSignup{
 			
-			border: none;
-			box-shadow: 0 0 0
+			z-index: 0;
 			
 			
 		}
-*/
+
 
 	
 	
@@ -588,7 +586,7 @@
 			<div class="col-md-4 border-start d-none d-md-block m-0 lightblue">
 		    
 			
-				<img src="image/GroupPhoto.png" class=" pt-2 w-100 h-auto sticky-top" alt="">
+				<img src="image/GroupPhoto.png" class=" pt-2 w-100 h-auto sticky-top " alt="" id="imageSignup">
 				
 			</div>
 			
@@ -826,13 +824,7 @@
 	<!--scripts from script folder	-->
 	<script src="script/main.js" type="text/javascript"></script>
 	
-        <script>
-            var input = document.querySelector("#mobile-number-register-cutomer");
-            window.intlTelInput(input, {
-                separateDialCode: true,
-                excludeCountries: ["in", "il"],
-                preferredCountries: ["om", "jp", "pk", "no"]
-            });
+        <script src="script/country_code.js" type="text/javascript">
         </script>
 	
 	
