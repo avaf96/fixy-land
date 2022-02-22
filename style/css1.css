@@ -385,7 +385,7 @@ transform: rotate(180deg);
 .article-box:hover .art-title{color: #FFB82F;}
 
 
-/*---------------------------------- 		----------------------------------*/
+/*----------------------------------articleDescription page----------------------------------*/
 
 
 
@@ -517,5 +517,7 @@ footer{
 .darkgreen-text{color: #054E4E;}
 
 .lightgreen-text{color: #5FB051;}
+
+.text_justify{text-align: justify;}
 
 
