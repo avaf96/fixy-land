@@ -158,7 +158,6 @@ transform: rotate(180deg);
 /*-----------------------------------index-----------------------------------*/
 
 
-
 /*-----------------index-sec2--------------------*/
 
 #index-sec2{
@@ -353,6 +352,10 @@ transform: rotate(180deg);
 }
 
 
+/*-----------------------------------       -----------------------------------*/
+
+
+
 
 
 
@@ -457,47 +460,24 @@ footer{
 
 /*------------------------------------global classes-----------------------------------------*/
 
-.darkYellow-text{
-		color: #FFB82F ;
-	}
+.darkYellow-text{color: #FFB82F ;}
 
-    .darkYellow-text:hover{
-		color: #FFB82Faa ;
-    }
-	
-		.white-text{
-			color: #fff;
-		}
-		
-		.white-text:hover{
-			color: #FFB82F;
-		}
+.darkYellow-text:hover{color: #FFB82Faa;}
 
-	.darkYellow{
-	background-color: #FFB82F ;
-}
+.white-text{color: #fff;}
 
-    .darkYellow:hover{
-	background-color: #FFB82Faa ;
-    }
+.white-text:hover{color: #FFB82F;}
 
-   .border-redius-20{
-	border: solid 1px;
-	border-radius: 20px;
-   }
-		
-		.font-size32{
-			font-size: 32px;
-		}
-		
-		.lightblue{
-			background-color: #D1DFFB;
-		}
-		
-		.darkgreen-text{
-			color: #054E4E;
-		}
-		
-		.lightgreen-text{
-			color: #5FB051;
-		}
+.darkYellow{background-color: #FFB82F ;}
+
+.darkYellow:hover{background-color: #FFB82Faa ;}
+
+.border-redius-20{border: solid 1px;border-radius: 20px;}
+
+.font-size32{font-size: 32px;}
+
+.lightblue{background-color: #D1DFFB;}
+
+.darkgreen-text{color: #054E4E;}
+
+.lightgreen-text{color: #5FB051;}

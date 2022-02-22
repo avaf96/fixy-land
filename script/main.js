@@ -1,9 +1,8 @@
 // JavaScript Document
 
 
-//<!--header scripts-->
-
-		
+//-------------------------header scripts-------------------------------
+	
 //		Hide Menu on Scroll down
 		let prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
@@ -16,11 +15,9 @@
           prevScrollpos = currentScrollPos;
         }
 		
-
 		
 
-		$(document).ready(function(){
-			
+		$(document).ready(function(){		
 //			daste-bandi-khadamat menu hidden and visible on mobile & tablet size (on click)
 			$("#khadamat-p").click(function(){
 				if ($(window).width() < 992){
@@ -106,18 +103,10 @@
 
 		
 		
-	
-	
-
-
-	
 
 	
 	
-	
-//<!--footer scripts	-->
-
-
+//-------------------------footer scripts-------------------------------	
 		$(document).ready(function(){
 			let footer_list_title_i = $(".footer-list-title i");
 			let footer_list = $(".footer-list");
@@ -126,9 +115,14 @@
 					$(footer_list[i]).toggleClass("d-none");		
 				})
 				}
-
 		})
 
+
+
+
+
+
+//-------------------------            -------------------------------	
 
 
 
