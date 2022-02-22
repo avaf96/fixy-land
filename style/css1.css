@@ -384,14 +384,52 @@ transform: rotate(180deg);
 
 .article-box:hover .art-title{color: #FFB82F;}
 
+.article-box a:hover{color: #000;}
+
 
 /*----------------------------------articleDescription page----------------------------------*/
+.article-search-box{
+	height: 350px;
+	background: #EFF0F1;
+	border-radius: 15px;
+	padding: 2%;
+}
+
+#article-search-bar{
+	width: 90%;
+	border: none;
+	border-radius: 15px 0 0 15px;
+	padding-right: 7px;
+
+}
+
+#article-search-bar:focus{outline: none;}
+
+.article-search-form{
+	background-color: #fff;
+	border-radius: 15px;
+	padding-right: 0;
+}
+
+.article-search-btn{
+	background-color: #FFB82F;
+	border-radius: 0 15px 15px 25px;
+	color: #fff;
+}
+
+.articles-link a{color: #000;}
+.articles-link a:hover{color: #FFB82F;}
+
+
+/*---------------------------------- 			----------------------------------*/
 
 
 
 
 
 
+/*------------------------------------------Signup page-------------------------------------*/
+#imageSignup{z-index: 0;}
 
 
 
@@ -519,5 +557,7 @@ footer{
 .lightgreen-text{color: #5FB051;}
 
 .text_justify{text-align: justify;}
+
+
 
 
