@@ -20,14 +20,12 @@
 	$(document).ready(function(){
 		let sub_menu_hover2 = $(".sub-menu-hover2");
 		let dastrasi_sari_grid = $(".dastrasi-sari-grid");
-		let dastrasi_sari_grid_active = $(".dastrasi-sari-grid-active");
 		let swiper_slide = $(".swiper-slide");
 
 		for(let i = 0 ; i < sub_menu_hover2.length ; i++){
 			$(sub_menu_hover2[i]).click(function(){	
 				for(let j = 0 ; j < dastrasi_sari_grid.length ; j++){
 					$(dastrasi_sari_grid[j]).addClass("d-none");
-					$(dastrasi_sari_grid_active[0]).addClass("d-none");
 				}
 				$(dastrasi_sari_grid[i]).removeClass("d-none");	
 
@@ -38,7 +36,6 @@
 			$(swiper_slide[i]).click(function(){	
 				for(let j = 0 ; j < dastrasi_sari_grid.length ; j++){
 					$(dastrasi_sari_grid[j]).addClass("d-none");
-					$(dastrasi_sari_grid_active[0]).addClass("d-none");
 				}
 				$(dastrasi_sari_grid[i]).removeClass("d-none");	
 
