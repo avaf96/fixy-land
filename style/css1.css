@@ -363,6 +363,11 @@ transform: rotate(180deg);
 	box-shadow: 0px 4px 10px 2.45534px rgba(156, 203, 248, 0.2);
 }
 
+.article-box:hover{
+	opacity: 88%;
+	box-shadow: 0px 4px 10px 2.45534px rgba(156, 203, 248, 0.3);	
+}
+
 .article-box img{border-radius: 12px 12px 0 0;}
 
 .article-box a{color: #000;}
@@ -373,14 +378,9 @@ transform: rotate(180deg);
 	padding: 5px 4%;
 }
 
-.article-box:hover{
-	opacity: 88%;
-	box-shadow: 0px 4px 10px 2.45534px rgba(156, 203, 248, 0.3);	
-}
+.article-box a:hover{color: #000;}
 
 .article-box:hover .art-title{color: #FFB82F;}
-
-.article-box a:hover{color: #000;}
 
 
 /*----------------------------------articleDescription page----------------------------------*/
@@ -417,10 +417,22 @@ transform: rotate(180deg);
 .articles-link a:hover{color: #FFB82F;}
 
 
-/*----------------------------------------- 			-------------------------------------*/
+/*--------------------------------------specialistInfo page-----------------------------------*/
+.specialist-portfolio-box{width: 95%;}
 
+.portfolio-info{
+	background-color: #E6E6E6;
+	padding: 5px 4%;
+}
 
+.box-text{display: none}
+.specialist-portfolio-box:hover .box-title{display: none;}
+.specialist-portfolio-box:hover .box-text{display: block;}
 
+.comments{width: 97%;}
+#more-cm-btn{box-shadow: none;}
+
+/*------------------------------------- 			-----------------------------------*/
 
 
 
