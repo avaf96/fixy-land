@@ -548,6 +548,8 @@ footer{
 
 .darkYellow:hover{background-color: #FFB82Faa ;}
 
+.darkYellowOnHover:hover{background-color: #FFB82Faa;}
+
 .border-redius-20{border: solid 1px;border-radius: 20px;}
 
 .font-size32{font-size: 32px;}
