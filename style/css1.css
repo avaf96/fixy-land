@@ -540,6 +540,8 @@ footer{
 
 .darkYellow-text:hover{color: #FFB82Faa;}
 
+.darkYellow-text_onHover:hover{color: #FFB82Faa;}
+
 .white-text{color: #fff;}
 
 .white-text:hover{color: #FFB82F;}
