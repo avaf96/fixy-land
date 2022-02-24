@@ -265,9 +265,6 @@ transform: rotate(180deg);
 	align-items: center;
  }
 
-#swiper-slide div{
-	width: 20%;
-}
 
 .swiper-slide:hover {
 	background-color: #FFB82F;
@@ -536,18 +533,6 @@ footer{
 @media screen and (min-width:1200px){
 
 }
-
-
-/*for sec3 swiper-start*/
-@media (max-width: 400px) and (min-width: 320px){
-	#swiper-slide div { width: 50%;}
-}
-
-@media (max-width: 768px) and (min-width: 400px){
-	#swiper-slide div { width: 30%;}
-}
-/*for sec3 swiper-end*/
-
 
 
 /*------------------------------------global classes-----------------------------------------*/
