@@ -196,18 +196,17 @@ transform: rotate(180deg);
 	display: none;
 }
 
-
-.sub-menu-hover2 div:hover{
-	background-color: #FFB82F;
+.sub-menu-hover2 div{
 	border-radius: 10px;
-	padding: 5px 5px 7px 2px;
+	padding: 5px 7px 7px 5px;
 }
+
+.sub-menu-hover2 div:hover{background-color: #FFB82F;}
 
 .sub-menu-hover2 div:hover i{
 	display: inline-block;
 	margin-right: 10px;
 	margin-left: 10px;
-
 }
 
 
@@ -250,6 +249,8 @@ transform: rotate(180deg);
 
 .swiper-slide {
 	text-align: center;
+	border-radius: 12px;
+	padding: 1px 3px 3px 3px;
 	/* Center slide text vertically */
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -268,8 +269,6 @@ transform: rotate(180deg);
 
 .swiper-slide:hover {
 	background-color: #FFB82F;
-	border-radius: 12px;
-	padding: 1px 0 3px 0;
 }
 
 
@@ -563,12 +562,8 @@ footer{
 
 .form-bg-color{background-color: #F4F2F2;}
 
-.dastrasi-sari-grid input{
-	background-color: #F4F2F2;
-}
-.lightgreen{
-	background-color: #4DE119;
-}
-.lightgray{
-	background-color: #C4C4C4;
-}
+.dastrasi-sari-grid input{background-color: #F4F2F2;}  /*for signup page*/
+
+.lightgreen{background-color: #4DE119;}
+
+.lightgray{background-color: #C4C4C4;}
