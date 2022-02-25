@@ -3,920 +3,656 @@
 <head>
 <meta charset="utf-8">
 <title>Fixy Land</title>
-	
 
-	
 <!-- bootstrap styles -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <!-- font awesome cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	
-	
+<!-- jquery cdn --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
 <!--swiper css cdn-->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-	
-	<link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
-	
-     <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-	
-	<!-- styles -->
-     <link href="style/css1.css" rel="stylesheet" type="text/css">
-	<style>
-		
-		
-		.squre-register div{
-			
-			width: 25px;
-			height: 25px;
-/*			border: solid;*/
-			border-radius: 5px;
-			
-		}
-		
-	
-		
+<link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+<script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> 
 
+<!-- styles -->
+<link href="style/css1.css" rel="stylesheet" type="text/css">
+<style>
+.squre-register div {
+    width: 25px;
+    height: 25px;
+    /*			border: solid;*/
+    border-radius: 5px;
+}
 	
-	
-	</style>
+#form-control-register-specialist{
+	border-width: 0;
+	background-color: #D1DFFB;
+}
 
+#form-control-register-specialist:focus{
+	background-color: #D1DFFB;
+	box-shadow: 0 0 0;
+}	
+	
+	.border-darkgreen{
+		border-color: #054E4E;
+	}
+	
+	#form-control-register-specialist-div{
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	
+	#form-control-register-specialist-div div div:hover{
+		background-color: #FFB82F;
+	}
+	
+	.form-control-register-specialist-ul li:hover{
+		background-color: #FFB82F;
+	}
+	.form-control-register-specialist-ul i{
+		color: #000;
+	}
+	.form-control-register-specialist-ul i:hover{
+		color: #FFF;
+	}
+	
+</style>
 </head>
-	
 
-	
 <body class="body">
-	
-	<header class="fixed-top navbar-expand-lg container-fluid header" id="header">
-		
-		<div class="position-relative pb-0">	
-			
-			<div class="row d-flex justify-content-between">
-				<!-- Hamburger & Xmark icon -->
-				<div class="navbar-toggler col-2 text-center" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" id="button-toggler-menu">
-					<i class="fa-solid fa-bars text-white" id="i-menu"></i>
-					<i class="fa-solid fa-xmark text-white d-none" id="i-menu2"></i>
-				</div>
-				
-				<!-- fixyLand logo for mobile size -->
-				<div class="navbar-toggler col-4 col-sm-2" >
-					<img class="w-100 " src="image/fixyLandMenuIcon.png" alt=""  id="logo-menu">	
-				</div>
-			</div>
-	
-		
-			
-			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<div class="row d-flex justify-content-center pt-2 flex-fill">
-					
-					<!-- header right column -->
-					<div class="col-lg-2 row order-lg-1 order-4">
-						<!-- fixyLand logo for laptop size -->
-						<div class="col-12 justify-content-center d-none d-lg-flex">
-							<img src="image/fixyLandMenuIcon.png" alt="" width="100" height="50">
-						</div>	
-						<!-- language selection -->
-						<div class="col-lg-12 d-flex justify-content-center row mb-2" dir="ltr">
-							<div class="col-lg-12 col-5">
-								<select class="form-select form-select-lang col-4" id="form-select-lang" aria-label="Default select example">
-									  <option selected>Fa</option>
-									  <option  value="1">En</option>
-									  <option  value="2">Ar</option>
-								</select>
-							</div>		
-						</div>	
-					</div>
-		
-					
-					<!--header middle column-->
-					<div class=" col-lg-7 d-flex justify-content-center row order-2">
-						<!-- search bar -->
-						<form class="col-10 col-sm-7 col-md-10 col-lg-12 d-flex d-flex-border pe-2 ps-2">
-							<button class="btn " type="submit">
-								<i class="fa-solid fa-magnifying-glass"></i>
-							</button>
-							<input class="form-control" id="form-control" type="search" placeholder="Search" aria-label="Search">
-						</form>
-		
-						<!-- header menu -->
-						<div class="col-12 justify-content-center d-flex row">
-							<div class="col-10 col-sm-7 col-md-10 col-lg-12 m-0 p-0 d-flex align-items-end">
-								<nav class="navbar d-flex flex-fill m-0 p-0 ">
-									<ul class="navbar-nav d-flex flex-fill justify-content-between m-0 p-0 ">
-									<!-- header menu items: -->
-										 <li class="nav-item pb-2 ">
-												<a class=" nav-link-hover" href="#">خانه</a>
-										  </li>
-										  <li class="nav-item pb-2">
-												<a class=" nav-link-hover" href="#">مقالات</a>
-										  </li>
-										
-										  <!-- daste-bandi-khadamat -->
-										  <li class="nav-item pb-2" id="khadamat">
-												<p class="nav-link-hover d-inline-block p-0 m-0 li-responsive" id="khadamat-p">
-												   دسته بندی خدمات
-												  <i class="fa-solid fa-caret-down"></i> 
-												</p>
-
-												<!-- daste-bandi-khadamt submenu for mobile size -->
-												<ul class="sub-menu text-white me-4 d-lg-none d-none" id="sub-menu-responsive">
-													<!-- daste-bandi-khadamat submenu-item1 -->
-												  	<li class="nav-item li-responsive">
-														 <p class="nav-link-click li-responsive-3 snav-link-hover-white p-0 m-0">
-															  نظافت و پذیرایی
-															  <i class="fa-solid fa-caret-down"></i>
-														 </p>
-
-														<!-- submenu for item1 from daste-bandi-khadamat submenu -->
-														 <div class="text-white me-3 li-responsive-submenu-3 d-none">
-															<ul style="list-style-type: none">
-															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 1 </a>
-															  </li>
-															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 1 </a>
-															  </li>
-															</ul>
-														 </div>
-													 </li>
-													
-													 <!-- daste-bandi-khadamat submenu-item2 -->
-												     <li class="nav-item li-responsive">
-														 <p class="nav-link-click li-responsive-3 nav-link-hover-white p-0 m-0">
-															 دکوراسیون و بازسازی
-														 	 <i class="fa-solid fa-caret-down"></i>
-														 </p>
-														
-														 <!-- submenu for item2 from daste-bandi-khadamat submenu -->
-														 <div class="text-white me-3 li-responsive-submenu-3 d-none">
-															<ul style="list-style-type: none">
-															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 2 </a>
-															  </li>
-															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 2 </a>
-															  </li>
-															</ul>
-														 </div>
-													  </li>
-													
-													  <!-- daste-bandi-khadamat submenu-item3 -->
-													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
-														 <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
-															 نصب و تعمیر لوازم خانگی
-														     <i class="fa-solid fa-caret-down"></i> 
-														 </p>
-														  
-														 <!-- submenu for item3 from daste-bandi-khadamat submenu -->
-														 <div class="text-white me-3 li-responsive-submenu-3 d-none">
-															<ul style="list-style-type: none">
-															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 3 </a>
-															  </li>
-															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 3 </a>
-															  </li>
-															</ul>
-														 </div>	
-													  </li>
-													
-													  <!-- daste-bandi-khadamat submenu-item4 -->
-													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
-														  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
-															 سرمایش و گرمایش
-												  			 <i class="fa-solid fa-caret-down"></i>
-														 </p>
-													  </li>
-													
-													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
-														  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
-															 باربری و جابه جایی
-												  			 <i class="fa-solid fa-caret-down"></i>
-														 </p>
-													  </li>
-													
-													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
-														  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
-															 برقکاری
-												  			 <i class="fa-solid fa-caret-down"></i>
-														 </p>
-													  </li>
-													
-													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
-														  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
-															 لوله کشی
-												  			 <i class="fa-solid fa-caret-down"></i>
-														 </p> 
-													  </li>
-													
-													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
-														  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
-															 زیبایی بانوان
-												  			 <i class="fa-solid fa-caret-down"></i>
-														 </p>
-													  </li>
-													
-													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
-														  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
-															 تعمیرات خودرو
-												  			 <i class="fa-solid fa-caret-down"></i>
-														 </p>
-													  </li>
-												</ul>
-										  </li>
-	
-		
-		
-										  <li class="nav-item pb-2">
-											<a class=" nav-link-hover" href="#">تماس با ما</a>
-										  </li>
-	
-										  <li class="nav-item pb-2">
-											<a class=" nav-link-hover" href="#">درباره ما</a>
-										  </li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-		
-					
-					<!--header left column-->
-					<div class="col-lg-3  order-1 order-lg-3">	
-						<div class="row d-flex flex-fill justify-content-center mb-2">	
-							<div class="d-flex gap-3 col-10 col-sm-7 col-md-10 col-lg-12">
-								<button class="btn outline-yellow flex-fill" id="button-menu1">  ورود </button>
-								<button class="btn flex-fill" id="button-menu2"> ثبت نام</button>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		
-		
-			<!-- daste-bandi-khadamt submenu for laptop size -->
-			<div class="position-absolute end-3 w-75 d-none" style="background-color: #f4f2f2" id="second-level-menu">
-				
-				<div class="row ">
-					<div class="col-4 col-lg-3 border p-0 pe-2">
-						<ul class="sub-menu sub-menu-hover p-0 pe-2">
-							<li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
-								<div>
-									  نظافت و پذیرایی
-									  <i class="fa-solid fa-arrow-left"></i>
-								</div>
-							</li>
-		  
-							<li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
-								<div>
-										دکوراسیون و بازسازی
-									  <i class="fa-solid fa-arrow-left"></i>
-								</div>
-							</li>
-							
-							<li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
-								<div>
-									نصب و تعمیر لوازم خانگی
-									<i class="fa-solid fa-arrow-left"></i>
-								</div>
-							</li>
-							
-							<li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
-								<div>
-									سرمایش و گرمایش
-									<i class="fa-solid fa-arrow-left"></i>
-								</div>
-							</li>
-							
-							<li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
-								<div>
-									باربری و جابه جایی
-									<i class="fa-solid fa-arrow-left"></i>
-								</div>
-							</li>
-							
-							<li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
-								<div>
-									برقکاری
-									<i class="fa-solid fa-arrow-left"></i>
-								</div>
-							</li>
-							
-							<li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
-								<div>
-									لوله کشی
-									<i class="fa-solid fa-arrow-left"></i>
-								</div>
-							</li>
-							
-							<li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
-								<div>
-									زیبایی بانوان 
-									<i class="fa-solid fa-arrow-left"></i>
-								</div>
-							</li>
-							
-							<li class="nav-item d-flex sub-menu-1-li ">
-								<div>
-									تعمیرات خودرو
-									<i class="fa-solid fa-arrow-left"></i>
-								</div>
-							</li>
-						</ul>
-					</div>
-
+<header class="fixed-top navbar-expand-lg container-fluid header" id="header">
+  <div class="position-relative pb-0">
+    <div class="row d-flex justify-content-between"> 
+      <!-- Hamburger & Xmark icon -->
+      <div class="navbar-toggler col-2 text-center" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" id="button-toggler-menu"> <i class="fa-solid fa-bars text-white" id="i-menu"></i> <i class="fa-solid fa-xmark text-white d-none" id="i-menu2"></i> </div>
       
-					<!--submenu for item1 from daste-bandi-khadamat submenu (laptop size) -->
-					<div class="col-8 col-lg-9 row sub-menu-show d-none">
-						
-						<div class="col-6">
-							<ul class="sub-menu" style="list-style-type: none">
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-							</ul>
-						</div>
-						
-						<div class="col-6">
-							<ul class="sub-menu" style="list-style-type: none">
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-							</ul>
-						</div>
-						
-						
-					</div>
-
-<!--					submenu for item2 from daste-bandi-khadamat submenu (laptop size) -->
-					<div class="col-8 col-lg-9 row sub-menu-show d-none">
-						<div class="col-6">
-							<ul class="sub-menu" style="list-style-type: none">
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">2نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی2</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">2نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی2</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">2نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-							</ul>
-						</div>
-						
-						<div class="col-6  ">
-							<ul class="sub-menu" style="list-style-type: none">
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-  
-					<!--submenu for item3 from daste-bandi-khadamat submenu (laptop size) -->
-					<div class="col-8 col-lg-9 row sub-menu-show d-none">
-						<div class="col-6  ">
-							<ul class="sub-menu" style="list-style-type: none">
-							  <li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-							  </li>
-								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-							  </li>
-							</ul>
-						</div>
-						
-						<div class="col-6  ">
-							<ul class="sub-menu" style="list-style-type: none">
-							  <li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
-							  </li>
-							</ul>
-						</div>
-					</div>
-					
-				</div>
-			 
-			</div>
-			
-
-		</div>
-			
-	</header>
-<!--end header-->
-
-	
-	
-	
-<!--start main-->
-	<main class="container-fluid p-0">
-		
-		<section class="row">
-		   <div class="col-12 border border-2 border-dark rounded-3 d-flex flex-column justify-content-center p-5 align-items-center">
-		   
-			   <h1>ثبت نام متخصص</h1>
-			   
-			   <div class="d-flex border squre-register gap-2">
-			   
-				   <div class="lightgreen"> </div>
-			       <div class="lightgray"> </div>
-				   <div class="lightgray"> </div>
-				   <div class="lightgray"> </div>
-				   <div class="lightgray"> </div>
-			   </div>
-			   
-			   
-			   
-	<section id="index-sec3 bg-white">
-			<div class="container-fluid">
-				<div class="row d-flex justify-content-center">
-					<div class="col-12 col-md-10  mt-4 overflow-auto">
-
-						<!--sec3 tablet and mobile size menu-->
-						 <div class="swiper mySwiper ">
-							  <div id="swiper-slide" class="swiper-wrapper  ">
-									<div class="swiper-slide " >نظافت و پذیرایی</div>
-									<div class="swiper-slide ">دکوراسیون و بازسازی</div>
-									<div class="swiper-slide ">نصب و تعمیر لوازم خانگی</div>
-									<div class="swiper-slide ">سرمایش و گرمایش</div>
-									<div class="swiper-slide ">باربری و جابه جایی</div>
-									<div class="swiper-slide ">لوله کشی</div>
-									<div class="swiper-slide ">زیبایی بانوان</div>
-									<div class="swiper-slide ">تعمیرات خودرو</div>
-							  </div>
-						</div>
-					</div>	
-
-					<!--sec3 submenu-->
-					<div class="col-12 ps-0 pe-0 border border-3">
-						<!--submenu for item1 (Default submenu) -->
-					
-
-
-						<!--submenu for item1-->
-						<div class="container-fluid ">
-							<div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
-								
-								
-	<form class="w-50">
-	<div class="d-flex justify-content-between">
-		<label for="gender-register-specialist" class="form-label">مشخصات</label>
-		<div><label for="men-register-specialist" class="form-label">مرد</label>
-		<input type="radio" class="" id="men-register-specialist" name="gender-register-specialist">
-		<label for="woman-register-specialist " class="form-label me-5">زن</label>
-		<input type="radio" class="" id="woman-register-specialist" name="gender-register-specialist"></div>
-		
-	</div>	
-	
-  <div class="row">
-	<div class="col-6 mb-3">
-    <label for="name-register-specialist" class="form-label">نام</label>
-    <input type="text" class="form-control" id="name-register-specialist" >
-  </div>
-  <div class="col-6 mb-3">
-    <label for="fname-register-specialist" class="form-label">نام خانوادگی</label>
-    <input type="text" class="form-control" id="fname-register-specialist" >
-  </div>
-   <div class="mb-3">
-    <label for="date-register-specialist" class="form-label">تاریخ تولد</label>
-    <input type="date" class="form-control" id="date-register-specialist" >
-  </div>
- </div>
-	<div class="mb-3">
-    <label for="email-register-specialist" class="form-label">ایمیل</label>
-    <input type="email" class="form-control" id="email-register-specialist" >
-  </div>
-	<div class="mb-3 d-flex justify-content-around">
-		<div><label for="healthy-register-specialist" class="form-label">سالم هستم</label>
-		<input type="radio" class="" id="healthy-register-specialist" name="healthy-register-specialist"></div>
-		<div><label for="patient-register-specialist" class="form-label">بیمار هستم</label>
-		<input type="radio" class="" id="patient-register-specialist" name="Patient-register-specialist"></div>
-	</div>
-		
-	<div class="mb-3">
-    <label for="about-register-specialist" class="form-label">در صورتی که بیماری یا معلولیت خاصی دارید وارد نمایید.</label>
-    <textarea class="form-control form-bg-color" id="address-register-specialist" placeholder="توضیحات">
-	  </textarea>
-  </div>
-		
-	
-
-	  
-  
-	
- 
-	
-	
-  <div class="mb-3 ">
-    <input type="checkbox" required="required" class="form-check-input" id="check-register-specialist" >
-	<label class="form-check-label" for="check-register-specialist">قوانین و مقررات را مطالعه و قبول دارم.</label>
-  </div>
-	
-    <div class="mb-3">
-    <label for="identificationCard-register-specialist" class="form-label">تاریخ تولد</label>
-    <input type="file" class="form-control" id="identificationCard-register-specialist" placeholder="اضافه کردن نمونه کار">
+      <!-- fixyLand logo for mobile size -->
+      <div class="navbar-toggler col-4 col-sm-2" > <img class="w-100 " src="image/fixyLandMenuIcon.png" alt=""  id="logo-menu"> </div>
     </div>
-	
-	  <div class="mb-3">
-	  <label for="citizenshipCode-register-specialist" class="form-label">کد شهروندی</label>
-	  <input type="text" class="form-control" id="citizenshipCode-register-specialist" >
-	  </div>  
-		  
-	  <div class="d-flex mb-3 gap-3">
-	  <button type="reset" class="w-100 mt-4 border-redius-20 font-size32">لغو</button>
- 	  <button type="submit" class=" w-100  mt-4 darkYellow border-redius-20 font-size32">تایید</button>
-      
-	  </div>
-	  
-	 
-	
-     
-</form>
-								
-							</div>
-						</div>
-						
-						
-						
-						
-						
-						
-			   
-			   </div>
-				</div>
-			</div>
-		</section>
-			   
-			   
-			   
-			   
-			   
-			   
-			   
-			   
-			   
-			   
-			   
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <div class="row d-flex justify-content-center pt-2 flex-fill"> 
+        
+        <!-- header right column -->
+        <div class="col-lg-2 row order-lg-1 order-4"> 
+          <!-- fixyLand logo for laptop size -->
+          <div class="col-12 justify-content-center d-none d-lg-flex"> <img src="image/fixyLandMenuIcon.png" alt="" width="100" height="50"> </div>
+          <!-- language selection -->
+          <div class="col-lg-12 d-flex justify-content-center row mb-2" dir="ltr">
+            <div class="col-lg-12 col-5">
+              <select class="form-select form-select-lang col-4" id="form-select-lang" aria-label="Default select example">
+                <option selected>Fa</option>
+                <option  value="1">En</option>
+                <option  value="2">Ar</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <!--header middle column-->
+        <div class=" col-lg-7 d-flex justify-content-center row order-2"> 
+          <!-- search bar -->
+          <form class="col-10 col-sm-7 col-md-10 col-lg-12 d-flex d-flex-border pe-2 ps-2">
+            <button class="btn " type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            <input class="form-control" id="form-control" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          
+          <!-- header menu -->
+          <div class="col-12 justify-content-center d-flex row">
+            <div class="col-10 col-sm-7 col-md-10 col-lg-12 m-0 p-0 d-flex align-items-end">
+              <nav class="navbar d-flex flex-fill m-0 p-0 ">
+                <ul class="navbar-nav d-flex flex-fill justify-content-between m-0 p-0 ">
+                  <!-- header menu items: -->
+                  <li class="nav-item pb-2 "> <a class=" nav-link-hover" href="#">خانه</a> </li>
+                  <li class="nav-item pb-2"> <a class=" nav-link-hover" href="#">مقالات</a> </li>
+                  
+                  <!-- daste-bandi-khadamat -->
+                  <li class="nav-item pb-2" id="khadamat">
+                    <p class="nav-link-hover d-inline-block p-0 m-0 li-responsive" id="khadamat-p"> دسته بندی خدمات <i class="fa-solid fa-caret-down"></i> </p>
+                    
+                    <!-- daste-bandi-khadamt submenu for mobile size -->
+                    <ul class="sub-menu text-white me-4 d-lg-none d-none" id="sub-menu-responsive">
+                      <!-- daste-bandi-khadamat submenu-item1 -->
+                      <li class="nav-item li-responsive">
+                        <p class="nav-link-click li-responsive-3 snav-link-hover-white p-0 m-0"> نظافت و پذیرایی <i class="fa-solid fa-caret-down"></i> </p>
+                        
+                        <!-- submenu for item1 from daste-bandi-khadamat submenu -->
+                        <div class="text-white me-3 li-responsive-submenu-3 d-none">
+                          <ul style="list-style-type: none">
+                            <li class="nav-item"> <a class="nav-link-hover-white" href="#"> نظافت 1 </a> </li>
+                            <li class="nav-item"> <a class="nav-link-hover-white" href="#"> نظافت 1 </a> </li>
+                          </ul>
+                        </div>
+                      </li>
+                      
+                      <!-- daste-bandi-khadamat submenu-item2 -->
+                      <li class="nav-item li-responsive">
+                        <p class="nav-link-click li-responsive-3 nav-link-hover-white p-0 m-0"> دکوراسیون و بازسازی <i class="fa-solid fa-caret-down"></i> </p>
+                        
+                        <!-- submenu for item2 from daste-bandi-khadamat submenu -->
+                        <div class="text-white me-3 li-responsive-submenu-3 d-none">
+                          <ul style="list-style-type: none">
+                            <li class="nav-item"> <a class="nav-link-hover-white" href="#"> نظافت 2 </a> </li>
+                            <li class="nav-item"> <a class="nav-link-hover-white" href="#"> نظافت 2 </a> </li>
+                          </ul>
+                        </div>
+                      </li>
+                      
+                      <!-- daste-bandi-khadamat submenu-item3 -->
+                      <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+                        <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0"> نصب و تعمیر لوازم خانگی <i class="fa-solid fa-caret-down"></i> </p>
+                        
+                        <!-- submenu for item3 from daste-bandi-khadamat submenu -->
+                        <div class="text-white me-3 li-responsive-submenu-3 d-none">
+                          <ul style="list-style-type: none">
+                            <li class="nav-item"> <a class="nav-link-hover-white" href="#"> نظافت 3 </a> </li>
+                            <li class="nav-item"> <a class="nav-link-hover-white" href="#"> نظافت 3 </a> </li>
+                          </ul>
+                        </div>
+                      </li>
+                      
+                      <!-- daste-bandi-khadamat submenu-item4 -->
+                      <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+                        <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0"> سرمایش و گرمایش <i class="fa-solid fa-caret-down"></i> </p>
+                      </li>
+                      <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+                        <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0"> باربری و جابه جایی <i class="fa-solid fa-caret-down"></i> </p>
+                      </li>
+                      <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+                        <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0"> برقکاری <i class="fa-solid fa-caret-down"></i> </p>
+                      </li>
+                      <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+                        <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0"> لوله کشی <i class="fa-solid fa-caret-down"></i> </p>
+                      </li>
+                      <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+                        <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0"> زیبایی بانوان <i class="fa-solid fa-caret-down"></i> </p>
+                      </li>
+                      <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
+                        <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0"> تعمیرات خودرو <i class="fa-solid fa-caret-down"></i> </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item pb-2"> <a class=" nav-link-hover" href="#">تماس با ما</a> </li>
+                  <li class="nav-item pb-2"> <a class=" nav-link-hover" href="#">درباره ما</a> </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <!--header left column-->
+        <div class="col-lg-3  order-1 order-lg-3">
+          <div class="row d-flex flex-fill justify-content-center mb-2">
+            <div class="d-flex gap-3 col-10 col-sm-7 col-md-10 col-lg-12">
+              <button class="btn outline-yellow flex-fill" id="button-menu1"> ورود </button>
+              <button class="btn flex-fill" id="button-menu2"> ثبت نام</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- daste-bandi-khadamt submenu for laptop size -->
+    <div class="position-absolute end-3 w-75 d-none" style="background-color: #f4f2f2" id="second-level-menu">
+      <div class="row ">
+        <div class="col-4 col-lg-3 border p-0 pe-2">
+          <ul class="sub-menu sub-menu-hover p-0 pe-2">
+            <li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
+              <div> نظافت و پذیرایی <i class="fa-solid fa-arrow-left"></i> </div>
+            </li>
+            <li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
+              <div> دکوراسیون و بازسازی <i class="fa-solid fa-arrow-left"></i> </div>
+            </li>
+            <li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
+              <div> نصب و تعمیر لوازم خانگی <i class="fa-solid fa-arrow-left"></i> </div>
+            </li>
+            <li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
+              <div> سرمایش و گرمایش <i class="fa-solid fa-arrow-left"></i> </div>
+            </li>
+            <li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
+              <div> باربری و جابه جایی <i class="fa-solid fa-arrow-left"></i> </div>
+            </li>
+            <li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
+              <div> برقکاری <i class="fa-solid fa-arrow-left"></i> </div>
+            </li>
+            <li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
+              <div> لوله کشی <i class="fa-solid fa-arrow-left"></i> </div>
+            </li>
+            <li class="nav-item d-flex sub-menu-1-li border-bottom pb-1">
+              <div> زیبایی بانوان <i class="fa-solid fa-arrow-left"></i> </div>
+            </li>
+            <li class="nav-item d-flex sub-menu-1-li ">
+              <div> تعمیرات خودرو <i class="fa-solid fa-arrow-left"></i> </div>
+            </li>
+          </ul>
+        </div>
+        
+        <!--submenu for item1 from daste-bandi-khadamat submenu (laptop size) -->
+        <div class="col-8 col-lg-9 row sub-menu-show d-none">
+          <div class="col-6">
+            <ul class="sub-menu" style="list-style-type: none">
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="sub-menu" style="list-style-type: none">
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!--					submenu for item2 from daste-bandi-khadamat submenu (laptop size) -->
+        <div class="col-8 col-lg-9 row sub-menu-show d-none">
+          <div class="col-6">
+            <ul class="sub-menu" style="list-style-type: none">
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">2نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی2</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">2نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی2</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">2نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+            </ul>
+          </div>
+          <div class="col-6  ">
+            <ul class="sub-menu" style="list-style-type: none">
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!--submenu for item3 from daste-bandi-khadamat submenu (laptop size) -->
+        <div class="col-8 col-lg-9 row sub-menu-show d-none">
+          <div class="col-6  ">
+            <ul class="sub-menu" style="list-style-type: none">
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+            </ul>
+          </div>
+          <div class="col-6  ">
+            <ul class="sub-menu" style="list-style-type: none">
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+              <li class="nav-item"> <a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--end header--> 
 
-			
-			
-			</div>
-		
-			
-			
-		
-		</section>
-
-		
-	</main>
-	
-	
-	
-	
-	
-	
-	<footer class="ps-5 pt-5 pe-5 pb-4">	
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col col-lg-2 col-12 p-0 mb-3">
-					<p class="footer-list-title">
-						سرویس های محبوب
-						<i class="fa-solid fa-angle-down me-1 d-lg-none"></i>
-					</p>
-					<ul class="footer-list d-lg-none d-none">
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> نظافت و پذیرایی </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> دکوراسیون و بازسازی </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> نصب و تعمیر لوازم خانگی </a>
-						</li>
-					</ul>
-					
-					
-					
-					<ul class="footer-list-lg d-none d-lg-block">
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> نظافت و پذیرایی </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> دکوراسیون و بازسازی </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> نصب و تعمیر لوازم خانگی </a>
-						</li>
-					</ul>
-					
-				</div>
-				
-				
-				<div class="col col-lg-2 col-12 p-0 mb-3">
-					<p class="footer-list-title">
-						لینک های مفید
-						<i class="fa-solid fa-angle-down me-1 d-lg-none"></i>
-					</p>
-					<ul class="footer-list d-lg-none d-none">
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> خدمات </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> درباره ما </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> مقالات </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> قوانین و مقررات </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> سوالات متداول </a>
-						</li>
-					</ul>
-					
-					
-					
-					<ul class="footer-list-lg d-none d-lg-block">
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> خدمات </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> درباره ما </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> مقالات </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> قوانین و مقررات </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> سوالات متداول </a>
-						</li>
-					</ul>
-				</div>
-				
-				
-				
-				<div class="col col-lg-2 col-12 p-0 mb-3">
-					<p class="footer-list-title">
-						مقالات
-						<i class="fa-solid fa-angle-down me-1 d-lg-none"></i>
-					</p>
-					<ul class="footer-list d-lg-none d-none">
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> انتخاب بهترین متخصص شهر </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> مشاهده امتیازات متخصصین </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> از تخصص خود کسب درآمد کنید </a>
-						</li>
-						
-					</ul>
-					
-					
-					<ul class="footer-list-lg d-none d-lg-block">
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> انتخاب بهترین متخصص شهر </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> مشاهده امتیازات متخصصین </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> از تخصص خود کسب درآمد کنید </a>
-						</li>
-						
-					</ul>
-				</div>
+<!--start main-->
+<main class="container-fluid p-0">
+  <section class="row">
+    <div class="col-12 border border-2 border-dark rounded-3 d-flex flex-column justify-content-center p-5 align-items-center">
+    <h1>ثبت نام متخصص</h1>
+    <div class="d-flex border squre-register gap-2">
+      <div class="lightgreen"> </div>
+      <div class="lightgray"> </div>
+      <div class="lightgray"> </div>
+      <div class="lightgray"> </div>
+      <div class="lightgray"> </div>
+    </div>
+    <section id="index-sec3 bg-white">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-10  mt-4 overflow-auto"> 
+            
+            <!--tablet and mobile size menu-->
+            <div class="swiper mySwiper ">
+              <div class="swiper-wrapper justify-content-center">
+                <div class="swiper-slide w-auto darkYellow rounded p-1" >پروفایل</div>
+                <div class="swiper-slide w-auto rounded p-1 ">آدرس</div>
+                <div class="swiper-slide w-auto rounded p-1">مهارت های من</div>
+                <div class="swiper-slide w-auto rounded p-1">اطلاعات بانکی</div>
+                <div class="swiper-slide w-auto rounded p-1">نمونه کار</div>
+                <div class="swiper-slide w-auto rounded p-1">مدارک فنی</div>
+              </div>
+            </div>
+          </div>
+          
+          <!--submenu-->
+          <div class="col-12 ps-0 pe-0 border border-3"> 
+            <!--submenu for item1 (Default submenu) --> 
+            
+            <!--submenu for item1-->
+            <div class="container-fluid "> 
+              
+              <!--							پروفایل-->
+              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
+                <form class="w-50">
+                  <div class="d-flex justify-content-between">
+                    <label for="gender-register-specialist" class="form-label">مشخصات</label>
+                    <div>
+                      <label for="men-register-specialist" class="form-label">مرد</label>
+                      <input type="radio" class="" id="men-register-specialist" name="gender-register-specialist">
+                      <label for="woman-register-specialist " class="form-label me-5">زن</label>
+                      <input type="radio" class="" id="woman-register-specialist" name="gender-register-specialist">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 mb-3">
+                      <label for="name-register-specialist" class="form-label">نام</label>
+                      <input type="text" class="form-control" id="name-register-specialist" >
+                    </div>
+                    <div class="col-6 mb-3">
+                      <label for="fname-register-specialist" class="form-label">نام خانوادگی</label>
+                      <input type="text" class="form-control" id="fname-register-specialist" >
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="date-register-specialist" class="form-label">تاریخ تولد</label>
+                    <input type="date" class="form-control" id="date-register-specialist" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="email-register-specialist" class="form-label">ایمیل</label>
+                    <input type="email" class="form-control" id="email-register-specialist" >
+                  </div>
+                  <div class="mb-3 d-flex justify-content-around">
+                    <div>
+                      <label for="healthy-register-specialist" class="form-label">سالم هستم</label>
+                      <input type="radio" class="" id="healthy-register-specialist" name="healthy-register-specialist">
+                    </div>
+                    <div>
+                      <label for="patient-register-specialist" class="form-label">بیمار هستم</label>
+                      <input type="radio" class="" id="patient-register-specialist" name="Patient-register-specialist">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="about-register-specialist" class="form-label">در صورتی که بیماری یا معلولیت خاصی دارید وارد نمایید.</label>
+                    <textarea class="form-control form-bg-color" id="about-register-specialist" placeholder="توضیحات">
+	                           </textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="identificationCard-register-specialist" class="form-label">تاریخ تولد</label>
+                    <input type="file" class="form-control" id="identificationCard-register-specialist" placeholder="اضافه کردن نمونه کار">
+                  </div>
+                  <div class="mb-3">
+                    <label for="citizenshipCode-register-specialist" class="form-label">کد شهروندی</label>
+                    <input type="text" class="form-control" id="citizenshipCode-register-specialist" >
+                  </div>
+                  <div class="mb-3 ">
+                    <input type="checkbox" required="required" class="form-check-input" id="check-register-specialist" >
+                    <label class="form-check-label" for="check-register-specialist">قوانین و مقررات را مطالعه و قبول دارم.</label>
+                  </div>
+                  <div class="d-flex mb-3 gap-3">
+                    <button type="reset" class="w-100 mt-4 border-redius-20 font-size32">لغو</button>
+                    <button type="submit" class=" w-100  mt-4 darkYellow border-redius-20 font-size32">تایید</button>
+                  </div>
+                </form>
+              </div>
+              
+              <!--							آدرس-->
+              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
+                <form class="w-50">
+                  <div class="mb-3">
+                    <label for="state-register-specialist" class="form-label">استان</label>
+                    <select class="form-control" id="state-register-specialist">
+                      <option value="fars">فارس</option>
+                      <option value="tehran">تهران</option>
+                      <option value="esfahan">اصفهان</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="city-register-specialist" class="form-label">شهر</label>
+                    <select class="form-control" id="city-register-specialist">
+                      <option value="shiraz">شیراز</option>
+                      <option value="tehran">تهران</option>
+                      <option value="esfahan">اصفهان</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="address-register-specialist" class="form-label">آدرس</label>
+                    <textarea class="form-control form-bg-color" id="address-register-specialist" placeholder="آدرس">
+	                              </textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="houseNumber-register-specialist" class="form-label">پلاک</label>
+                    <input type="text" class="form-control" id="houseNumber-register-specialist" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="houseNumberCode-register-specialist" class="form-label">پلاک</label>
+                    <input type="text" class="form-control" id="houseNumberCode-register-specialist" >
+                  </div>
+                  <div class="d-flex mb-3 gap-3">
+                    <button type="reset" class="w-100 mt-4 border-redius-20 font-size32">لغو</button>
+                    <button type="submit" class=" w-100  mt-4 darkYellow border-redius-20 font-size32">تایید</button>
+                  </div>
+                </form>
+              </div>
+              
 				
 				
 				
-				<div class="col col-lg-2 col-12 p-0 mb-3">
-					<p class="footer-list-title">
-						تماس با ما
-						<i class="fa-solid fa-angle-down me-1 d-lg-none"></i>
-					</p>
-					<ul class="footer-list d-lg-none d-none">
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> www.fixyland-fa.com </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> info@fixyland-eg.com </a>
-						</li>
-						
-						<li class="footer-list-item">
-							 0224561600 
-						</li>
-						
-					</ul>
+<!--							مهارت من-->
+              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
+                <div class="w-75">
 					
-					<ul class="footer-list-lg d-none d-lg-block">
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> www.fixyland-fa.com </a>
-						</li>
-						
-						<li class="footer-list-item">
-							<a class="footer-list-item-link"> info@fixyland-eg.com </a>
-						</li>
-						
-						<li class="footer-list-item">
-							 0224561600 
-						</li>
-						
-					</ul>
-				</div>
-				
-				<div class="col col-lg-4 col-12 text-center p-0 ">
-					<div class="fixy-title d-inline-block text-center ms-1 d-inline-flex flex-column justify-content-end">
-						<p class="fixyland-footer-logo"> فیکسی لند </p>
-						<p > از تخصص تا کسب درآمد </p>
+                <div class="row">
+					
+                <div class="col-8 border border-danger ">
+					
+                <form class=" d-flex pe-2 ps-2 flex-row lightblue border">
+                  <button class="btn" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+                  <input class="form-control" id="form-control-register-specialist" type="search" placeholder="Search" aria-label="Search">
+                </form>
+					
+				<div class="mt-2 vh-100 " id="form-control-register-specialist-div">
+					<div class="row d-flex gap-2 justify-content-center mb-2  ">
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
 					</div>
-					<img class="d-inline-block ms-3" src="image/logo.png" alt="fixyland-logo" width="100" height="150">
+					<div class="row d-flex gap-2 justify-content-center mb-2 ">
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					</div>
+					<div class="row d-flex gap-2 justify-content-center mb-2 ">
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					</div>
+					<div class="row d-flex gap-2 justify-content-center mb-2 ">
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					</div>
+					<div class="row d-flex gap-2 justify-content-center mb-2 ">
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					</div>
+					<div class="row d-flex gap-2 justify-content-center mb-2 ">
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					</div>
+					<div class="row d-flex gap-2 justify-content-center mb-2 ">
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					</div>
+					<div class="row d-flex gap-2 justify-content-center mb-2 ">
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
+					</div>
+					
 				</div>
-				
-			</div>
-		</div>
-		
-		
-		<hr>
-		
-		
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col d-none d-md-block col-md-6 order-md-1">
-					<img class="ms-3 mb-2" src="image/etemad.png" alt="symbol" width="85" height="60">
-					<img class="ms-3 mb-2" src="image/etemad-reza.png" alt="symbol" width="85" height="60">
-					<img class="ms-3 mb-2" src="image/etemad.png" alt="symbol" width="85" height="60">
-				</div>
-				
-				<div class="col col-2 col-md-12 order-md-3 mt-md-5 d-none d-md-flex justify-content-center align-items-center">
-					<p class="copyright-footer"> تمام حقوق مادی و معنوی قالب سایت متعلق به <a class="text-decoration-none white-text" href="https://lordofit.com/fa">lord of it</a> می باشد. </p>
-				</div>
-				
-				<div class="col col-12 col-md-6 order-md-1 text-center text-md-start social-media-footer">
-					<i class="fa-brands fa-facebook-square  ms-2 me-2 white-text"></i>
-					<i class="fa-brands fa-linkedin  ms-2 me-2 white-text"></i>
-					<i class="fa-solid fa-envelope  ms-2 me-2 white-text"></i>
-					<i class="fa-brands fa-instagram  ms-2 me-2 white-text"></i>
-				</div>
-			</div>
-		</div>
+					
+              </div>
+					
+					
+					
+              <div class="col-4 border border-warning ">
+					
+				  <div class="lightblue text-center">
+				  <p >تخصص های که شما انتخاب کرده اید.</p>
+				  </div>
+				  <div class="border border-dark d-flex flex-column align-content-between  overflow-auto">
+					  
+					  <ul class="list-group form-control-register-specialist-ul">
+                        <li class="list-group-item d-flex justify-content-between"><p>First item</p><a href="#"><i class="fa-solid fa-trash-can"></i></a></li>
+						 <li class="list-group-item d-flex justify-content-between"><p>Second item</p><a href="#"><i class="fa-solid fa-trash-can"></i></a></li>
+						  <li class="list-group-item d-flex justify-content-between"><p>Third item</p><a href="#"><i class="fa-solid fa-trash-can"></i></a></li>
+                       </ul>
+					  
+					  
+					  <p class="text-center text-danger ">در حال حاضر مهارتی انتخاب نشوده</p>
+					  
+					  
+					  <form>
+					  <button type="submit" class=" w-100  mt-4 darkYellow  font-size32">ذخیره</button>
+				      </form>
+				  </div>
+				  
+				  
+			  </div>
+					
+					
+					
+            </div>
+					
+			
+            </div>
+				  
+				  
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    </div>
+  </section>
+	
+	
+</main>
+<footer class="ps-5 pt-5 pe-5 pb-4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col col-lg-2 col-12 p-0 mb-3">
+        <p class="footer-list-title"> سرویس های محبوب <i class="fa-solid fa-angle-down me-1 d-lg-none"></i> </p>
+        <ul class="footer-list d-lg-none d-none">
+          <li class="footer-list-item"> <a class="footer-list-item-link"> نظافت و پذیرایی </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> دکوراسیون و بازسازی </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> نصب و تعمیر لوازم خانگی </a> </li>
+        </ul>
+        <ul class="footer-list-lg d-none d-lg-block">
+          <li class="footer-list-item"> <a class="footer-list-item-link"> نظافت و پذیرایی </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> دکوراسیون و بازسازی </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> نصب و تعمیر لوازم خانگی </a> </li>
+        </ul>
+      </div>
+      <div class="col col-lg-2 col-12 p-0 mb-3">
+        <p class="footer-list-title"> لینک های مفید <i class="fa-solid fa-angle-down me-1 d-lg-none"></i> </p>
+        <ul class="footer-list d-lg-none d-none">
+          <li class="footer-list-item"> <a class="footer-list-item-link"> خدمات </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> درباره ما </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> مقالات </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> قوانین و مقررات </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> سوالات متداول </a> </li>
+        </ul>
+        <ul class="footer-list-lg d-none d-lg-block">
+          <li class="footer-list-item"> <a class="footer-list-item-link"> خدمات </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> درباره ما </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> مقالات </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> قوانین و مقررات </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> سوالات متداول </a> </li>
+        </ul>
+      </div>
+      <div class="col col-lg-2 col-12 p-0 mb-3">
+        <p class="footer-list-title"> مقالات <i class="fa-solid fa-angle-down me-1 d-lg-none"></i> </p>
+        <ul class="footer-list d-lg-none d-none">
+          <li class="footer-list-item"> <a class="footer-list-item-link"> انتخاب بهترین متخصص شهر </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> مشاهده امتیازات متخصصین </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> از تخصص خود کسب درآمد کنید </a> </li>
+        </ul>
+        <ul class="footer-list-lg d-none d-lg-block">
+          <li class="footer-list-item"> <a class="footer-list-item-link"> انتخاب بهترین متخصص شهر </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> مشاهده امتیازات متخصصین </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> از تخصص خود کسب درآمد کنید </a> </li>
+        </ul>
+      </div>
+      <div class="col col-lg-2 col-12 p-0 mb-3">
+        <p class="footer-list-title"> تماس با ما <i class="fa-solid fa-angle-down me-1 d-lg-none"></i> </p>
+        <ul class="footer-list d-lg-none d-none">
+          <li class="footer-list-item"> <a class="footer-list-item-link"> www.fixyland-fa.com </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> info@fixyland-eg.com </a> </li>
+          <li class="footer-list-item"> 0224561600 </li>
+        </ul>
+        <ul class="footer-list-lg d-none d-lg-block">
+          <li class="footer-list-item"> <a class="footer-list-item-link"> www.fixyland-fa.com </a> </li>
+          <li class="footer-list-item"> <a class="footer-list-item-link"> info@fixyland-eg.com </a> </li>
+          <li class="footer-list-item"> 0224561600 </li>
+        </ul>
+      </div>
+      <div class="col col-lg-4 col-12 text-center p-0 ">
+        <div class="fixy-title d-inline-block text-center ms-1 d-inline-flex flex-column justify-content-end">
+          <p class="fixyland-footer-logo"> فیکسی لند </p>
+          <p > از تخصص تا کسب درآمد </p>
+        </div>
+        <img class="d-inline-block ms-3" src="image/logo.png" alt="fixyland-logo" width="100" height="150"> </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col d-none d-md-block col-md-6 order-md-1"> <img class="ms-3 mb-2" src="image/etemad.png" alt="symbol" width="85" height="60"> <img class="ms-3 mb-2" src="image/etemad-reza.png" alt="symbol" width="85" height="60"> <img class="ms-3 mb-2" src="image/etemad.png" alt="symbol" width="85" height="60"> </div>
+      <div class="col col-2 col-md-12 order-md-3 mt-md-5 d-none d-md-flex justify-content-center align-items-center">
+        <p class="copyright-footer"> تمام حقوق مادی و معنوی قالب سایت متعلق به <a class="text-decoration-none white-text" href="https://lordofit.com/fa">lord of it</a> می باشد. </p>
+      </div>
+      <div class="col col-12 col-md-6 order-md-1 text-center text-md-start social-media-footer"> <i class="fa-brands fa-facebook-square  ms-2 me-2 white-text"></i> <i class="fa-brands fa-linkedin  ms-2 me-2 white-text"></i> <i class="fa-solid fa-envelope  ms-2 me-2 white-text"></i> <i class="fa-brands fa-instagram  ms-2 me-2 white-text"></i> </div>
+    </div>
+  </div>
+</footer>
 
-	</footer>
-	
-	
+<!-- bootstrap script --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
 
+<!--swiper js cdn--> 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
 
-
-	<!-- bootstrap script -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
-
-	<!--swiper js cdn-->
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	
-	
-	<!--scripts from script folder	-->
-	<script src="script/main.js" type="text/javascript"></script>
-	
-    <script src="script/country_code.js" type="text/javascript"></script>
-	<script src="script/signup_specialist.js" type="text/javascript"></script>
-	
-    
+<!--scripts from script folder	--> 
+<script src="script/main.js" type="text/javascript"></script> 
+<script src="script/country_code.js" type="text/javascript"></script> 
+<script src="script/signup_specialist.js" type="text/javascript"></script>
 </body>
-    
-    
-    
-    
-    
 </html>
