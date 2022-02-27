@@ -28,6 +28,12 @@
     border-radius: 5px;
 }
 	
+.squre-skill {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+	
 #form-control-register-specialist{
 	border-width: 0;
 	background-color: #D1DFFB;
@@ -42,12 +48,19 @@
 		border-color: #054E4E;
 	}
 	
-	#form-control-register-specialist-div{
+	.form-control-register-specialist-div{
 		overflow-y: scroll;
 		overflow-x: hidden;
 	}
 	
-	#form-control-register-specialist-div div div:hover{
+
+	
+	.form-control-register-specialist-div2{
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	
+	.form-control-register-specialist-div div div:hover{
 		background-color: #FFB82F;
 	}
 	
@@ -60,7 +73,9 @@
 	.form-control-register-specialist-ul i:hover{
 		color: #FFF;
 	}
-	
+	.font-size24{
+		font-size: 24px;
+	}
 </style>
 </head>
 
@@ -472,8 +487,9 @@
                   <button class="btn" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
                   <input class="form-control" id="form-control-register-specialist" type="search" placeholder="Search" aria-label="Search">
                 </form>
+						
 					
-				<div class="mt-2 vh-100 " id="form-control-register-specialist-div">
+					<div class="mt-2 vh-100 form-control-register-specialist-div">
 					<div class="row d-flex gap-2 justify-content-center mb-2  ">
 					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
 					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
@@ -515,7 +531,89 @@
 					<div class="col-3 border-redius-20 border-darkgreen border-4 p-3">لوازم خانگی نصب و تعمیر</div>
 					</div>
 					
-				</div>
+			    	</div>
+					
+					<div class="mt-2 vh-100 form-control-register-specialist-div2 d-none" >
+					
+						<div class="d-flex justify-content-between lightgray align-items-center p-2 mb-2">
+						
+						<p >باربری و جابجایی</p>
+						
+						<button  class="link-dark text-decoration-none  pe-3 ps-3 rounded lightblue darkYellowOnHover" onClick="backToCategories()">بازگشت به دسته</button>
+							
+						</div>
+						
+						<div >
+						
+							
+							<div class="mb-3 d-flex justify-content-around">
+                            <form>
+							<button type="submit" class="mt-4 darkYellow border-0 lightgray p-2 rounded-3">پمپ و منبع آب1</button>
+							</form>
+								
+							 <form>
+							<button type="submit" class="mt-4 border-0 darkgreen p-2 rounded-3 text-light">1نصب روشویی</button>
+							</form>
+							</div>	
+							
+							<div class="mb-3 d-flex justify-content-around">
+                            <form>
+							<button type="submit" class="mt-4 darkYellow border-0 lightgray p-2 rounded-3">پمپ و منبع آب1</button>
+							</form>
+								
+							 <form>
+							<button type="submit" class="mt-4 darkYellow border-0 lightgray p-2 rounded-3">1نصب روشویی</button>
+							</form>
+							</div>		
+								
+							
+							
+							</div>
+						
+						
+			    	</div>
+					
+					
+					
+						<div class="mt-2 vh-100 form-control-register-specialist-div2 d-none" >
+					
+						<div class="d-flex justify-content-between lightgray align-items-center p-2 mb-2">
+						
+						<p >باربری و جابجایی</p>
+						
+						<button  class="link-dark text-decoration-none  pe-3 ps-3 rounded lightblue darkYellowOnHover" onClick="backToCategories()">بازگشت به دسته</button>
+							
+						</div>
+						
+						<div >
+						
+							
+							<div class="mb-3 d-flex justify-content-around">
+                            <form>
+							<button type="submit" class="mt-4 darkYellow border-0 lightgray p-2 rounded-3">پمپ و منبع آب2</button>
+							</form>
+								
+							 <form>
+							<button type="submit" class="mt-4 darkYellow border-0 lightgray p-2 rounded-3">2نصب روشویی</button>
+							</form>
+							</div>	
+							
+							<div class="mb-3 d-flex justify-content-around">
+                            <form>
+							<button type="submit" class="mt-4 darkYellow border-0 lightgray p-2 rounded-3">پمپ و منبع آب2</button>
+							</form>
+								
+							 <form>
+							<button type="submit" class="mt-4 border-0 darkgreen p-2 rounded-3 text-light">2نصب روشویی</button>
+							</form>
+							</div>		
+								
+							
+							
+							</div>
+						
+						
+			    	</div>
 					
               </div>
 					
@@ -529,7 +627,7 @@
 				  <div class="border border-dark d-flex flex-column align-content-between  overflow-auto">
 					  
 					  <ul class="list-group form-control-register-specialist-ul">
-                        <li class="list-group-item d-flex justify-content-between"><p>First item</p><a href="#"><i class="fa-solid fa-trash-can"></i></a></li>
+                        <li class="list-group-item d-flex justify-content-between"><p>First item</p><button type="submit" class="border-0 "><i class="fa-solid fa-trash-can white"></i></button></li>
 						 <li class="list-group-item d-flex justify-content-between"><p>Second item</p><a href="#"><i class="fa-solid fa-trash-can"></i></a></li>
 						  <li class="list-group-item d-flex justify-content-between"><p>Third item</p><a href="#"><i class="fa-solid fa-trash-can"></i></a></li>
                        </ul>
@@ -539,7 +637,7 @@
 					  
 					  
 					  <form>
-					  <button type="submit" class=" w-100  mt-4 darkYellow  font-size32">ذخیره</button>
+					  <button type="submit" class=" w-100  mt-4 darkYellow  font-size24">ذخیره</button>
 				      </form>
 				  </div>
 				  
@@ -555,6 +653,98 @@
 				  
 				  
           </div>
+				
+				
+			  <!--							اطلاعات بانکی-->
+              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
+                <form class="w-50 mt-3">   
+                  <div class="mb-3">
+                    <label for="bank-account-number" class="form-label">شماره حساب</label>
+                    <input type="text" class="form-control" id="bank-account-number" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="credit-card" class="form-label">کارت اعتباری</label>
+                    <input type="text" class="form-control" id="credit-card" >
+                  </div>
+                  <div class="d-flex mb-3 gap-3">
+                    <button type="reset" class="w-100 mt-4 border-redius-20 font-size32">لغو</button>
+                    <button type="submit" class=" w-100  mt-4 darkYellow border-redius-20 font-size32">تایید</button>
+                  </div>
+                </form>
+              </div>	
+				
+				
+				
+			  <!--							نمونه کار ها-->
+              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
+                <section class="w-75 mt-3">
+					
+					<div class="row d-flex justify-content-evenly gy-2  gap-2">
+					<div class="col-5 col-md-3 d-flex lightblue align-items-center p-2 justify-content-center rounded">
+					 <div class="">
+						<p>اضافه کردن نمونه کار+</p>
+					 </div>
+					</div>
+					<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio1.png" class="w-100 h-auto" alt="">
+						</div>
+					</div>
+					<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio2.png" class="w-100 h-auto" alt="">
+						</div>
+					 </div>
+					<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio2.png" class="w-100 h-auto" alt="">
+						</div>
+					 </div>
+						<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio2.png" class="w-100 h-auto" alt="">
+						</div>
+					 </div>
+						<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio2.png" class="w-100 h-auto" alt="">
+						</div>
+					 </div>
+						<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio2.png" class="w-100 h-auto" alt="">
+						</div>
+					 </div>
+					</div>
+					
+					
+                  
+                </section>
+              </div>	
+				
+				
+				
+				
+				
+				
         </div>
       </div>
       </div>

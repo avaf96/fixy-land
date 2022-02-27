@@ -561,6 +561,8 @@ footer{
 
 .white-text{color: #fff;}
 
+.white{background-color: none;}
+
 .white-text:hover{color: #FFB82F;}
 
 .darkYellow{background-color: #FFB82F ;}
@@ -576,6 +578,8 @@ footer{
 .lightblue{background-color: #D1DFFB;}
 
 .darkgreen-text{color: #054E4E;}
+
+.darkgreen{background-color: #054E4E;}
 
 .lightgreen-text{color: #5FB051;}
 
