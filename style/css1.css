@@ -249,8 +249,6 @@ transform: rotate(180deg);
 
 .swiper-slide {
 	text-align: center;
-	border-radius: 12px;
-	padding: 1px 3px 3px 3px;
 	/* Center slide text vertically */
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -459,8 +457,52 @@ transform: rotate(180deg);
 
 
 
-/*------------------------------------------Signup page-------------------------------------*/
+/*-----------------------------------------Signup page-------------------------------------*/
 #imageSignup{z-index: 0;}
+
+
+
+/*-----------------------------------Signup-specialist page--------------------------------*/
+.squre-register div {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+	
+.squre-skill {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+	
+#form-control-register-specialist{
+	border-width: 0;
+	background-color: #D1DFFB;
+}
+
+#form-control-register-specialist:focus{
+	background-color: #D1DFFB;
+	box-shadow: 0 0 0;
+}	
+	
+.border-darkgreen{
+	border-color: #054E4E;
+}
+
+.form-control-register-specialist-div{
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.form-control-register-specialist-div2{
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.form-control-register-specialist-div div div:hover{background-color: #FFB82F;}
+
+.form-control-register-specialist-ul i{color: #000;}
+.form-control-register-specialist-ul i:hover{color: #FFB82F;}
 
 
 
@@ -515,34 +557,23 @@ footer{
 
 /*-----------------------------responsive-------------------------------*/
 @media screen and (max-width:576px){
-	.body{
-		padding-top: 60px;
-    }
-	
- 	#button-toggler-menu{
-		margin-top: 2%;
-	}
+	.body{padding-top: 60px;}
+ 	#button-toggler-menu{margin-top: 2%;}
 }
 
 
 @media screen and (min-width:577px){
-	.body{
-		padding-top: 50px;
-    } 
+	.body{padding-top: 50px;} 
 }
 
 
 @media screen and (min-width:768px){
-	.body{
-	   padding-top: 70px;
-    }
+	.body{padding-top: 70px;}
 }
 
 
 @media screen and (min-width:992px){
-    .body{
-	   padding-top: 90px;
-    }
+    .body{padding-top: 90px;}
 }
 
 
@@ -552,107 +583,57 @@ footer{
 
 
 /*------------------------------------global classes-----------------------------------------*/
+#remove-boxshadow:focus{box-shadow: none;}
+
+.circle-img-div{width: 130px;height: 130px;}
 
 .darkYellow-text{color: #FFB82F ;}
-
 .darkYellow-text:hover{color: #FFB82Faa;}
 
 .darkYellow-text_onHover:hover{color: #FFB82Faa;}
 
 .white-text{color: #fff;}
+.white-text:hover{color: #FFB82F;}
+
+.text-black{color: #000;}
 
 .white{background-color: none;}
 
-.white-text:hover{color: #FFB82F;}
-
 .darkYellow{background-color: #FFB82F ;}
-
-.darkYellow:hover{background-color: #FFB82Faa ;}
+.darkYellow:hover{background-color: #FFB82Faa;}
 
 .darkYellowOnHover:hover{background-color: #FFB82Faa;}
 
-.border-redius-20{border: solid 1px;border-radius: 20px;}
-
-.font-size32{font-size: 32px;}
-
 .lightblue{background-color: #D1DFFB;}
-
-.darkgreen-text{color: #054E4E;}
 
 .darkgreen{background-color: #054E4E;}
 
-.lightgreen-text{color: #5FB051;}
-
-.text_justify{text-align: justify;}
-
-.form-bg-color{background-color: #F4F2F2;}
-
-.dastrasi-sari-grid input{background-color: #F4F2F2;}  /*for signup page*/
+.darkgreen-text{color: #054E4E;}
 
 .lightgreen{background-color: #4DE119;}
+.lightgreen:hover{background-color: #4DE119aa;}
+
+.lightgreen-text{color: #5FB051;}
 
 .lightgray{background-color: #C4C4C4;}
 
-.gray-text{color: #828282;}
 .gray-bg{background-color: #F4F2F2;}
+
+.gray-text{color: #828282;}
+
+.form-bg-color{background-color: #F4F2F2;}
+.dastrasi-sari-grid input{background-color: #F4F2F2;}  /*for signup page*/
+
+.text_justify{text-align: justify;}
 
 .padding-bottom{padding-bottom: 100px;}
 
+.border-redius-20{border: solid 1px;border-radius: 20px;}
 
-.squre-register div {
-    width: 25px;
-    height: 25px;
-    /*			border: solid;*/
-    border-radius: 5px;
-}
-	
-.squre-skill {
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-}
-	
-#form-control-register-specialist{
-	border-width: 0;
-	background-color: #D1DFFB;
-}
+.font-size24{font-size: 24px;}
+.font-size32{font-size: 32px;}
+.font-size40{font-size: 40px;}
 
-#form-control-register-specialist:focus{
-	background-color: #D1DFFB;
-	box-shadow: 0 0 0;
-}	
-	
-	.border-darkgreen{
-		border-color: #054E4E;
-	}
-	
-	.form-control-register-specialist-div{
-		overflow-y: scroll;
-		overflow-x: hidden;
-	}
-	
 
-	
-	.form-control-register-specialist-div2{
-		overflow-y: scroll;
-		overflow-x: hidden;
-	}
-	
-	.form-control-register-specialist-div div div:hover{
-		background-color: #FFB82F;
-	}
-	
-/*
-	.form-control-register-specialist-ul li:hover{
-		background-color: #FFB82F;
-	}
-*/
-	.form-control-register-specialist-ul i{
-		color: #000;
-	}
-	.form-control-register-specialist-ul i:hover{
-		color: #FFB82F;
-	}
-	.font-size24{
-		font-size: 24px;
-	}
+
+
