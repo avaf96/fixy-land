@@ -21,61 +21,7 @@
 <!-- styles -->
 <link href="style/css1.css" rel="stylesheet" type="text/css">
 <style>
-.squre-register div {
-    width: 25px;
-    height: 25px;
-    /*			border: solid;*/
-    border-radius: 5px;
-}
-	
-.squre-skill {
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-}
-	
-#form-control-register-specialist{
-	border-width: 0;
-	background-color: #D1DFFB;
-}
 
-#form-control-register-specialist:focus{
-	background-color: #D1DFFB;
-	box-shadow: 0 0 0;
-}	
-	
-	.border-darkgreen{
-		border-color: #054E4E;
-	}
-	
-	.form-control-register-specialist-div{
-		overflow-y: scroll;
-		overflow-x: hidden;
-	}
-	
-
-	
-	.form-control-register-specialist-div2{
-		overflow-y: scroll;
-		overflow-x: hidden;
-	}
-	
-	.form-control-register-specialist-div div div:hover{
-		background-color: #FFB82F;
-	}
-	
-	.form-control-register-specialist-ul li:hover{
-		background-color: #FFB82F;
-	}
-	.form-control-register-specialist-ul i{
-		color: #000;
-	}
-	.form-control-register-specialist-ul i:hover{
-		color: #FFF;
-	}
-	.font-size24{
-		font-size: 24px;
-	}
 </style>
 </head>
 
@@ -371,7 +317,7 @@
               
               <!--							پروفایل-->
               <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
-                <form class="w-50">
+                <form class="col-12 col-md-6">
                   <div class="d-flex justify-content-between">
                     <label for="gender-register-specialist" class="form-label">مشخصات</label>
                     <div>
@@ -434,8 +380,8 @@
               </div>
               
               <!--							آدرس-->
-              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
-                <form class="w-50">
+              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly d-none ">
+                <form class="col-12 col-md-6">
                   <div class="mb-3">
                     <label for="state-register-specialist" class="form-label">استان</label>
                     <select class="form-control" id="state-register-specialist">
@@ -476,12 +422,12 @@
 				
 				
 <!--							مهارت من-->
-              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
-                <div class="w-75">
+              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  d-none">
+                <div class="col-12 col-md-10">
 					
                 <div class="row">
 					
-                <div class="col-8 border border-danger ">
+                <div class="col-12 col-md-8  ">
 					
                 <form class=" d-flex pe-2 ps-2 flex-row lightblue border">
                   <button class="btn" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
@@ -619,26 +565,31 @@
 					
 					
 					
-              <div class="col-4 border border-warning ">
+              <div class="col-12 col-md-4 ">
 					
 				  <div class="lightblue text-center">
 				  <p >تخصص های که شما انتخاب کرده اید.</p>
 				  </div>
 				  <div class="border border-dark d-flex flex-column align-content-between  overflow-auto">
 					  
-					  <ul class="list-group form-control-register-specialist-ul">
-                        <li class="list-group-item d-flex justify-content-between"><p>First item</p><button type="submit" class="border-0 "><i class="fa-solid fa-trash-can white"></i></button></li>
-						 <li class="list-group-item d-flex justify-content-between"><p>Second item</p><a href="#"><i class="fa-solid fa-trash-can"></i></a></li>
-						  <li class="list-group-item d-flex justify-content-between"><p>Third item</p><a href="#"><i class="fa-solid fa-trash-can"></i></a></li>
+					    <ul class="list-group form-control-register-specialist-ul">
+                        <li class="list-group-item "><form class="d-flex justify-content-between">
+                        <p>First item</p><button type="submit" class="border-0 bg-white"><i class="fa-solid fa-trash-can"></i></button>
+                        </form></li>
+							<li class="list-group-item "><form class="d-flex justify-content-between">
+                        <p>Second item</p><button type="submit" class="border-0 bg-white"><i class="fa-solid fa-trash-can"></i></button>
+                        </form></li>
+						<li class="list-group-item "><form class="d-flex justify-content-between">
+                        <p>Third item</p><button type="submit" class="border-0 bg-white"><i class="fa-solid fa-trash-can"></i></button>
+                        </form></li>
+						
                        </ul>
 					  
 					  
 					  <p class="text-center text-danger ">در حال حاضر مهارتی انتخاب نشوده</p>
 					  
 					  
-					  <form>
-					  <button type="submit" class=" w-100  mt-4 darkYellow  font-size24">ذخیره</button>
-				      </form>
+
 				  </div>
 				  
 				  
@@ -656,8 +607,8 @@
 				
 				
 			  <!--							اطلاعات بانکی-->
-              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
-                <form class="w-50 mt-3">   
+              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  d-none">
+                <form class="col-12 col-md-6">   
                   <div class="mb-3">
                     <label for="bank-account-number" class="form-label">شماره حساب</label>
                     <input type="text" class="form-control" id="bank-account-number" >
@@ -676,14 +627,12 @@
 				
 				
 			  <!--							نمونه کار ها-->
-              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
-                <section class="w-75 mt-3">
+              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  d-none">
+                <section class="col-12 col-md-6">
 					
-					<div class="row d-flex justify-content-evenly gy-2  gap-2">
-					<div class="col-5 col-md-3 d-flex lightblue align-items-center p-2 justify-content-center rounded">
-					 <div class="">
+					<div class="row d-flex justify-content-evenly gy-2  gap-2" id="input-demo1">
+					<div class="col-5 col-md-3 d-flex lightblue text-center rounded align-items-center" onClick="goInputDemo()">
 						<p>اضافه کردن نمونه کار+</p>
-					 </div>
 					</div>
 					<div class="col-5 col-md-3 lightblue p-2 rounded">
 					 <div>
@@ -736,10 +685,132 @@
 					</div>
 					
 					
+					
+<!--                 input demo					-->
+					<div class="row d-flex justify-content-center gy-2  gap-2 d-none" id="input-demo2">
+				   <form class="">
+                    
+				   <div class="mb-3">
+                    <label for="date-register-demo" class="form-label">اضافه کردن نمونه کار</label>
+                    <input type="file" id="date-register-demo" class="form-control">
+                  </div>
+					   <div class="mb-3">
+                    <label for="date-register-demo-title" class="form-label">عنوان</label>
+                    <input type="text" class="form-control" id="date-register-demo-title" >
+                  </div>
+					   
+					<div class="mb-3">
+                    <label for="date-register-demo-text" class="form-label">توضیحات</label>
+                    <textarea id="date-register-demo-text" class="form-control">
+						
+						
+						</textarea>
+                  </div>
+					   
+					    <div class="d-flex mb-3 gap-3">
+                    <button type="reset" class="w-100 mt-4 border-redius-20 font-size32" onClick="goInputDemo()">لغو</button>
+                    <button type="submit" class=" w-100  mt-4 darkYellow border-redius-20 font-size32">تایید</button>
+                  </div>
+                
+                </form>
+					</div>
                   
                 </section>
               </div>	
 				
+				
+				
+				 <!--							مدارک فنی-->
+              <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  d-none">
+                <section class="col-12 col-md-6">
+					
+					<div class="row d-flex justify-content-evenly gy-2  gap-2" id="input-doc1">
+					<div class="col-5 col-md-3 d-flex lightblue text-center rounded align-items-center" onClick="goInputDoc()">
+						<p>اضافه کردن مدارک فنی+</p>
+					</div>
+					<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio1.png" class="w-100 h-auto" alt="">
+						</div>
+					</div>
+					<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio2.png" class="w-100 h-auto" alt="">
+						</div>
+					 </div>
+					<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio2.png" class="w-100 h-auto" alt="">
+						</div>
+					 </div>
+						<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio2.png" class="w-100 h-auto" alt="">
+						</div>
+					 </div>
+						<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio2.png" class="w-100 h-auto" alt="">
+						</div>
+					 </div>
+						<div class="col-5 col-md-3 lightblue p-2 rounded">
+					 <div>
+						<i class="fa-solid fa-xmark"></i>
+						</div>
+					 <div>
+						<img src="image/portfolio2.png" class="w-100 h-auto" alt="">
+						</div>
+					 </div>
+					</div>
+					
+					
+					
+<!--                 input demo					-->
+					<div class="row d-flex justify-content-center gy-2  gap-2 d-none" id="input-doc2">
+				   <form class="">
+                    
+				   <div class="mb-3">
+                    <label for="date-register-doc" class="form-label">اضافه کردن مدارک فنی+</label>
+                    <input type="file" id="date-register-doc" class="form-control">
+                  </div>
+					   <div class="mb-3">
+                    <label for="date-register-doc-title" class="form-label">عنوان</label>
+                    <input type="text" class="form-control" id="date-register-doc-title" >
+                  </div>
+					   
+					<div class="mb-3">
+                    <label for="date-register-doc-text" class="form-label">توضیحات</label>
+                    <textarea id="date-register-doc-text" class="form-control">
+						
+						
+						</textarea>
+                  </div>
+					   
+					    <div class="d-flex mb-3 gap-3">
+                    <button type="reset" class="w-100 mt-4 border-redius-20 font-size32" onClick="goInputDoc()">لغو</button>
+                    <button type="submit" class=" w-100  mt-4 darkYellow border-redius-20 font-size32">تایید</button>
+                  </div>
+                
+                </form>
+					</div>
+                  
+                </section>
+              </div>	
 				
 				
 				

@@ -597,3 +597,62 @@ footer{
 .gray-bg{background-color: #F4F2F2;}
 
 .padding-bottom{padding-bottom: 100px;}
+
+
+.squre-register div {
+    width: 25px;
+    height: 25px;
+    /*			border: solid;*/
+    border-radius: 5px;
+}
+	
+.squre-skill {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+	
+#form-control-register-specialist{
+	border-width: 0;
+	background-color: #D1DFFB;
+}
+
+#form-control-register-specialist:focus{
+	background-color: #D1DFFB;
+	box-shadow: 0 0 0;
+}	
+	
+	.border-darkgreen{
+		border-color: #054E4E;
+	}
+	
+	.form-control-register-specialist-div{
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	
+
+	
+	.form-control-register-specialist-div2{
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	
+	.form-control-register-specialist-div div div:hover{
+		background-color: #FFB82F;
+	}
+	
+/*
+	.form-control-register-specialist-ul li:hover{
+		background-color: #FFB82F;
+	}
+*/
+	.form-control-register-specialist-ul i{
+		color: #000;
+	}
+	.form-control-register-specialist-ul i:hover{
+		color: #FFB82F;
+	}
+	.font-size24{
+		font-size: 24px;
+	}

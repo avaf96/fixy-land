@@ -17,7 +17,6 @@
 		let form_control_register_specialist_main = $(".form-control-register-specialist-div");
         let categories_input = $(".categories-input");
 
-
 	$(document).ready(function(){
 
 		let dastrasi_sari_grid = $(".dastrasi-sari-grid");
@@ -79,8 +78,23 @@
 			 }
 			$(form_control_register_specialist_main[0]).removeClass("d-none");
 				});
-         }
+            }
 	
+   
+           function goInputDemo() {
+			   	$(document).ready(function(){
+                $("#input-demo1").toggleClass("d-none");
+				$("#input-demo2").toggleClass("d-none");
+					});
+            }
+
+			 function goInputDoc() {
+			   	$(document).ready(function(){
+                $("#input-doc1").toggleClass("d-none");
+				$("#input-doc2").toggleClass("d-none");
+					});
+            }					  
+		
    
 
 //$('#myCheckbox').prop('checked', true); // Checks it
