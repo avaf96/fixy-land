@@ -465,7 +465,15 @@ transform: rotate(180deg);
 .pic-width-laptop{width: 350px;}
 
 
-/*-------------------------------- 						-------------------------------*/
+/*----------------------------------user-order-list page-----------------------------------*/
+.pay-img-size{width: 80%;height: auto;}
+
+.darkYellow-border{border: 2px solid #FFB82F;}
+
+#disapprove{cursor: pointer;}
+
+
+/*----------------------------------               -----------------------------------*/
 
 
 
@@ -520,6 +528,28 @@ transform: rotate(180deg);
 .form-control-register-specialist-ul i{color: #000;}
 .form-control-register-specialist-ul i:hover{color: #FFB82F;}
 
+
+
+/*----------------------------------questions page-----------------------------------*/
+#question-col2{
+	border-right:solid;
+	border-width: 3px;
+	border-color: #054E4E;
+}
+#question-col2 div{
+	border-bottom:solid;
+	border-width: 3px;
+	border-color: #054E4E;
+}
+
+.question-div1{cursor: pointer;}
+
+.question-pointer{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 5px;
+}
 
 
 
@@ -649,35 +679,6 @@ footer{
 .font-size24{font-size: 24px;}
 .font-size32{font-size: 32px;}
 .font-size40{font-size: 40px;}
-
-/*qustion page start*/
-
-
-	#question-col2{
-			border-right:solid;
-			border-width: 3px;
-			border-color: #054E4E;
-		}
-		#question-col2 div{
-			border-bottom:solid;
-			border-width: 3px;
-			border-color: #054E4E;
-		}
-		
-		.question-div1{
-			cursor: pointer;
-		}
-        
-		.question-pointer{
-			width: 20px;
-			height: 20px;
-			border-radius: 50%;
-			margin: 5px;
-		}
-
-
-/*qustion page end*/
-
 
 
 /*---scrollbar style---*/
