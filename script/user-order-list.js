@@ -36,3 +36,16 @@ disapprove.onclick = function(){
 		let problem = prompt('مشکل:');
 		alert("با تشکر از ثبت نظر");
 }
+
+
+//toggle running-job page and user-payment page
+$(document).ready(function(){
+		let running_job = $("#running_job");
+		let user_payment = $("#user_payment");
+		let paying_btn = $("#paying_btn");
+		$(paying_btn).click(function(){
+			$(running_job).addClass("d-none");
+			$(user_payment).removeClass("d-none");
+		});
+
+	})
