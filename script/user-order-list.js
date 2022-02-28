@@ -12,8 +12,8 @@
 //		swipper-end
 	
 
+
 $(document).ready(function(){
-	
 		let user_order_list_menu_item = $(".user-order-list-menu-item");
 		let swiper_slide = $(".swiper-slide");
 
@@ -25,9 +25,14 @@ $(document).ready(function(){
 				}
 				$(user_order_list_menu_item[i]).removeClass("d-none");	
 				$(swiper_slide[i]).addClass("darkYellow");	
-
-
 			})	
 		}
+})
 
-	})
+
+//Submit comment
+let disapprove = document.getElementById("disapprove");
+disapprove.onclick = function(){
+		let problem = prompt('مشکل:');
+		alert("با تشکر از ثبت نظر");
+}

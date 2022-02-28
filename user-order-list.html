@@ -23,10 +23,13 @@
 
 	<style>
 		.pay-img-size{
-			width: 100%;
+			width: 80%;
 			height: auto;
 		}
-	
+		
+		.darkYellow-border{border: 2px solid #FFB82F;}
+		
+		#disapprove{cursor: pointer;}
 	
 	</style>
 </head>
@@ -574,12 +577,12 @@
 						<div class="border border-primary rounded-3 pt-2 pb-2 p-2 p-md-3 mb-4 mt-2 w-75">
 							<div class="container-fluid">
 								<div class="row">
-									<div class="col-lg-3 col-12 p-0 d-flex justify-content-center mb-3 mb-lg-0">
+									<div class="col-lg-4 col-12 p-0 d-flex justify-content-center mb-3 mb-lg-0">
 										<div class="circle-img-div">
 											<img class="rounded-circle w-100 h-100" src="image/human4.jpg" alt="specialist">
 										</div>
 									</div>
-									<div class="col-lg-9 col-12 mt-2 text-center mt-sm-0 text-lg-end p-0">
+									<div class="col-lg-8 col-12 mt-2 text-center mt-sm-0 text-lg-end p-0">
 										<div class="mb-2">
 											<img src="image/gray-star.png" alt="rating">
 											<img src="image/gray-star.png" alt="rating">
@@ -593,15 +596,15 @@
 								</div>	
 							</div>
 
-							<p class="mt-4 text_justify ps-1 pe-1 ps-lg-5 pe-lg-5">
+							<p class="mt-4 text_justify ps-1 pe-1 ps-lg-3 pe-lg-3 ps-xl-5 pe-xl-5">
 								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. 
 							</p>
 
-							<a href="#" class="text-decoration-none darkYellow-text ps-1 pe-1 ps-lg-5 pe-lg-5 d-flex justify-content-center justify-content-md-end">
+							<a href="#" class="text-decoration-none darkYellow-text ps-1 pe-1 ps-lg-3 pe-lg-3 ps-xl-5 pe-xl-5 d-flex justify-content-center justify-content-md-end">
 								مشاهده اطلاعات بیشتر
 							</a>
 
-							<div class="text-center mb-1 mt-4 ps-1 pe-1 ps-lg-5 pe-lg-5 d-flex justify-content-end flex-column flex-md-row">
+							<div class="text-center mb-1 mt-4 ps-1 pe-1 ps-lg-3 pe-lg-3 ps-xl-5 pe-xl-5 d-flex justify-content-end flex-column flex-md-row">
 								<form class="d-inline-block mb-3">
 									<button class="btn btn-outline-dark darkYellow ms-3" type="submit"> انتخاب این متخصص </button>
 								</form>
@@ -668,7 +671,7 @@
 						<!--پرداخت کاربر-->
 						<div class="user_payment w-100 d-flex justify-content-center">
 								<div class="row w-100 m-0"> 
-									<div class="col-12 col-md-6">
+									<div class="col-12 col-lg-6">
 										<p class="font-size24 fw-bold"> اتمام کار توسط مشتری </p>
 										<p> 
 											خدمات: تعمیرات موبایل، تبلت، لوازم جانبی، (خدمات اضافه)
@@ -680,62 +683,79 @@
 											پس از پایان کار توافق براساس قیمت و کار صورت بگیرد.
 										</p>
 										
-										<form>
-											<div class="mb-3">
-												<label for="password-register-cutomer" class="form-label">رمز</label>
-												<input type="password" class="form-control" id="password-register-cutomer" >
-											</div>
-											
-											<div class="mb-3">
-												<label for="password-register-cutomer" class="form-label">رمز</label>
-												<input type="password" class="form-control" id="password-register-cutomer" >
-											</div>
-											
-											<div class="mb-3">
-												<label for="password-register-cutomer" class="form-label">رمز</label>
-												<input type="password" class="form-control" id="password-register-cutomer" >
-											</div>
-
-											<div class="mb-3 ">
-												<input type="checkbox" required="required" class="form-check-input" id="check-register-cutomer">
-												<label class="form-check-label" for="check-register-cutomer">قوانین و مقررات را مطالعه و قبول دارم.
+										<form class="mt-4">
+											<div class="mb-4">
+												<label for="wages" class="form-label">
+													دستمزد انجام کار
 												</label>
+												<input type="text" class="form-control text-center border border-dark p-2" id="wages" value="60000 ریال" disabled>
+											</div>
+											
+											<div class="mb-4">
+												<label for="equipment-cost" class="form-label">
+													هزینه وسایل
+												</label>
+												<input id="equipment-cost" type="text" class="form-control text-center border border-dark p-2" value="50000 ریال" disabled>
+											</div>
+											
+											<div class="mb-4">
+												<label for="transportation-cost" class="form-label">
+													ایاب و ذهاب
+												</label>
+												<input id="transportation-cost" type="text" class="form-control text-center border border-dark p-2" value="78000 ریال" disabled>
+											</div>
+											
+											<div class="mb-4">
+												<div class="d-flex justify-content-between">
+													<label for="total-cost" class="form-label">
+													جمع کل هزینه ها
+												</label>
+												<del class="fw-bold"> 480000 </del>
+												</div>
+												<input id="total-cost" type="text" class="form-control text-center border border-dark lightgreen-text fw-bold p-2" value="30000 ریال" disabled>
 												
-												<input type="checkbox" required="required" class="form-check-input" id="check-register-cutomer">
-												<label class="form-check-label" for="check-register-cutomer">قوانین و مقررات را مطالعه و قبول دارم.
-												</label>
 											</div>
 
-											<form class="mb-3">
-												<label for="identifierCode-register-cutomer" class="form-label">کد معرف</label>
-												<div class="d-flex border-redius-20 pe-3">
-													<input class="form-control border-0" id="identifierCode-register-cutomer" type="text" placeholder="در صورت داشتن کد معرف آن را وارد نمایید.">
-													<button class="darkYellow border-redius-20   p-2 pe-4 ps-4 m-0" type="submit">
-													اعمال	
-													</button>
+											<div class="d-flex justify-content-between flex-column flex-md-row mb-md-4 ps-2 pe-2">
+												<div>
+													<input type="checkbox" required="required" class="form-check-input" id="confirm">
+													<label class="form-check-label pe-2" for="confirm">
+														تایید می کنم
+													</label>
+												</div>
+												
+												<div class="mt-3 mt-md-0">
+													<p id="disapprove" class="darkYellow-text"> مبلغ مورد قبول نیست </p>
+												</div>
+											</div>
+
+											<form class="mb-4">
+												<label for="discount-code" class="form-label fw-bold">کد تخفیف</label>
+												<div class="d-flex justify-content-center">
+													<div class="input-group mb-3 w-100 darkYellow-border rounded-3" dir="ltr">
+														<button class="discount_btn btn darkYellow" type="button" id="button-addon1">
+															اعمال
+														</button>
+														<input id="discount-code" type="text" class="discount_input form-control form-bg-color border-0 text-center" aria-label="text with button addon" aria-describedby="button-addon1" placeholder="کد تخفیف">
+													</div>
 												</div>
 											</form>
 
-											<button type="submit" class=" w-50 mt-4 darkYellow border-redius-20 font-size32">تایید</button>
+											<form>
+												<button type="submit" class="w-100 border-0 rounded-3 darkYellow p-2">پرداخت از درگاه بانکی</button>
+											</form>
 
 											
 										</form>
 										
-										<div class="d-flex justify-content-center mt-4 mb-3">
-											<div class="input-group mb-3 w-50" dir="ltr">
-												<button class="discount_btn btn darkYellow" type="button" id="button-addon1">
-													کپی
-												</button>
-												<input type="text" class="discount_input form-control form-bg-color border-0 text-center" aria-label="text with button addon" aria-describedby="button-addon1" value="discount1" disabled>
-											</div>
-										</div>
+										
 
 										
 									</div>
 									
-									<div class="col-6 d-none d-md-block">
+									<div class="col-6 d-none d-lg-flex justify-content-center align-items-center">
 										<div class="pay-img-size">
-											<img src="image/undraw_bug_fixing_oc7a 1.png" alt="fixing">
+											<img class="w-100" src="image/undraw_bug_fixing_oc7a 1.png" alt="fixing">
 										</div>
 									</div>
 								</div>
@@ -1054,6 +1074,7 @@
 	<!--scripts from script folder	-->
 	<script src="script/main.js" type="text/javascript"></script>
 	<script src="script/user-order-list.js" type="text/javascript"></script>
+	
 	
 
 </body>
