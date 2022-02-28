@@ -356,6 +356,13 @@ transform: rotate(180deg);
 }
 
 
+/*-----------------------------------conactUs page-----------------------------------*/
+.contact-us-box{
+	border-radius: 12px;
+	box-shadow: 1px 1px 7px 1px rgba(5,78,78,0.50);
+}
+
+
 /*----------------------------------articles page----------------------------------*/
 .article-box{
 	width: 95%;
@@ -430,8 +437,9 @@ transform: rotate(180deg);
 .comments{width: 97%;}
 #more-cm-btn{box-shadow: none;}
 
-/*-------------------------------------customSpecialist page-----------------------------------*/
+/*------------------------customSpecialist & automaticSpecialist page---------------------------*/
 .specialist-box{width: 95%;}
+.circle-img-div-spc{width: 110px;height: 110px;}
 
 /*-----------------------------------spc-final-description page--------------------------------*/
 .circleDiv{width: 15px;height: 15px;}
