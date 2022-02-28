@@ -506,11 +506,13 @@ transform: rotate(180deg);
 .form-control-register-specialist-div{
 	overflow-y: scroll;
 	overflow-x: hidden;
+	height: 75vh;
 }
 
 .form-control-register-specialist-div2{
 	overflow-y: scroll;
 	overflow-x: hidden;
+	height: 75vh;
 }
 
 .form-control-register-specialist-div div div:hover{background-color: #FFB82F;}
