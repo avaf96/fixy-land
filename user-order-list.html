@@ -21,6 +21,14 @@
 <link href="style/css1.css" rel="stylesheet" type="text/css">
 	
 
+	<style>
+		.pay-img-size{
+			width: 100%;
+			height: auto;
+		}
+	
+	
+	</style>
 </head>
 	
 
@@ -608,51 +616,136 @@
 					
 					<!--در دست اجرا-->
 					<div class="user-order-list-menu-item w-100 h-100 border-gray pt-3 padding-bottom mb-5 d-flex justify-content-center d-none">
-						<div class="border border-3 border-dark rounded-3 pt-2 pb-2 p-2 p-md-3 mb-4 mt-2 w-75">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-lg-3 col-12 p-0 d-flex justify-content-center mb-3 mb-lg-0">
-										<div>
-											<img class="rounded-3 mw-100 nh-100" src="image/human1.jpg" alt="specialist" height="auto">
+						
+						<!--default box-->
+						<div class="running_job w-100 d-flex justify-content-center d-none">
+							<div class="border border-3 border-dark rounded-3 pt-2 pb-2 p-2 p-md-3 mb-4 mt-2 w-75">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-lg-3 col-12 p-0 d-flex justify-content-center mb-3 mb-lg-0">
+											<div>
+												<img class="rounded-3 mw-100 nh-100" src="image/human1.jpg" alt="specialist" height="auto">
+											</div>
 										</div>
+										<div class="col-lg-9 col-12 mt-2 text-center mt-sm-0 text-lg-end p-0">
+											<p class="m-0 pb-2 me-lg-3 fw-bold"> نام: محمدرضا امیری </p>
+											<p class="m-0 pb-2 me-lg-3 fw-bold" > نوع: تعویض فریم گوشی </p>
+											<p class="m-0 pb-2 me-lg-3 fw-bold" > آدرس: شیراز-ملاصدرا-خیابان جمالی </p>
+											<p class="m-0 pb-3 me-lg-3 fw-bold" > شرح مشکل: تعویض فریم گوشی </p>
+											<form class="me-3">
+												<button type="submit" class="border-0 bg-white text-danger"> 
+													افزودن به متخصص منتخب
+													<i class="fa-regular fa-heart text-dark"></i> 
+												</button>
+											</form>
+											<p class="m-0 mt-3 pb-1 text-center text-lg-start" > 1400/2/24 </p>
+
+										</div>
+
+									</div>	
+								</div>
+
+
+								<!--buttons( قسمت در دست اجرا )-->
+								<div class="d-flex flex-column align-items-center mt-3">
+									<div class="col-12 col-lg-6 d-flex justify-content-lg-center gap-1 mb-1 flex-column flex-lg-row align-items-center w-75">
+										<a href="#" class="btn text-decoration-none text-black darkYellow w-75"> <i class="fa-solid fa-comments"></i> چت با متخصص </a>
+
+										<a href="#" class="btn text-decoration-none text-black darkYellow w-75"> <i class="fa-solid fa-phone-flip"></i> تماس با متخصص </a>
 									</div>
-									<div class="col-lg-9 col-12 mt-2 text-center mt-sm-0 text-lg-end p-0">
-										<p class="m-0 pb-2 me-lg-3 fw-bold"> نام: محمدرضا امیری </p>
-										<p class="m-0 pb-2 me-lg-3 fw-bold" > نوع: تعویض فریم گوشی </p>
-										<p class="m-0 pb-2 me-lg-3 fw-bold" > آدرس: شیراز-ملاصدرا-خیابان جمالی </p>
-										<p class="m-0 pb-3 me-lg-3 fw-bold" > شرح مشکل: تعویض فریم گوشی </p>
-										<form class="me-3">
-											<button type="submit" class="border-0 bg-white text-danger"> 
-												افزودن به متخصص منتخب
-												<i class="fa-regular fa-heart text-dark"></i> 
-											</button>
+
+									<div class="col-12 col-lg-6 d-flex justify-content-lg-center gap-1 mb-1 flex-column flex-lg-row align-items-center w-75">
+										<a href="#" class="btn text-decoration-none text-black lightgreen w-75"> اتمام این کار </a>
+
+										<a href="#" class="btn btn-outline-danger text-decoration-none white text-black w-75"> لغو این کار </a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						
+						
+						<!--پرداخت کاربر-->
+						<div class="user_payment w-100 d-flex justify-content-center">
+								<div class="row w-100 m-0"> 
+									<div class="col-12 col-md-6">
+										<p class="font-size24 fw-bold"> اتمام کار توسط مشتری </p>
+										<p> 
+											خدمات: تعمیرات موبایل، تبلت، لوازم جانبی، (خدمات اضافه)
+										</p>
+										<p> 
+											شناسه قرارداد: 655465
+										</p>
+										<p>
+											پس از پایان کار توافق براساس قیمت و کار صورت بگیرد.
+										</p>
+										
+										<form>
+											<div class="mb-3">
+												<label for="password-register-cutomer" class="form-label">رمز</label>
+												<input type="password" class="form-control" id="password-register-cutomer" >
+											</div>
+											
+											<div class="mb-3">
+												<label for="password-register-cutomer" class="form-label">رمز</label>
+												<input type="password" class="form-control" id="password-register-cutomer" >
+											</div>
+											
+											<div class="mb-3">
+												<label for="password-register-cutomer" class="form-label">رمز</label>
+												<input type="password" class="form-control" id="password-register-cutomer" >
+											</div>
+
+											<div class="mb-3 ">
+												<input type="checkbox" required="required" class="form-check-input" id="check-register-cutomer">
+												<label class="form-check-label" for="check-register-cutomer">قوانین و مقررات را مطالعه و قبول دارم.
+												</label>
+												
+												<input type="checkbox" required="required" class="form-check-input" id="check-register-cutomer">
+												<label class="form-check-label" for="check-register-cutomer">قوانین و مقررات را مطالعه و قبول دارم.
+												</label>
+											</div>
+
+											<form class="mb-3">
+												<label for="identifierCode-register-cutomer" class="form-label">کد معرف</label>
+												<div class="d-flex border-redius-20 pe-3">
+													<input class="form-control border-0" id="identifierCode-register-cutomer" type="text" placeholder="در صورت داشتن کد معرف آن را وارد نمایید.">
+													<button class="darkYellow border-redius-20   p-2 pe-4 ps-4 m-0" type="submit">
+													اعمال	
+													</button>
+												</div>
+											</form>
+
+											<button type="submit" class=" w-50 mt-4 darkYellow border-redius-20 font-size32">تایید</button>
+
+											
 										</form>
-										<p class="m-0 mt-3 pb-1 text-center text-lg-start" > 1400/2/24 </p>
+										
+										<div class="d-flex justify-content-center mt-4 mb-3">
+											<div class="input-group mb-3 w-50" dir="ltr">
+												<button class="discount_btn btn darkYellow" type="button" id="button-addon1">
+													کپی
+												</button>
+												<input type="text" class="discount_input form-control form-bg-color border-0 text-center" aria-label="text with button addon" aria-describedby="button-addon1" value="discount1" disabled>
+											</div>
+										</div>
+
 										
 									</div>
 									
-								</div>	
-							</div>
-							
-							
-							<!--buttons( قسمت در دست اجرا )-->
-							<div class="d-flex flex-column align-items-center mt-3">
-								<div class="col-12 col-lg-6 d-flex justify-content-lg-center gap-1 mb-1 flex-column flex-lg-row align-items-center w-75">
-									<a href="#" class="btn text-decoration-none text-black darkYellow w-75"> <i class="fa-solid fa-comments"></i> چت با متخصص </a>
-
-									<a href="#" class="btn text-decoration-none text-black darkYellow w-75"> <i class="fa-solid fa-phone-flip"></i> تماس با متخصص </a>
+									<div class="col-6 d-none d-md-block">
+										<div class="pay-img-size">
+											<img src="image/undraw_bug_fixing_oc7a 1.png" alt="fixing">
+										</div>
+									</div>
 								</div>
 
-								<div class="col-12 col-lg-6 d-flex justify-content-lg-center gap-1 mb-1 flex-column flex-lg-row align-items-center w-75">
-									<a href="#" class="btn text-decoration-none text-black lightgreen w-75"> اتمام این کار </a>
-
-									<a href="#" class="btn btn-outline-danger text-decoration-none white text-black w-75"> لغو این کار </a>
-								</div>
-							</div>
-
-
 							
-						</div>	
+							
+						</div>
+						
+
+						
 					</div>
 					
 					
