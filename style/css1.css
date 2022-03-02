@@ -473,10 +473,27 @@ transform: rotate(180deg);
 #disapprove{cursor: pointer;}
 
 
+/*-----------------------------------user-rating-spc page----------------------------------*/
+.black-div-bg{
+	background-color: rgba(0,0,0,0.80);
+	z-index: 9999;
+}
+
+.problem_box{
+	border-radius: 20px;
+	background-color: #F4F2F2;
+	width: 98%;
+	display: flex;
+	justify-content: center;
+}
+
+.problem_box input{width: 0;height: 0;}
+
+.rating-btn-bg-green{background-color: #4DE119;}
+
+
+
 /*----------------------------------               -----------------------------------*/
-
-
-
 
 
 /*-----------------------------------------Signup page-------------------------------------*/
