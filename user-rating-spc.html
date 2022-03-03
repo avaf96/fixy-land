@@ -503,8 +503,13 @@
 		<div class="container-fluied">
 			<div class="row ms-0 me-0 position-relative">
 				
-				<div class="profile-box col-md-3 d-none d-md-flex flex-column align-items-center ps-0 pe-0 pt-5 pb-5">
-					<img class="mb-4" src="image/pf.png" alt="profile picture">
+				<div class="profile-box h-75 col-md-3 d-none d-md-flex flex-column align-items-center ps-0 pe-0 pt-5 pb-5">
+					<div class="position-relative mb-4 text-center">
+						<img class="rounded-circle" src="image/pf-pic.png" alt="profile picture" height="150px" width="150px">
+						<button class="btn position-absolute upload-pic p-0">
+							<img src="image/pf-pic-update.png" alt="new profile picture" height="45px" width="45px">
+						</button>
+					</div>
 					<p class="gray-text m-0 mb-1"> نام و نام خانوادگی </p>
 					<p class="gray-text m-0 mb-1"> abc@gmail.com </p>
 					<p class="gray-text m-0 mb-1"> ********091 </p>
@@ -615,501 +620,504 @@
 		
 		<div class="black-div-bg vw-100 h-100 pt-5 pb-5 position-absolute top-0 start-0 d-flex justify-content-center align-items-center">
 			
-			<div class="rating-div bg-white w-75 h-100 overflow-auto d-flex flex-column align-items-center pt-3 ps-md-5 pe-md-5 pb-3">
+			<div class="rating-div bg-white w-75 h-100 overflow-auto pt-3 ps-md-5 pe-md-5 pb-3">
 				
-				<p class="text-center"> امتیاز به این متخصص </p>
+				<a href="user-panel.html" class="text-decoration-none darkYellow-text_onHover text-black d-flex justify-content-end"><i class="fa-solid fa-xmark font-size24"></i></a>
+				
+				<div class="d-flex flex-column align-items-center">
+					<p class="text-center"> امتیاز به این متخصص </p>
 
-				<div>
-					<img class="rounded-circle" src="image/human.jpg" alt="specialist" width="100px" height="100px">
-				</div>
+					<div>
+						<img class="rounded-circle" src="image/human.jpg" alt="specialist" width="100px" height="100px">
+					</div>
 
-				<div id="images" class="mb-2 mt-3">
-					<img src="image/gray-star.png" alt="rating">
-					<img src="image/gray-star.png" alt="rating">
-					<img src="image/gray-star.png" alt="rating">
-					<img src="image/gray-star.png" alt="rating">
-					<img src="image/gray-star.png" alt="rating">
-				</div>
+					<div id="images" class="mb-2 mt-3">
+						<img src="image/gray-star.png" alt="rating">
+						<img src="image/gray-star.png" alt="rating">
+						<img src="image/gray-star.png" alt="rating">
+						<img src="image/gray-star.png" alt="rating">
+						<img src="image/gray-star.png" alt="rating">
+					</div>
+
+
+					<!--div for 5 stars-->
+					<div class="forms-based-on-star d-none">
+						<p class="m-0 pb-1 text-center"> عالی </p>
+						<p class="m-0 text-center" > چه مشکلی به وجود اومده555؟ </p>
+
+						<!--form for 5 stars-->
+						<form>
+							<div class="container mt-3">
+								<div class="row d-flex justify-content-around gy-1">
+
+									<label for="group"></label>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star5-group1" value=""/>
+											<label class="text-center w-100 rounded-3" for="star5-group1">رفتار نامناسب5</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star5-group2" value=""/>
+											<label class="text-center w-100 rounded-3" for="star5-group2">بوی نامطبوع5</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star5-group3" value=""/>
+											<label class="text-center w-100 rounded-3" for="star5-group3">نداشتن تخصص کافی5</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-126 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star5-group4" value=""/>
+											<label class="text-center w-100 rounded-3" for="star5-group4">عدم رعایت قرارداد5</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star5-group5" value=""/>
+											<label class="text-center w-100 rounded-3" for="star5-group5">رفتار نامحترمانه5</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star5-group6" value=""/>
+											<label class="text-center w-100 rounded-3" for="star5-group6">5 //////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star5-group7" value=""/>
+											<label class="text-center w-100 rounded-3" for="star5-group7"> 5//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star5-group8" value=""/>
+											<label class="text-center w-100 rounded-3" for="star5-group8"> 5//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-none d-xl-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star5-group9" value=""/>
+											<label class="text-center w-100 rounded-3" for="star5-group9"> 5//////// </label>
+										</div>
+									</div>
+
+
+								</div>	
+							</div>
+
+							<!--text area-->
+							<div class="container mt-2 mb-4">
+								<label for="star5-problem-description" class="form-label"></label>
+								<textarea id="star5-problem-description" class="form-control gray-bg border-0" rows="15" placeholder="اگر نظری درباره متخصص یا خدمات دارید در این بخش بنویسید ..."></textarea>
+							</div>
+
+						</form>
+
+
+						<!--submit button-->
+						<form class="mt-4 d-flex justify-content-center">
+							<button class="btn darkYellow ps-5 pe-5" type="submmit"> ثبت بازخورد </button>
+						</form>
+					</div>
+
+
+					<!--div for 4 stars-->
+					<div class="forms-based-on-star d-none">
+						<p class="m-0 pb-1 text-center"> خیلی خوب </p>
+						<p class="m-0 text-center" > چه مشکلی به وجود اومده444؟ </p>
+
+						<!--form for 4 stars-->
+						<form>
+							<div class="container mt-3">
+								<div class="row d-flex justify-content-around gy-1">
+
+									<label for="group"></label>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star4-group1" value=""/>
+											<label class="text-center w-100 rounded-3" for="star4-group1">رفتار نامناسب4</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star4-group2" value=""/>
+											<label class="text-center w-100 rounded-3" for="star4-group2">4بوی نامطبوع</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star4-group3" value=""/>
+											<label class="text-center w-100 rounded-3" for="star4-group3">نداشتن تخصص کاف4ی</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-126 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star4-group4" value=""/>
+											<label class="text-center w-100 rounded-3" for="star4-group4">عدم رعایت قرارداد4</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star4-group5" value=""/>
+											<label class="text-center w-100 rounded-3" for="star4-group5">رفتار نامحترمانه4</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star4-group6" value=""/>
+											<label class="text-center w-100 rounded-3" for="star4-group6"> 4//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star4-group7" value=""/>
+											<label class="text-center w-100 rounded-3" for="star4-group7"> 4//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star4-group8" value=""/>
+											<label class="text-center w-100 rounded-3" for="star4-group8"> 4//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-none d-xl-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star4-group9" value=""/>
+											<label class="text-center w-100 rounded-3" for="star4-group9"> 4//////// </label>
+										</div>
+									</div>
+
+
+								</div>	
+							</div>
+
+							<!--text area-->
+							<div class="container mt-2 mb-4">
+								<label for="star4-problem-description" class="form-label"></label>
+								<textarea id="star4-problem-description" class="form-control gray-bg border-0" rows="15" placeholder="اگر نظری درباره متخصص یا خدمات دارید در این بخش بنویسید ..."></textarea>
+							</div>
+
+						</form>
+
+
+						<!--submit button-->
+						<form class="mt-4 d-flex justify-content-center">
+							<button class="btn darkYellow ps-5 pe-5" type="submmit"> ثبت بازخورد </button>
+						</form>
+					</div>
+
+
+					<!--div for 3 stars-->
+					<div class="forms-based-on-star d-none">
+						<p class="m-0 pb-1 text-center"> خوب </p>
+						<p class="m-0 text-center" > چه مشکلی به وجود اومده333؟ </p>
+
+						<!--form for 3 stars-->
+						<form>
+							<div class="container mt-3">
+								<div class="row d-flex justify-content-around gy-1">
+
+									<label for="group"></label>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star3-group1" value=""/>
+											<label class="text-center w-100 rounded-3" for="star3-group1">رفتار نامناسب3</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star3-group2" value=""/>
+											<label class="text-center w-100 rounded-3" for="star3-group2">3بوی نامطبوع</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star3-group3" value=""/>
+											<label class="text-center w-100 rounded-3" for="star3-group3">نداشتن تخصص3 کافی</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-126 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star3-group4" value=""/>
+											<label class="text-center w-100 rounded-3" for="star3-group4">عدم رعایت قرارداد3</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star3-group5" value=""/>
+											<label class="text-center w-100 rounded-3" for="star3-group5">رفتار نامحترمانه3</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star3-group6" value=""/>
+											<label class="text-center w-100 rounded-3" for="star3-group6"> 3//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star3-group7" value=""/>
+											<label class="text-center w-100 rounded-3" for="star3-group7"> 3//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star3-group8" value=""/>
+											<label class="text-center w-100 rounded-3" for="star3-group8">3 //////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-none d-xl-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star3-group9" value=""/>
+											<label class="text-center w-100 rounded-3" for="star3-group9"> 3//////// </label>
+										</div>
+									</div>
+
+
+								</div>	
+							</div>
+
+							<!--text area-->
+							<div class="container mt-2 mb-4">
+								<label for="star3-problem-description" class="form-label"></label>
+								<textarea id="star3-problem-description" class="form-control gray-bg border-0" rows="15" placeholder="اگر نظری درباره متخصص یا خدمات دارید در این بخش بنویسید ..."></textarea>
+							</div>
+
+						</form>
+
+
+						<!--submit button-->
+						<form class="mt-4 d-flex justify-content-center">
+							<button class="btn darkYellow ps-5 pe-5" type="submmit"> ثبت بازخورد </button>
+						</form>
+					</div>
+
+
+					<!--div for 2 stars-->
+					<div class="forms-based-on-star d-none">
+						<p class="m-0 pb-1 text-center"> معمولی </p>
+						<p class="m-0 text-center" > چه مشکلی به وجود اومده222؟ </p>
+
+						<!--form for 2 stars-->
+						<form>
+							<div class="container mt-3">
+								<div class="row d-flex justify-content-around gy-1">
+
+									<label for="group"></label>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star2-group1" value=""/>
+											<label class="text-center w-100 rounded-3" for="star2-group1">رفتار نامناسب2</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star2-group2" value=""/>
+											<label class="text-center w-100 rounded-3" for="star2-group2">بوی نامطبوع2</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star2-group3" value=""/>
+											<label class="text-center w-100 rounded-3" for="star2-group3">2نداشتن تخصص کافی</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-126 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star2-group4" value=""/>
+											<label class="text-center w-100 rounded-3" for="star2-group4">عدم رعایت قرارداد2</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star2-group5" value=""/>
+											<label class="text-center w-100 rounded-3" for="star2-group5">رفتار نامحترمانه2</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star2-group6" value=""/>
+											<label class="text-center w-100 rounded-3" for="star2-group6"> 2//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star2-group7" value=""/>
+											<label class="text-center w-100 rounded-3" for="star2-group7"> 2//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star2-group8" value=""/>
+											<label class="text-center w-100 rounded-3" for="star2-group8"> 2//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-none d-xl-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star2-group9" value=""/>
+											<label class="text-center w-100 rounded-3" for="star2-group9"> 2//////// </label>
+										</div>
+									</div>
+
+
+								</div>	
+							</div>
+
+							<!--text area-->
+							<div class="container mt-2 mb-4">
+								<label for="star2-problem-description" class="form-label"></label>
+								<textarea id="star2-problem-description" class="form-control gray-bg border-0" rows="15" placeholder="اگر نظری درباره متخصص یا خدمات دارید در این بخش بنویسید ..."></textarea>
+							</div>
+
+						</form>
+
+
+						<!--submit button-->
+						<form class="mt-4 d-flex justify-content-center">
+							<button class="btn darkYellow ps-5 pe-5" type="submmit"> ثبت بازخورد </button>
+						</form>
+					</div>
+
+
+					<!--div for 1 star-->
+					<div class="forms-based-on-star d-none">
+						<p class="m-0 pb-1 text-center"> بد </p>
+						<p class="m-0 text-center" > چه مشکلی به وجود اومده111؟ </p>
+
+
+						<!--form for 1 star-->
+						<form>
+							<div class="container mt-3">
+								<div class="row d-flex justify-content-around gy-1">
+
+									<label for="group"></label>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star1-group1" value=""/>
+											<label class="text-center w-100 rounded-3" for="star1-group1">رفتار نامناسب1</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star1-group2" value=""/>
+											<label class="text-center w-100 rounded-3" for="star1-group2">بوی نامطبوع1</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star1-group3" value=""/>
+											<label class="text-center w-100 rounded-3" for="star1-group3">نداشتن تخصص کافی1</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-126 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star1-group4" value=""/>
+											<label class="text-center w-100 rounded-3" for="star1-group4">عدم رعایت قرارداد1</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star1-group5" value=""/>
+											<label class="text-center w-100 rounded-3" for="star1-group5">رفتار نامحترمانه1</label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star1-group6" value=""/>
+											<label class="text-center w-100 rounded-3" for="star1-group6"> 1//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star1-group7" value=""/>
+											<label class="text-center w-100 rounded-3" for="star1-group7"> 1//////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star1-group8" value=""/>
+											<label class="text-center w-100 rounded-3" for="star1-group8"> //////// </label>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 col-12 d-none d-xl-flex justify-content-center">
+										<div class="problem_box pt-2 pb-2 ps-1 pe-1">
+											<input type="checkbox" name="group" id="star1-group9" value=""/>
+											<label class="text-center w-100 rounded-3" for="star1-group9"> 1//////// </label>
+										</div>
+									</div>
+
+
+								</div>	
+							</div>
+
+							<!--text area-->
+							<div class="container mt-2">
+								<label for="star1-problem-description" class="form-label"></label>
+								<textarea id="star1-problem-description" class="form-control gray-bg border-0" rows="15" placeholder="اگر نظری درباره متخصص یا خدمات دارید در این بخش بنویسید ..."></textarea>
+							</div>
+
+						</form>
+
+
+						<!--submit button-->
+						<form class="mt-4 d-flex justify-content-center">
+							<button class="btn darkYellow ps-5 pe-5" type="submmit"> ثبت بازخورد </button>
+						</form>
+					</div>
+
 
 				
-				<!--div for 5 stars-->
-				<div class="forms-based-on-star d-none">
-					<p class="m-0 pb-1 text-center"> عالی </p>
-					<p class="m-0 text-center" > چه مشکلی به وجود اومده555؟ </p>
-
-					<!--form for 5 stars-->
-					<form>
-						<div class="container mt-3">
-							<div class="row d-flex justify-content-around gy-1">
-
-								<label for="group"></label>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star5-group1" value=""/>
-										<label class="text-center w-100 rounded-3" for="star5-group1">رفتار نامناسب5</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star5-group2" value=""/>
-										<label class="text-center w-100 rounded-3" for="star5-group2">بوی نامطبوع5</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star5-group3" value=""/>
-										<label class="text-center w-100 rounded-3" for="star5-group3">نداشتن تخصص کافی5</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-126 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star5-group4" value=""/>
-										<label class="text-center w-100 rounded-3" for="star5-group4">عدم رعایت قرارداد5</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star5-group5" value=""/>
-										<label class="text-center w-100 rounded-3" for="star5-group5">رفتار نامحترمانه5</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star5-group6" value=""/>
-										<label class="text-center w-100 rounded-3" for="star5-group6">5 //////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star5-group7" value=""/>
-										<label class="text-center w-100 rounded-3" for="star5-group7"> 5//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star5-group8" value=""/>
-										<label class="text-center w-100 rounded-3" for="star5-group8"> 5//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-none d-xl-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star5-group9" value=""/>
-										<label class="text-center w-100 rounded-3" for="star5-group9"> 5//////// </label>
-									</div>
-								</div>
-
-
-							</div>	
-						</div>
-
-						<!--text area-->
-						<div class="container mt-2 mb-4">
-							<label for="star5-problem-description" class="form-label"></label>
-							<textarea id="star5-problem-description" class="form-control gray-bg border-0" rows="15" placeholder="اگر نظری درباره متخصص یا خدمات دارید در این بخش بنویسید ..."></textarea>
-						</div>
-
-					</form>
-
-
-					<!--submit button-->
-					<form class="mt-4 d-flex justify-content-center">
-						<button class="btn darkYellow ps-5 pe-5" type="submmit"> ثبت بازخورد </button>
-					</form>
-				</div>
-				
-				
-				<!--div for 4 stars-->
-				<div class="forms-based-on-star d-none">
-					<p class="m-0 pb-1 text-center"> خیلی خوب </p>
-					<p class="m-0 text-center" > چه مشکلی به وجود اومده444؟ </p>
-
-					<!--form for 4 stars-->
-					<form>
-						<div class="container mt-3">
-							<div class="row d-flex justify-content-around gy-1">
-
-								<label for="group"></label>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star4-group1" value=""/>
-										<label class="text-center w-100 rounded-3" for="star4-group1">رفتار نامناسب4</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star4-group2" value=""/>
-										<label class="text-center w-100 rounded-3" for="star4-group2">4بوی نامطبوع</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star4-group3" value=""/>
-										<label class="text-center w-100 rounded-3" for="star4-group3">نداشتن تخصص کاف4ی</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-126 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star4-group4" value=""/>
-										<label class="text-center w-100 rounded-3" for="star4-group4">عدم رعایت قرارداد4</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star4-group5" value=""/>
-										<label class="text-center w-100 rounded-3" for="star4-group5">رفتار نامحترمانه4</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star4-group6" value=""/>
-										<label class="text-center w-100 rounded-3" for="star4-group6"> 4//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star4-group7" value=""/>
-										<label class="text-center w-100 rounded-3" for="star4-group7"> 4//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star4-group8" value=""/>
-										<label class="text-center w-100 rounded-3" for="star4-group8"> 4//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-none d-xl-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star4-group9" value=""/>
-										<label class="text-center w-100 rounded-3" for="star4-group9"> 4//////// </label>
-									</div>
-								</div>
-
-
-							</div>	
-						</div>
-
-						<!--text area-->
-						<div class="container mt-2 mb-4">
-							<label for="star4-problem-description" class="form-label"></label>
-							<textarea id="star4-problem-description" class="form-control gray-bg border-0" rows="15" placeholder="اگر نظری درباره متخصص یا خدمات دارید در این بخش بنویسید ..."></textarea>
-						</div>
-
-					</form>
-
-
-					<!--submit button-->
-					<form class="mt-4 d-flex justify-content-center">
-						<button class="btn darkYellow ps-5 pe-5" type="submmit"> ثبت بازخورد </button>
-					</form>
-				</div>
-				
-				
-				<!--div for 3 stars-->
-				<div class="forms-based-on-star d-none">
-					<p class="m-0 pb-1 text-center"> خوب </p>
-					<p class="m-0 text-center" > چه مشکلی به وجود اومده333؟ </p>
-
-					<!--form for 3 stars-->
-					<form>
-						<div class="container mt-3">
-							<div class="row d-flex justify-content-around gy-1">
-
-								<label for="group"></label>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star3-group1" value=""/>
-										<label class="text-center w-100 rounded-3" for="star3-group1">رفتار نامناسب3</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star3-group2" value=""/>
-										<label class="text-center w-100 rounded-3" for="star3-group2">3بوی نامطبوع</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star3-group3" value=""/>
-										<label class="text-center w-100 rounded-3" for="star3-group3">نداشتن تخصص3 کافی</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-126 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star3-group4" value=""/>
-										<label class="text-center w-100 rounded-3" for="star3-group4">عدم رعایت قرارداد3</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star3-group5" value=""/>
-										<label class="text-center w-100 rounded-3" for="star3-group5">رفتار نامحترمانه3</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star3-group6" value=""/>
-										<label class="text-center w-100 rounded-3" for="star3-group6"> 3//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star3-group7" value=""/>
-										<label class="text-center w-100 rounded-3" for="star3-group7"> 3//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star3-group8" value=""/>
-										<label class="text-center w-100 rounded-3" for="star3-group8">3 //////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-none d-xl-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star3-group9" value=""/>
-										<label class="text-center w-100 rounded-3" for="star3-group9"> 3//////// </label>
-									</div>
-								</div>
-
-
-							</div>	
-						</div>
-
-						<!--text area-->
-						<div class="container mt-2 mb-4">
-							<label for="star3-problem-description" class="form-label"></label>
-							<textarea id="star3-problem-description" class="form-control gray-bg border-0" rows="15" placeholder="اگر نظری درباره متخصص یا خدمات دارید در این بخش بنویسید ..."></textarea>
-						</div>
-
-					</form>
-
-
-					<!--submit button-->
-					<form class="mt-4 d-flex justify-content-center">
-						<button class="btn darkYellow ps-5 pe-5" type="submmit"> ثبت بازخورد </button>
-					</form>
-				</div>
-				
-				
-				<!--div for 2 stars-->
-				<div class="forms-based-on-star d-none">
-					<p class="m-0 pb-1 text-center"> معمولی </p>
-					<p class="m-0 text-center" > چه مشکلی به وجود اومده222؟ </p>
-
-					<!--form for 2 stars-->
-					<form>
-						<div class="container mt-3">
-							<div class="row d-flex justify-content-around gy-1">
-
-								<label for="group"></label>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star2-group1" value=""/>
-										<label class="text-center w-100 rounded-3" for="star2-group1">رفتار نامناسب2</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star2-group2" value=""/>
-										<label class="text-center w-100 rounded-3" for="star2-group2">بوی نامطبوع2</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star2-group3" value=""/>
-										<label class="text-center w-100 rounded-3" for="star2-group3">2نداشتن تخصص کافی</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-126 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star2-group4" value=""/>
-										<label class="text-center w-100 rounded-3" for="star2-group4">عدم رعایت قرارداد2</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star2-group5" value=""/>
-										<label class="text-center w-100 rounded-3" for="star2-group5">رفتار نامحترمانه2</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star2-group6" value=""/>
-										<label class="text-center w-100 rounded-3" for="star2-group6"> 2//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star2-group7" value=""/>
-										<label class="text-center w-100 rounded-3" for="star2-group7"> 2//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star2-group8" value=""/>
-										<label class="text-center w-100 rounded-3" for="star2-group8"> 2//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-none d-xl-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star2-group9" value=""/>
-										<label class="text-center w-100 rounded-3" for="star2-group9"> 2//////// </label>
-									</div>
-								</div>
-
-
-							</div>	
-						</div>
-
-						<!--text area-->
-						<div class="container mt-2 mb-4">
-							<label for="star2-problem-description" class="form-label"></label>
-							<textarea id="star2-problem-description" class="form-control gray-bg border-0" rows="15" placeholder="اگر نظری درباره متخصص یا خدمات دارید در این بخش بنویسید ..."></textarea>
-						</div>
-
-					</form>
-
-					
-					<!--submit button-->
-					<form class="mt-4 d-flex justify-content-center">
-						<button class="btn darkYellow ps-5 pe-5" type="submmit"> ثبت بازخورد </button>
-					</form>
-				</div>
-				
-				
-				<!--div for 1 star-->
-				<div class="forms-based-on-star d-none">
-					<p class="m-0 pb-1 text-center"> بد </p>
-					<p class="m-0 text-center" > چه مشکلی به وجود اومده111؟ </p>
-
-
-					<!--form for 1 star-->
-					<form>
-						<div class="container mt-3">
-							<div class="row d-flex justify-content-around gy-1">
-
-								<label for="group"></label>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star1-group1" value=""/>
-										<label class="text-center w-100 rounded-3" for="star1-group1">رفتار نامناسب1</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star1-group2" value=""/>
-										<label class="text-center w-100 rounded-3" for="star1-group2">بوی نامطبوع1</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star1-group3" value=""/>
-										<label class="text-center w-100 rounded-3" for="star1-group3">نداشتن تخصص کافی1</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-126 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star1-group4" value=""/>
-										<label class="text-center w-100 rounded-3" for="star1-group4">عدم رعایت قرارداد1</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star1-group5" value=""/>
-										<label class="text-center w-100 rounded-3" for="star1-group5">رفتار نامحترمانه1</label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star1-group6" value=""/>
-										<label class="text-center w-100 rounded-3" for="star1-group6"> 1//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star1-group7" value=""/>
-										<label class="text-center w-100 rounded-3" for="star1-group7"> 1//////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star1-group8" value=""/>
-										<label class="text-center w-100 rounded-3" for="star1-group8"> //////// </label>
-									</div>
-								</div>
-
-								<div class="col-xl-4 col-md-6 col-12 d-none d-xl-flex justify-content-center">
-									<div class="problem_box pt-2 pb-2 ps-1 pe-1">
-										<input type="checkbox" name="group" id="star1-group9" value=""/>
-										<label class="text-center w-100 rounded-3" for="star1-group9"> 1//////// </label>
-									</div>
-								</div>
-
-
-							</div>	
-						</div>
-
-						<!--text area-->
-						<div class="container mt-2">
-							<label for="star1-problem-description" class="form-label"></label>
-							<textarea id="star1-problem-description" class="form-control gray-bg border-0" rows="15" placeholder="اگر نظری درباره متخصص یا خدمات دارید در این بخش بنویسید ..."></textarea>
-						</div>
-
-					</form>
-
-					
-					<!--submit button-->
-					<form class="mt-4 d-flex justify-content-center">
-						<button class="btn darkYellow ps-5 pe-5" type="submmit"> ثبت بازخورد </button>
-					</form>
-				</div>
-
-				
-				
-	
+			</div>
 				
 			</div>
 			

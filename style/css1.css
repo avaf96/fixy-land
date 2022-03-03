@@ -356,14 +356,14 @@ transform: rotate(180deg);
 }
 
 
-/*-----------------------------------conactUs page-----------------------------------*/
+/*-----------------------------------conactUs page---------------------------------------*/
 .contact-us-box{
 	border-radius: 12px;
 	box-shadow: 1px 1px 7px 1px rgba(5,78,78,0.50);
 }
 
 
-/*----------------------------------articles page----------------------------------*/
+/*----------------------------------articles page----------------------------------------*/
 .article-box{
 	width: 95%;
 	border-radius: 12px;
@@ -446,7 +446,10 @@ transform: rotate(180deg);
 .pic-width{width: 300px;}
 
 /*--------------------------------user-panel & user-panel-mmobile-------------------------------*/
-.profile-box{box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);}
+.profile-box{
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+	border-radius: 0 0 15px 15px;
+}
 
 .text-black{color: #000;}
 
@@ -463,6 +466,8 @@ transform: rotate(180deg);
 
 .pic-width-mobile{width: 200px;}
 .pic-width-laptop{width: 350px;}
+
+.upload-pic{bottom: 0; right: 0;}
 
 
 /*----------------------------------user-order-list page-----------------------------------*/
@@ -493,7 +498,11 @@ transform: rotate(180deg);
 
 
 
-/*----------------------------------               -----------------------------------*/
+/*-------------------------------spc-panel & spc-panel-mobile------------------------------*/
+.Financial-list{list-style-type: none;}
+.Financial-list li{margin-top: 10px; margin-right: 3px;}
+
+
 
 
 /*-----------------------------------------Signup page-------------------------------------*/
@@ -683,6 +692,9 @@ footer{
 .gray-bg{background-color: #F4F2F2;}
 
 .gray-text{color: #828282;}
+
+.green-arrow{color: #11DF32;}
+.red-arrow{color: #DF3030;}
 
 .form-bg-color{background-color: #F4F2F2;}
 .dastrasi-sari-grid input{background-color: #F4F2F2;}  /*for signup page*/
