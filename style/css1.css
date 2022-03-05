@@ -705,6 +705,9 @@ footer{
 
 .lightgreen-text{color: #5FB051;}
 
+.green-btn-bg{background-color: #4B9E2E;}
+.green-btn-bg:hover{background-color: #4B9E2Eaa;}
+
 .lightgray{background-color: #C4C4C4;}
 
 .gray-bg{background-color: #F4F2F2;}
