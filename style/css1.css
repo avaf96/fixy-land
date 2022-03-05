@@ -503,11 +503,29 @@ transform: rotate(180deg);
 .Financial-list li{margin-top: 10px; margin-right: 3px;}
 
 
+/*--------------------------------------spc-income page------------------------------------*/
+.spc-income-box-top{
+	width: 95%;
+	height: 100%;
+	background-color: #054E4E;
+	color: #fff;
+	border-radius: 15px;
+	padding: 50px 5px;
+}
+
+.spc-income-box-bottom{width: 98%;}
+
+#more-box-btn{box-shadow: none;}
+
+
+/*-------------------------------------- 			 ------------------------------------*/
+
+
+
 
 
 /*-----------------------------------------Signup page-------------------------------------*/
 #imageSignup{z-index: 0;}
-
 
 
 /*-----------------------------------Signup-specialist page--------------------------------*/
