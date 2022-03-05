@@ -12,7 +12,7 @@
 
    for (let i = 0; i < question_div1.length; i++) {
      $(question_div1[i]).click(function () {
-       $(question_div2[i]).slideToggle("slow");
+       $(question_div2[i]).slideToggle("fast");
      })
    }
 
