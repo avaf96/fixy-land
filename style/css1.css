@@ -720,6 +720,7 @@ footer{
 .lightblue{background-color: #D1DFFB;}
 
 .darkgreen{background-color: #054E4E;}
+.darkgreen:hover{background-color: #054E4Eaa;}
 
 .darkgreen-text{color: #054E4E;}
 
