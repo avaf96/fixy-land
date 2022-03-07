@@ -542,7 +542,17 @@ transform: rotate(180deg);
 }
 
 
-/*------------------------------- 						---------------------------*/
+/*------------------------------------submit-a-req page----------------------------------*/
+#date-picker , #time-picker , .aut-time-pick{
+	border: none;
+	background-color: #D1DFFB;
+	width: 250px;
+}
+
+#date-picker:focus , #time-picker:focus{outline: none;}
+.yes-no-input{width: 0; height: 0}
+
+#map{height: 600px;}
 
 
 
@@ -709,6 +719,7 @@ footer{
 .white-text:hover{color: #FFB82F;}
 
 .text-black{color: #000;}
+.text-black:hover{color: #000;}
 
 .white{background-color: none;}
 
@@ -716,6 +727,8 @@ footer{
 .darkYellow:hover{background-color: #FFB82Faa;}
 
 .darkYellowOnHover:hover{background-color: #FFB82Faa;}
+
+.darkYellow-border{border: 1px solid #FFB82F;}
 
 .lightblue{background-color: #D1DFFB;}
 
