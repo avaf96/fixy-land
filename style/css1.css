@@ -156,6 +156,15 @@ transform: rotate(180deg);
 /*-----------------------------------index-----------------------------------*/
 
 
+/*--------------index-fixed-icon-----------------*/
+#index_fixed_icon{
+	position: fixed;
+	top: 85%;
+	left: 10px;
+	z-index: 9999;
+	transition: ease-in-out 20s;
+}
+
 /*-----------------index-sec2--------------------*/
 
 #index-sec2{

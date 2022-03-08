@@ -23,6 +23,7 @@
 		let dastrasi_sari_grid = $(".dastrasi-sari-grid");
 		let swiper_slide = $(".swiper-slide");
 
+//		menu items for laptop size	
 		for(let i = 0 ; i < sub_menu_hover2.length ; i++){
 			$(sub_menu_hover2[i]).click(function(){	
 				for(let j = 0 ; j < sub_menu_hover2.length ; j++){
@@ -31,10 +32,12 @@
 				}
 				$(dastrasi_sari_grid[i]).removeClass("d-none");	
 				$(sub_menu_hover2_div[i]).addClass("darkYellow");	
-
 			})	
 		}
-
+		
+		
+		
+//		menu items for mobile size
 		for(let i = 0 ; i < swiper_slide.length ; i++){
 			$(swiper_slide[i]).click(function(){	
 				for(let j = 0 ; j < swiper_slide.length ; j++){
@@ -47,5 +50,16 @@
 
 			})	
 		}
+			
+		
+		
+//		fixed-icon (move to top of the page)
+		$(window).scroll(function(){
+			if ($(window).scrollTop() > 350){
+				$("#index_fixed_icon").removeClass("d-none");
+			}else{$("#index_fixed_icon").addClass("d-none");}
+		})
+		
+		
 
 	})
