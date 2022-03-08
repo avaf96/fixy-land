@@ -305,6 +305,8 @@ transform: rotate(180deg);
 	width: 100%;
 }
 
+.maghalat-box:hover{opacity: 85%;}
+
 .maghalat-box img{
 	border-radius: 12px 12px 0 0 ;
 }
@@ -717,6 +719,8 @@ footer{
 
 .white-text{color: #fff;}
 .white-text:hover{color: #FFB82F;}
+
+.white-background{background-color: #fff;}
 
 .text-black{color: #000;}
 .text-black:hover{color: #000;}
