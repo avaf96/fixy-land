@@ -50,7 +50,6 @@
 
 .nav-link-hover-black{
 	color: #000;
-/*	margin: 10px;*/
 	text-decoration: none;
   }
 
@@ -88,13 +87,6 @@
 	display: none;
 }
 
-/*
-.sub-menu-hover li:hover{
-	background-color: #FFB82F;
-	border-radius: 10px;
-	padding: 2px;
-}
-*/
 
 .sub-menu-hover-li{
 	background-color: #FFB82F;
@@ -107,9 +99,6 @@
 	margin-right: 2px;
 	margin-left: 2px;
 
-	/*	english*/
-	/*	transform: rotate(180deg);*/
-	/*	english*/
 }
 
 

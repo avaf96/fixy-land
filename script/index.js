@@ -56,8 +56,12 @@
 //		fixed-icon (move to top of the page)
 		$(window).scroll(function(){
 			if ($(window).scrollTop() > 350){
-				$("#index_fixed_icon").removeClass("d-none");
-			}else{$("#index_fixed_icon").addClass("d-none");}
+				$("#index_fixed_icon").removeClass("d-md-none");
+				$("#index_fixed_icon").addClass("d-md-block");
+			}else{
+				$("#index_fixed_icon").removeClass("d-md-block");
+				$("#index_fixed_icon").addClass("d-md-none");
+			}
 		})
 		
 		
