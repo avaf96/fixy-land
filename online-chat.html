@@ -20,7 +20,6 @@
 <!-- styles -->
 <link href="style/css1.css" rel="stylesheet" type="text/css">
 	
-
 </head>
 	
 
@@ -500,12 +499,12 @@
 <!--start main-->
 	<main class="p-5">
 		
-		<div class="gray-bg rounded-3 pt-3 ps-5 pe-5 pb-2 w-100">
+		<div class="gray-bg rounded-3 pt-3 ps-md-5 pe-md-5 ps-1 pe-1 pb-2 w-100">
 			
 			<!--پشتیبان-->
 			<div class="w-100 mb-3">
 				<p class="gray-text m-0 mb-1 me-3"> پشتیبان </p>
-				<div class="w-50 rounded-3 white-background p-3 pb-2"> 
+				<div class="chat-box-width rounded-3 white-background p-3 pb-2"> 
 					<p class="text_justify"> چه کاری برات انجام بدم؟ </p>
 				</div>
 			</div>
@@ -514,7 +513,7 @@
 			<!--کاربر-->
 			<div class="w-100 d-flex flex-column align-items-end mb-3">
 				<p class="gray-text m-0 mb-1 ms-3"> نام کاربر </p>
-				<div class="w-50 rounded-3 white-background p-3 pb-2"> 
+				<div class="chat-box-width rounded-3 white-background p-3 pb-2"> 
 					<p class="text_justify"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها ولورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.له در ستون و سطرآنچنان که لازم است زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فو برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف به </p>
 				</div>
 			</div>
@@ -523,7 +522,7 @@
 			<!--پشتیبان-->
 			<div class="w-100 mb-3">
 				<p class="gray-text m-0 mb-1 me-3"> پشتیبان </p>
-				<div class="w-50 rounded-3 white-background p-3 pb-2"> 
+				<div class="chat-box-width rounded-3 white-background p-3 pb-2"> 
 					<p class="text_justify"> تگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.له در ستون و و سطرآنچنان که لازم است زیادی </p>
 				</div>
 			</div>
@@ -532,13 +531,13 @@
 			<!--کاربر- ارسال عکس-->
 			<div class="w-100 d-flex flex-column align-items-end mb-3">
 				<p class="gray-text m-0 mb-1 ms-3"> نام کاربر </p>
-				<div class="w-50 rounded-3 white-background p-3 pb-2"> 
+				<div class="chat-box-width rounded-3 white-background p-3 pb-2"> 
 					<p class="text_justify"> لورم ایپسوم متن ساختگی با تولید شناخت فو برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف به </p>
 				</div>
 				
 				<!--ارسال عکس-->
-				<div class="w-50 h-50 d-flex justify-content-end mt-2 rounded-3">
-					<img src="image/article-5.jpg" class="rounded-3" alt="picture">
+				<div class="chat-box-width d-flex justify-content-end mt-2 rounded-3">
+					<img src="image/article-5.jpg" class="rounded-3" alt="picture" width="50%" height="50%">
 				</div>
 			</div>
 			
@@ -546,7 +545,7 @@
 			<!--پشتیبان-->
 			<div class="w-100 mb-3">
 				<p class="gray-text m-0 mb-1 me-3"> پشتیبان </p>
-				<div class="w-50 rounded-3 white-background p-3 pb-2"> 
+				<div class="chat-box-width rounded-3 white-background p-3 pb-2"> 
 					<p class="text_justify"> ده از طراحان گرافیک است.له در ستون و و سطرآنچنان که لازم است زیادی </p>
 				</div>
 			</div>
@@ -555,11 +554,12 @@
 			
 			<!--chat input-->
 			<form class="mt-5 w-100 d-flex justify-content-center">
-				<!--send button-->
+				<!--send file-->
 				<div class="ms-1 align-self-center">
-					<button type="submit" class="btn darkgreen p-2 ps-3 pe-3 text-white text-center fw-bold">
-						<i class="fa-solid fa-share"></i>
-					</button>
+					<label for="chat-upload-pic" class="darkgreen rounded-3 p-2 ps-3 pe-3 text-white text-center fw-bold">
+						<i class="fa-solid fa-plus"></i>
+					</label>
+					<input type="file" id="chat-upload-pic" class="d-none">
 				</div>
 
 				<!--input msg-->
@@ -567,12 +567,11 @@
 					<input type="text" class="form-control pt-2 pb-3" placeholder="متن خود را وارد کنید ...">
 				</div>
 
-				<!--send file-->
+				<!--send button-->
 				<div class="me-1 align-self-center">
-					<label for="chat-upload-pic" class="darkgreen rounded-3 p-2 ps-3 pe-3 text-white text-center fw-bold">
-						<i class="fa-solid fa-plus"></i>
-					</label>
-					<input type="file" id="chat-upload-pic" class="d-none">
+					<button type="submit" class="btn darkgreen p-2 ps-3 pe-3 text-white text-center fw-bold">
+						<i class="fa-solid fa-share"></i>
+					</button>
 				</div>
 				
 			</form>
