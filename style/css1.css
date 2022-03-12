@@ -451,10 +451,6 @@ transform: rotate(180deg);
 	border-radius: 0 0 15px 15px;
 }
 
-.text-black{color: #000;}
-
-.border-gray{border: 3px solid #CBC6C6;}
-
 .user-panel-box{
 	width: 70%;
 	height: 100%;
@@ -679,6 +675,17 @@ footer{
 	
 
 /*-----------------------------responsive-------------------------------*/
+/*for oniline-chat page*/
+@media screen and (max-width: 425px){
+	.chat-box-width{width: 100%;}
+}
+
+@media screen and (min-width: 426px){
+	.chat-box-width{width: 50%;}
+}
+/*for oniline-chat page*/
+
+
 @media screen and (max-width:576px){
 	.body{padding-top: 60px;}
  	#button-toggler-menu{margin-top: 2%;}
@@ -705,6 +712,7 @@ footer{
 }
 
 
+
 /*------------------------------------global classes-----------------------------------------*/
 #remove-boxshadow:focus{box-shadow: none;}
 
@@ -722,6 +730,10 @@ footer{
 
 .text-black{color: #000;}
 .text-black:hover{color: #000;}
+
+.text-black-no-hover{color: #000;}
+
+.border-gray{border: 3px solid #CBC6C6;}
 
 .white{background-color: none;}
 

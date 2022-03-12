@@ -529,40 +529,40 @@
 					
 					<div class="d-flex mt-2 p-2 ps-3 pe-3 w-100 ">
 						<i class="fa-solid fa-user ms-3 mt-1"></i>
-						<a href="spc-panel.html" class="text-decoration-none darkYellow-text_onHover text-black"> پنل کاربری </a>
+						<a href="spc-panel.html" class="text-decoration-none darkYellow-text_onHover text-black-no-hover"> پنل کاربری </a>
 					</div>
 					
 					<div class="d-flex p-2 ps-3 pe-3 w-100">
 						<i class="fa-solid fa-pen-to-square ms-3 mt-1"></i>
-						<a href="spc-edit-profile.html" class="text-decoration-none darkYellow-text_onHover text-black"> ویرایش پروفایل </a>
+						<a href="spc-edit-profile.html" class="text-decoration-none darkYellow-text_onHover text-black-no-hover"> ویرایش پروفایل </a>
 					</div>
 					
 					<div class="d-flex p-2 ps-3 pe-3 w-100">
 						<i class="fa-solid fa-dollar-sign ms-3 mt-1"></i>
-						<div id="Financial-sec" class="text-decoration-none darkYellow-text_onHover text-black question-div1">
+						<div id="Financial-sec" class="text-decoration-none darkYellow-text_onHover text-black-no-hover question-div1">
 							بخش مالی 
 							<i id="angle-down" class="fa-solid fa-angle-down me-2"></i>
 							<ul class="Financial-list m-0 d-none">
-								<li><a href="spc-income.html" class="text-decoration-none darkYellow-text_onHover text-black"> درآمد من </a></li>
-								<li><a href="spc-money-demand.html" class="text-decoration-none darkYellow-text_onHover text-black"> تقاضای وجه </a></li>
-								<li><a href="spc-reward.html" class="text-decoration-none darkYellow-text_onHover text-black"> دریافت پاداش </a></li>
+								<li><a href="spc-income.html" class="text-decoration-none darkYellow-text_onHover text-black-no-hover"> درآمد من </a></li>
+								<li><a href="spc-money-demand.html" class="text-decoration-none darkYellow-text_onHover text-black-no-hover"> تقاضای وجه </a></li>
+								<li><a href="spc-reward.html" class="text-decoration-none darkYellow-text_onHover text-black-no-hover"> دریافت پاداش </a></li>
 							</ul>
 						</div>
 					</div>
 					
 					<div class="d-flex p-2 ps-3 pe-3 w-100">
 						<i class="fa-regular fa-hard-drive ms-3 mt-1"></i>
-						<a href="spc-desk.html" class="text-decoration-none darkYellow-text_onHover text-black"> میزکار </a>
+						<a href="spc-desk.html" class="text-decoration-none darkYellow-text_onHover text-black-no-hover"> میزکار </a>
 					</div>
 				
 					<div class="d-flex p-2 ps-3 pe-3 w-100">
 						<i class="fa-solid fa-headset ms-3 mt-1"></i>
-						<a href="#" class="text-decoration-none darkYellow-text_onHover text-black"> مرکز پشتیبانی </a>
+						<a href="#" class="text-decoration-none darkYellow-text_onHover text-black-no-hover"> مرکز پشتیبانی </a>
 					</div>
 				
 					<div class="d-flex p-2 ps-3 pe-3 w-100">
 						<i class="fa-solid fa-newspaper ms-3 mt-1"></i>
-						<a href="spc-fixy-msgs.html" class="text-decoration-none darkYellow-text_onHover text-black"> پیام های فیکسی لند </a>
+						<a href="spc-fixy-msgs.html" class="text-decoration-none darkYellow-text_onHover text-black-no-hover"> پیام های فیکسی لند </a>
 					</div>	
 				
 				</div>
@@ -570,11 +570,11 @@
 			
 			
  			<div class="h-100 col-12 col-md-9 d-flex flex-column align-items-center pt-3 pt-md-5 pb-5 p-md-5">
-				<div class="d-flex flex-column justify-content-center p-4 pt-2 align-items-center">
-				<h1> ویرایش پروفایل من </h1>
+				<div class="d-flex flex-column justify-content-center p-4 pt-2 align-items-center w-100">
+				<h1 class="mb-3"> ویرایش پروفایل من </h1>
 					
 				<!--squares-->
-				<div class="d-flex squre-register gap-2">
+				<div class="d-flex squre-register gap-2 mb-2">
 				  <div class="lightgreen"> </div>
 				  <div class="lightgray"> </div>
 				  <div class="lightgray"> </div>
@@ -582,37 +582,32 @@
 				  <div class="lightgray"> </div>
 				</div>
 					
-				<section id="index-sec3 bg-white">
-				  <div class="container-fluid">
-					<div class="row d-flex justify-content-center">
-					  <div class="col-12 col-md-10  mt-4 overflow-auto"> 
+				<section class="bg-white w-100">
 
-						<!--tablet and mobile size menu-->
-						<div class="swiper mySwiper ">
-						  <div class="swiper-wrapper justify-content-center">
-							<div class="swiper-slide w-auto darkYellow rounded p-1" >پروفایل</div>
-							<div class="swiper-slide w-auto rounded p-1">آدرس</div>
-							<div class="swiper-slide w-auto rounded p-1">مهارت های من</div>
-							<div class="swiper-slide w-auto rounded p-1">اطلاعات بانکی</div>
-							<div class="swiper-slide w-auto rounded p-1">نمونه کار</div>
-							<div class="swiper-slide w-auto rounded p-1">مدارک فنی</div>
-						  </div>
+						<!--swiper menu-->
+						<div class="container">
+							<div class="swiper mySwiper w-100">
+							  <div class="swiper-wrapper">
+								<div class="swiper-slide w-auto me-lg-5 ms-lg-5 darkYellow rounded p-1" >پروفایل</div>
+								<div class="swiper-slide w-auto me-lg-5 ms-lg-5 rounded p-1">آدرس</div>
+								<div class="swiper-slide w-auto me-lg-5 ms-lg-5 rounded p-1">مهارت های من</div>
+								<div class="swiper-slide w-auto me-lg-5 ms-lg-5 rounded p-1">اطلاعات بانکی</div>
+								<div class="swiper-slide w-auto me-lg-5 ms-lg-5 rounded p-1">نمونه کار</div>
+								<div class="swiper-slide w-auto me-lg-5 ms-lg-5 rounded p-1">مدارک فنی</div>
+							  </div>
+							</div>
 						</div>
-					  </div>
 
+					
 					  <!--submenu-->
-					  <div class="col-12 ps-0 pe-0 border border-3"> 
-						<!--submenu for item1 (Default submenu) --> 
+						<div class=" w-100 p-4 border border-3"> 
 
-						<!--submenu for item1-->
-						<div class="container-fluid "> 
-
-						  <!--							پروفایل-->
+						  <!--پروفایل-->
 						  <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  ">
-							<form class="col-12 col-md-6">
-							  <div class="d-flex justify-content-between">
+							<form class="col-12">
+							  <div class="mb-3">
 								<label for="gender-register-specialist" class="form-label">مشخصات</label>
-								<div>
+								<div class="d-inline-block me-sm-5 me-3">
 								  <label for="men-register-specialist" class="form-label">مرد</label>
 								  <input type="radio" class="" id="men-register-specialist" name="gender-register-specialist">
 								  <label for="woman-register-specialist " class="form-label me-5">زن</label>
@@ -671,7 +666,8 @@
 							</form>
 						  </div>
 
-						  <!--							آدرس-->
+							
+						  <!--آدرس-->
 						  <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly d-none ">
 							<form class="col-12 col-md-6">
 							  <div class="mb-3">
@@ -711,9 +707,7 @@
 						  </div>
 
 
-
-
-			<!--							مهارت من-->
+						  <!--مهارت من-->
 						  <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  d-none">
 							<div class="col-12 col-md-10">
 
@@ -780,7 +774,10 @@
 							<!--پیشنهاد تخصص جدید-->
 							<div class="spc-new-req row d-flex gap-2 justify-content-center mb-2 ">
 								<div class="col-3 border-redius-20 border-darkgreen border-4 p-3 text-center">
-									<a href="spc-new-req-form.html" class="text-decoration-none text-black">پیشنهاد تخصص جدید</a>
+									<a href="spc-new-req-form.html" class="text-decoration-none text-black">
+										<i class="fa-solid fa-plus"></i>
+										پیشنهاد تخصص جدید
+									</a>
 								</div>
 							</div>
 
@@ -916,7 +913,7 @@
 					  </div>
 
 
-						  <!--							اطلاعات بانکی-->
+						  <!--اطلاعات بانکی-->
 						  <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  d-none">
 							<form class="col-12 col-md-6">   
 							  <div class="mb-3">
@@ -935,8 +932,7 @@
 						  </div>	
 
 
-
-						  <!--							نمونه کار ها-->
+						  <!--نمونه کار ها-->
 						  <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  d-none">
 							<section class="col-12 col-md-6">
 
@@ -1029,8 +1025,7 @@
 						  </div>	
 
 
-
-							 <!--							مدارک فنی-->
+							<!--مدارک فنی-->
 						  <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly  d-none">
 							<section class="col-12 col-md-6">
 
@@ -1122,14 +1117,7 @@
 							</section>
 						  </div>	
 
-
-
-
-
 					</div>
-				  </div>
-				  </div>
-				  </div>
 				</section>
 				</div>
  			</div>
