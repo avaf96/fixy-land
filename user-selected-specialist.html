@@ -512,9 +512,12 @@
 				<div class="profile-box h-75 col-md-3 d-none d-md-flex flex-column align-items-center ps-0 pe-0 pt-5 pb-5">
 					<div class="position-relative mb-4 text-center">
 						<img class="rounded-circle" src="image/pf-pic.png" alt="profile picture" height="150px" width="150px">
-						<button class="btn position-absolute upload-pic p-0">
-							<img src="image/pf-pic-update.png" alt="new profile picture" height="45px" width="45px">
-						</button>
+					
+						<div class="position-absolute bottom-0 end-0">
+							<input type="image" src="image/pf-pic-update.png" alt="new pf pic" height="45px" width="45px"/>
+							<input type="file" id="my_file" class="d-none" />
+						</div>
+						
 					</div>
 					<p class="gray-text m-0 mb-1"> نام و نام خانوادگی </p>
 					<p class="gray-text m-0 mb-1"> abc@gmail.com </p>
@@ -868,7 +871,9 @@
 
 	<!--scripts from script folder	-->
 	<script src="script/main.js" type="text/javascript"></script>
+	<script src="script/user-panel.js" type="text/javascript"></script>
 	
+
 
 </body>
     
