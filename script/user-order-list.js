@@ -27,15 +27,32 @@ $(document).ready(function(){
 				$(swiper_slide[i]).addClass("darkYellow");	
 			})	
 		}
+	
+	
+//		check if checkbox is checked - toggle button
+		let confirm_checkbox = $("#confirm");
+		let pay_btn = $(".pay_btn");
+		$(confirm_checkbox).click(function(){
+			if($(this).is(":checked")){
+				$(pay_btn[0]).addClass("d-none");
+				$(pay_btn[1]).removeClass("d-none");
+			}
+			else if($(this).is(":not(:checked)")){
+				$(pay_btn[0]).removeClass("d-none");
+				$(pay_btn[1]).addClass("d-none");
+			}
+		});
+
+
+//		alert if checkbox is not checked
+		$(pay_btn[0]).click(function(){
+			alert("taeed mikonam ra click konid.");
+		});
+	
+
 })
 
 
-//Submit comment
-let disapprove = document.getElementById("disapprove");
-disapprove.onclick = function(){
-		let problem = prompt('مشکل:');
-		alert("با تشکر از ثبت نظر");
-}
 
 
 //toggle running-job page and user-payment page
