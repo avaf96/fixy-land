@@ -499,7 +499,25 @@ transform: rotate(180deg);
 
 .rating-btn-bg-green{background-color: #4DE119;}
 
+/*------------------------------------spc-edit-profile------------------------------------*/
+#date-register-specialist{
+    box-sizing: border-box;
+    outline: 0;
+    position: relative;  
+}
 
+#date-register-specialist::-webkit-calendar-picker-indicator {
+	background: transparent;
+	bottom: 0;
+	color: transparent;
+	cursor: pointer;
+	height: auto;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: auto;
+}
 
 /*-------------------------------spc-panel & spc-panel-mobile------------------------------*/
 .Financial-list{list-style-type: none;}
