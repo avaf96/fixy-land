@@ -42,5 +42,27 @@ $(document).ready(function(){
 	});
 
 
-
 })
+
+
+//upload picture
+var output = document.getElementById('output_img');
+output.classList.add("d-none");
+var remove_output = document.getElementById('remove_img');
+remove_output.classList.add("d-none");
+
+var loadFile = function(event) {
+	output.src = URL.createObjectURL(event.target.files[0]);
+	output.classList.remove("d-none");
+	remove_output.classList.remove("d-none");
+	output.onload = function() {
+		URL.revokeObjectURL(output.src) // free memory
+	}
+};
+		
+function remove_picture(){
+	var output = document.getElementById('output_img');
+	output.src = "";
+	remove_output.classList.add("d-none");
+	output.classList.add("d-none");
+}
