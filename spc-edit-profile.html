@@ -685,26 +685,98 @@
 						  <!--آدرس-->
 						  <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly d-none ">
 							<form class="col-12 col-md-6">
-							  <div class="mb-3">
-								<label for="state-register-specialist" class="form-label">استان</label>
-								<select class="form-control" id="state-register-specialist">
-								  <option value="fars">فارس</option>
-								  <option value="tehran">تهران</option>
-								  <option value="esfahan">اصفهان</option>
+							
+							<!----------------------------------------------------->	
+							 <!--استان محل سکونت-->
+							 <div class="mb-3">
+								<label for="state-register-specialist" class="form-label"> استان محل سکونت</label>
+								<select class="form-select form-bg-color" id="state-register-specialist">
+								  <option value="0" selected>فارس</option>
+								  <option value="1">تهران</option>
+								  <option value="2">اصفهان</option>
 								</select>
 							  </div>
+
+								<!--شهرهای مرتبط به هر استان   --  start -->
+								<!--فارس-->
+								<div class="cities mb-3">
+									<label for="city-register-specialist-fars" class="form-label">شهر محل سکونت </label> 
+									<select class="form-select form-bg-color" id="city-register-specialist-fars">
+										<option value="shiraz">شیراز</option>
+										<option value="tehran">فسا</option>
+										<option value="esfahan">اقلید</option>
+									</select>
+								</div>
+
+								<!--تهران-->
+								<div class="cities mb-3 d-none">
+									<label for="city-register-specialist-tehran" class="form-label">شهر محل سکونت</label>
+									<select class="form-select form-bg-color" id="city-register-specialist-tehran">
+										<option value="shiraz">تهران</option>
+										<option value="tehran">تهران</option>
+										<option value="esfahan">تهران</option>
+									</select>
+								</div>
+
+								<!--اصفهان-->
+								<div class="cities mb-3 d-none">
+									<label for="city-register-specialis-esfahan" class="form-label">شهر محل سکونت</label>
+									<select class="form-select form-bg-color" id="city-register-specialist-esfahan">
+										<option value="shiraz">اصفهان</option>
+										<option value="tehran">اصفهان</option>
+										<option value="esfahan">اصفهان</option>
+									</select>
+								</div>
+								<!--شهرهای مرتبط به هر استان   --  end -->
+								
+							<!----------------------------------------------------->
+								
+							  <!--استان محل خدمت-->
 							  <div class="mb-3">
-								<label for="city-register-specialist" class="form-label">شهر</label>
-								<select class="form-control" id="city-register-specialist">
-								  <option value="shiraz">شیراز</option>
-								  <option value="tehran">تهران</option>
-								  <option value="esfahan">اصفهان</option>
+								<label for="work_state-register-specialist" class="form-label"> استان محل خدمت</label>
+								<select class="form-select form-bg-color" id="work_state-register-specialist">
+								  <option value="0" selected>فارس</option>
+								  <option value="1">تهران</option>
+								  <option value="2">اصفهان</option>
 								</select>
 							  </div>
+
+								<!--شهرهای مرتبط به هر استان   --  start -->
+								<!--فارس-->
+								<div class="work_cities mb-3">
+									<label for="work_city-register-specialist-fars" class="form-label">شهر محل خدمت </label> 
+									<select class="form-select form-bg-color" id="work_city-register-specialist-fars">
+										<option value="shiraz">شیراز</option>
+										<option value="tehran">فسا</option>
+										<option value="esfahan">اقلید</option>
+									</select>
+								</div>
+
+								<!--تهران-->
+								<div class="work_cities mb-3 d-none">
+									<label for="work_city-register-specialist-tehran" class="form-label">شهر محل خدمت</label>
+									<select class="form-select form-bg-color" id="work_city-register-specialist-tehran">
+										<option value="shiraz">تهران</option>
+										<option value="tehran">تهران</option>
+										<option value="esfahan">تهران</option>
+									</select>
+								</div>
+
+								<!--اصفهان-->
+								<div class="work_cities mb-3 d-none">
+									<label for="work_city-register-specialis-esfahan" class="form-label">شهر محل خدمت</label>
+									<select class="form-select form-bg-color" id="work_city-register-specialist-esfahan">
+										<option value="shiraz">اصفهان</option>
+										<option value="tehran">اصفهان</option>
+										<option value="esfahan">اصفهان</option>
+									</select>
+								</div>
+								<!--شهرهای مرتبط به هر استان   --  end -->
+							<!----------------------------------------------------->
+								
 							  <div class="mb-3">
 								<label for="address-register-specialist" class="form-label">آدرس</label>
-								<textarea class="form-control form-bg-color" id="address-register-specialist" placeholder="آدرس">
-											  </textarea>
+								<textarea class="form-control form-bg-color" id="address-register-specialist" placeholder="آدرس"></textarea>
 							  </div>
 							  <div class="mb-3">
 								<label for="houseNumber-register-specialist" class="form-label">پلاک</label>

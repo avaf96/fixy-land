@@ -79,13 +79,27 @@
 					$(cities[i]).removeClass("d-none");
 				}
 			}	
-		})
+		})	
 		
+//		change work cities based on states		
+		let work_state = $("#work_state-register-specialist");
+		let work_cities = $(".work_cities");
+		$(work_state).change(function(){
+			let work_select_value = $(work_state).val();
+			for(let i=0 ; i< work_cities.length ; i++){
+				$(work_cities[i]).addClass("d-none");
+				if((work_select_value) == i ){
+					$(work_cities[i]).removeClass("d-none");
+				}
+			}	
+		})
 		
 		
 		
 
 	});
+
+
 
 		   function backToCategories() {
 			   	$(document).ready(function(){
