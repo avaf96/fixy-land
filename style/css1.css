@@ -29,15 +29,13 @@
 	padding-bottom: 0;
 }
 
-#form-select-lang {
-	border: none;
-	border-radius: 12px;
-	background-color: #FFB82F;
-}
+/*language field-start*/
+#select_lang_div{cursor: pointer;}
+.darkYellow-no-hover{background-color: #FFB82F;}
+.darkYellow-lang{background-color: #FFB82F;}
+.darkYellow-lang:hover{background-color: rgba(255,201,98,1.00);}
+/*language field-end*/
 
-.form-select-lang:focus{
-	box-shadow: 0 0 0;
-}
 
 #yellow{
 	background-color: #FFB82F ;
@@ -498,7 +496,7 @@ transform: rotate(180deg);
 
 .rating-btn-bg-green{background-color: #4DE119;}
 
-/*------------------------------------spc-edit-profile------------------------------------*/
+/*-------------------------spc-edit-profile & sign-up specialist page------------------------*/
 #date-register-specialist{
     box-sizing: border-box;
     outline: 0;
@@ -792,6 +790,8 @@ footer{
 
 .darkYellow-border{border: 1px solid #FFB82F;}
 
+.list_style_type{list-style-type: none;}
+
 .lightblue{background-color: #D1DFFB;}
 
 .darkgreen{background-color: #054E4E;}
@@ -831,6 +831,7 @@ footer{
 .font-size32{font-size: 32px;}
 .font-size40{font-size: 40px;}
 
+.no-shadow:focus{box-shadow: none;}
 
 /*---scrollbar style---*/
 ::-webkit-scrollbar {width: 6px;}

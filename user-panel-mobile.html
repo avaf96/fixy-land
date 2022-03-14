@@ -57,12 +57,27 @@
 						</div>	
 						<!-- language selection -->
 						<div class="col-lg-12 d-flex justify-content-center row mb-2" dir="ltr">
-							<div class="col-lg-12 col-5">
-								<select class="form-select form-select-lang col-4" id="form-select-lang" aria-label="Default select example">
-									  <option selected>Fa</option>
-									  <option  value="1">En</option>
-									  <option  value="2">Ar</option>
-								</select>
+							<div class="col-lg-12 col-6">
+								<div id="select_lang_div" class="text-center darkYellow-no-hover rounded-3 pt-1 pb-1 position-relative">
+									<p class="m-0">
+										انتخاب زبان
+										<i class="fa-solid fa-caret-down"></i>
+									</p>
+									
+									<div id="langs_div" class="d-none rounded-bottom darkYellow-no-hover position-absolute start-0 w-100">
+										<ul class="list_style_type p-0 m-0">
+											<hr class="m-0 mt-2">
+											<li class="rounded-top darkYellow-lang text-center mt-1 mb-1">
+												<a href="#" class="text-decoration-none text-black"> AR </a>
+											</li>
+											<hr class="m-0">
+											<li class="rounded-bottom darkYellow-lang text-center mt-1 mb-1">
+												<a href="#" class="text-decoration-none text-black"> EN </a>
+											</li>
+										</ul>
+									</div>
+									
+								</div>
 							</div>		
 						</div>	
 					</div>
@@ -510,9 +525,11 @@
 				<div class="col-md-3 d-md-none d-flex flex-column align-items-center ps-0 pe-0 pt-5 pb-5">
 					<div class="position-relative mb-4 text-center">
 						<img class="rounded-circle" src="image/pf-pic.png" alt="profile picture" height="150px" width="150px">
-						<button class="btn position-absolute upload-pic p-0">
-							<img src="image/pf-pic-update.png" alt="new profile picture" height="45px" width="45px">
-						</button>
+					
+						<div class="position-absolute bottom-0 end-0">
+							<input type="image" src="image/pf-pic-update.png" alt="new pf pic" height="45px" width="45px"/>
+							<input type="file" id="my_file" class="d-none" />
+						</div>
 					</div>
 					<p class="gray-text m-0 mb-1"> نام و نام خانوادگی </p>
 					<p class="gray-text m-0 mb-1"> abc@gmail.com </p>
@@ -551,7 +568,28 @@
 						<i class="fa-solid fa-newspaper ms-3 mt-1"></i>
 						<a href="user-fixy-msgs.html" class="text-decoration-none darkYellow-text_onHover text-black"> پیام های فیکسی </a>
 					</div>	
-				
+					
+					<div class="d-flex p-2 ps-3 pe-3 w-100">
+						<i class="fa-solid fa-share-nodes ms-3 mt-1"></i>
+						<!-- Modal button -->
+						<button id="share_btn" type="button" class="btn darkYellow-text_onHover text-black-no-hover p-0 no-shadow" data-bs-toggle="modal" data-bs-target="#share-modal"> اشتراک گذاری </button>
+						
+						<!--Modal starts-->
+						<div class="modal fade" id="share-modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+							<div class="modal-content">
+							  <div id="web_link" class="modal-body text-center">
+								fixiLand website link
+							  </div>
+							  <div class="modal-footer d-flex justify-content-center">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button id="copy_link_btn" type="button" class="btn darkYellow">Copy</button>
+							  </div>
+							</div>
+						  </div>
+						</div>
+						<!--Modal ends-->
+					</div>
 				</div>
 				
 			
@@ -794,6 +832,7 @@
 
 	<!--scripts from script folder	-->
 	<script src="script/main.js" type="text/javascript"></script>
+	<script src="script/user-panel.js" type="text/javascript"></script>
 	
 
 </body>

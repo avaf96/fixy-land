@@ -1,7 +1,7 @@
 // JavaScript Document
 
 
-//-------------------------header scripts-------------------------------
+//---------------------------------------header scripts----------------------------------------------
 	
 //		Hide Menu on Scroll down
 		let prevScrollpos = window.pageYOffset;
@@ -109,6 +109,21 @@
 			});
 			
 
+//			change language
+			let select_lang_div = $("#select_lang_div");
+			let langs_div = $("#langs_div");
+			$(select_lang_div).click(function(){
+				$(langs_div).toggleClass("d-none");
+			});
+			
+			$(select_lang_div).mouseover(function(){
+				$(langs_div).removeClass("d-none");
+			});
+			$(select_lang_div).mouseout(function(){
+				$(langs_div).addClass("d-none");
+			});
+			
+			
 			
 		})
 
@@ -119,7 +134,7 @@
 
 	
 	
-//-------------------------footer scripts-------------------------------	
+//--------------------------------------footer scripts---------------------------------------	
 		$(document).ready(function(){
 			let footer_list_title_i = $(".footer-list-title i");
 			let footer_list = $(".footer-list");
@@ -135,7 +150,7 @@
 
 
 
-//-------------------------            -------------------------------	
+
 
 
 

@@ -56,12 +56,27 @@
 						</div>	
 						<!-- language selection -->
 						<div class="col-lg-12 d-flex justify-content-center row mb-2" dir="ltr">
-							<div class="col-lg-12 col-5">
-								<select class="form-select form-select-lang col-4" id="form-select-lang" aria-label="Default select example">
-									  <option selected>Fa</option>
-									  <option  value="1">En</option>
-									  <option  value="2">Ar</option>
-								</select>
+							<div class="col-lg-12 col-6">
+								<div id="select_lang_div" class="text-center darkYellow-no-hover rounded-3 pt-1 pb-1 position-relative">
+									<p class="m-0">
+										انتخاب زبان
+										<i class="fa-solid fa-caret-down"></i>
+									</p>
+									
+									<div id="langs_div" class="d-none rounded-bottom darkYellow-no-hover position-absolute start-0 w-100">
+										<ul class="list_style_type p-0 m-0">
+											<hr class="m-0 mt-2">
+											<li class="rounded-top darkYellow-lang text-center mt-1 mb-1">
+												<a href="#" class="text-decoration-none text-black"> AR </a>
+											</li>
+											<hr class="m-0">
+											<li class="rounded-bottom darkYellow-lang text-center mt-1 mb-1">
+												<a href="#" class="text-decoration-none text-black"> EN </a>
+											</li>
+										</ul>
+									</div>
+									
+								</div>
 							</div>		
 						</div>	
 					</div>
@@ -84,10 +99,10 @@
 									<ul class="navbar-nav d-flex flex-fill justify-content-between m-0 p-0 ">
 									<!-- header menu items: -->
 										 <li class="nav-item pb-2 ">
-												<a class=" nav-link-hover" href="#">خانه</a>
+												<a class=" nav-link-hover" href="index.html">خانه</a>
 										  </li>
 										  <li class="nav-item pb-2">
-												<a class=" nav-link-hover" href="#">مقالات</a>
+												<a class=" nav-link-hover" href="articles.html">مقالات</a>
 										  </li>
 										
 										  <!-- daste-bandi-khadamat -->
@@ -110,10 +125,10 @@
 														 <div class="text-white me-3 li-responsive-submenu-3 d-none">
 															<ul style="list-style-type: none">
 															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 1 </a>
+																<a class="nav-link-hover-white" href="sub-category-descriptions.html"> نظافت 1 </a>
 															  </li>
 															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 1 </a>
+																<a class="nav-link-hover-white" href="sub-category-descriptions.html"> نظافت 1 </a>
 															  </li>
 															</ul>
 														 </div>
@@ -130,10 +145,10 @@
 														 <div class="text-white me-3 li-responsive-submenu-3 d-none">
 															<ul style="list-style-type: none">
 															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 2 </a>
+																<a class="nav-link-hover-white" href="sub-category-descriptions.html"> نظافت 2 </a>
 															  </li>
 															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 2 </a>
+																<a class="nav-link-hover-white" href="sub-category-descriptions.html"> نظافت 2 </a>
 															  </li>
 															</ul>
 														 </div>
@@ -150,10 +165,10 @@
 														 <div class="text-white me-3 li-responsive-submenu-3 d-none">
 															<ul style="list-style-type: none">
 															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 3 </a>
+																<a class="nav-link-hover-white" href="sub-category-descriptions.html"> نظافت 3 </a>
 															  </li>
 															  <li class="nav-item">
-																<a class="nav-link-hover-white" href="#"> نظافت 3 </a>
+																<a class="nav-link-hover-white" href="sub-category-descriptions.html"> نظافت 3 </a>
 															  </li>
 															</ul>
 														 </div>	
@@ -167,6 +182,7 @@
 														 </p>
 													  </li>
 													
+													  <!-- daste-bandi-khadamat submenu-item5 -->
 													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
 														  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
 															 باربری و جابه جایی
@@ -174,6 +190,7 @@
 														 </p>
 													  </li>
 													
+													  <!-- daste-bandi-khadamat submenu-item6 -->
 													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
 														  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
 															 برقکاری
@@ -181,6 +198,7 @@
 														 </p>
 													  </li>
 													
+													  <!-- daste-bandi-khadamat submenu-item7 -->
 													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
 														  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
 															 لوله کشی
@@ -188,6 +206,7 @@
 														 </p> 
 													  </li>
 													
+													  <!-- daste-bandi-khadamat submenu-item8 -->
 													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
 														  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
 															 زیبایی بانوان
@@ -195,6 +214,7 @@
 														 </p>
 													  </li>
 													
+													  <!-- daste-bandi-khadamat submenu-item9 -->
 													  <li class="nav-item  nav-link-click li-responsive nav-link-hover-white">
 														  <p class="nav-link-click li-responsive-3  nav-link-hover-white p-0 m-0">
 															 تعمیرات خودرو
@@ -205,13 +225,12 @@
 										  </li>
 	
 		
-		
 										  <li class="nav-item pb-2">
-											<a class=" nav-link-hover" href="#">تماس با ما</a>
+											<a class=" nav-link-hover" href="contactUs.html">تماس با ما</a>
 										  </li>
 	
 										  <li class="nav-item pb-2">
-											<a class=" nav-link-hover" href="#">درباره ما</a>
+											<a class=" nav-link-hover" href="aboutUs.html">درباره ما</a>
 										  </li>
 									</ul>
 								</nav>
@@ -224,8 +243,8 @@
 					<div class="col-lg-3  order-1 order-lg-3">	
 						<div class="row d-flex flex-fill justify-content-center mb-2">	
 							<div class="d-flex gap-3 col-10 col-sm-7 col-md-10 col-lg-12">
-								<button class="btn outline-yellow flex-fill" id="button-menu1">  ورود </button>
-								<button class="btn flex-fill" id="button-menu2"> ثبت نام</button>
+								<a href="login.html" class="btn outline-yellow flex-fill text-decoration-none" id="button-menu1">  ورود </a>
+								<a href="register.html" class="btn flex-fill text-decoration-none" id="button-menu2"> ثبت نام</a>
 							</div>
 						</div>
 					</div>
@@ -312,43 +331,43 @@
 						<div class="col-6">
 							<ul class="sub-menu" style="list-style-type: none">
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 							</ul>
 						</div>
@@ -356,10 +375,10 @@
 						<div class="col-6">
 							<ul class="sub-menu" style="list-style-type: none">
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 							</ul>
 						</div>
@@ -367,48 +386,49 @@
 						
 					</div>
 
-<!--					submenu for item2 from daste-bandi-khadamat submenu (laptop size) -->
+					
+					<!--submenu for item2 from daste-bandi-khadamat submenu (laptop size) -->
 					<div class="col-8 col-lg-9 row sub-menu-show d-none">
 						<div class="col-6">
 							<ul class="sub-menu" style="list-style-type: none">
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">2نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">2نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی2</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی2</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">2نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">2نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی2</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی2</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">2نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">2نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 							</ul>
 						</div>
@@ -416,10 +436,10 @@
 						<div class="col-6  ">
 							<ul class="sub-menu" style="list-style-type: none">
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+									<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 								</li>
 							</ul>
 						</div>
@@ -430,54 +450,54 @@
 						<div class="col-6  ">
 							<ul class="sub-menu" style="list-style-type: none">
 							  <li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی3</a>
 							  </li>
 							  <li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی3</a>
 							  </li>
 							  <li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی3</a>
 							  </li>
 								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی3</a>
 							  </li>
 								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی3</a>
 							  </li>
 								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی3</a>
 							  </li>
 								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی3</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی3</a>
 							  </li>
 								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 							  </li>
 								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 							  </li>
 								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 							  </li>
 								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 							  </li>
 								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 							  </li>
 								<li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 							  </li>
 							</ul>
 						</div>
 						
-						<div class="col-6  ">
+						<div class="col-6">
 							<ul class="sub-menu" style="list-style-type: none">
 							  <li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 							  </li>
 							  <li class="nav-item">
-								<a class="nav-link-hover-black" href="#">نظافت و پذیرایی</a>
+								<a class="nav-link-hover-black" href="sub-category-descriptions.html">نظافت و پذیرایی</a>
 							  </li>
 							</ul>
 						</div>

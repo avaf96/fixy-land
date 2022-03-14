@@ -58,12 +58,27 @@
 						</div>	
 						<!-- language selection -->
 						<div class="col-lg-12 d-flex justify-content-center row mb-2" dir="ltr">
-							<div class="col-lg-12 col-5">
-								<select class="form-select form-select-lang col-4" id="form-select-lang" aria-label="Default select example">
-									  <option selected>Fa</option>
-									  <option  value="1">En</option>
-									  <option  value="2">Ar</option>
-								</select>
+							<div class="col-lg-12 col-6">
+								<div id="select_lang_div" class="text-center darkYellow-no-hover rounded-3 pt-1 pb-1 position-relative">
+									<p class="m-0">
+										انتخاب زبان
+										<i class="fa-solid fa-caret-down"></i>
+									</p>
+									
+									<div id="langs_div" class="d-none rounded-bottom darkYellow-no-hover position-absolute start-0 w-100">
+										<ul class="list_style_type p-0 m-0">
+											<hr class="m-0 mt-2">
+											<li class="rounded-top darkYellow-lang text-center mt-1 mb-1">
+												<a href="#" class="text-decoration-none text-black"> AR </a>
+											</li>
+											<hr class="m-0">
+											<li class="rounded-bottom darkYellow-lang text-center mt-1 mb-1">
+												<a href="#" class="text-decoration-none text-black"> EN </a>
+											</li>
+										</ul>
+									</div>
+									
+								</div>
 							</div>		
 						</div>	
 					</div>

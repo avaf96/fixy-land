@@ -573,22 +573,51 @@
 						<label for="date-register-doc" class="form-label">تصویر گوایی مهارت خود را وارد کنید.</label>
 						<input type="file" class="form-control" id="date-register-doc" placeholder="اضافه کردن نمونه کار">
 					  </div>
+						
+						
 						<div class="mb-3">
 						<label for="state-register-specialist" class="form-label">استان</label>
-						<select class="form-control" id="state-register-specialist">
-						  <option value="fars">فارس</option>
-						  <option value="tehran">تهران</option>
-						  <option value="esfahan">اصفهان</option>
+						<select class="form-select" id="state-register-specialist">
+						  <option value="0" selected>فارس</option>
+						  <option value="1">تهران</option>
+						  <option value="2">اصفهان</option>
 						</select>
 					  </div>
-					  <div class="mb-3">
-						<label for="city-register-specialist" class="form-label">شهر</label>
-						<select class="form-control" id="city-register-specialist">
-						  <option value="shiraz">شیراز</option>
-						  <option value="tehran">تهران</option>
-						  <option value="esfahan">اصفهان</option>
-						</select>
-					  </div>
+						
+						
+						<!--شهرهای مرتبط به هر استان   --  start -->
+						<!--فارس-->
+						<div class="cities mb-3">
+							<label for="city-register-specialist-fars" class="form-label">شهر</label> 
+							<select class="form-select" id="city-register-specialist-fars">
+								<option value="shiraz">شیراز</option>
+								<option value="tehran">فسا</option>
+								<option value="esfahan">اقلید</option>
+							</select>
+						</div>
+						
+						<!--تهران-->
+						<div class="cities mb-3 d-none">
+							<label for="city-register-specialist-tehran" class="form-label">شهر</label>
+							<select class="form-select" id="city-register-specialist-tehran">
+								<option value="shiraz">تهران</option>
+								<option value="tehran">تهران</option>
+								<option value="esfahan">تهران</option>
+							</select>
+						</div>
+						
+						<!--اصفهان-->
+						<div class="cities mb-3 d-none">
+							<label for="city-register-specialis-esfahan" class="form-label">شهر</label>
+							<select class="form-select" id="city-register-specialist-esfahan">
+								<option value="shiraz">اصفهان</option>
+								<option value="tehran">اصفهان</option>
+								<option value="esfahan">اصفهان</option>
+							</select>
+						</div>
+						<!--شهرهای مرتبط به هر استان   --  end -->
+						
+						
 					  <div class="mb-3">
 						<label for="address-register-specialist" class="form-label ">آدرس</label>
 						<textarea class="form-control bg-white" id="address-register-specialist" placeholder="آدرس"></textarea>
@@ -1042,7 +1071,7 @@
 <script src="script/main.js" type="text/javascript"></script> 
 <script src="script/country_code.js" type="text/javascript"></script> 
 <script src="script/signup_specialist.js" type="text/javascript"></script>
-	
+
 	
 </body>
 </html>
