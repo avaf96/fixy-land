@@ -598,6 +598,52 @@
 								<input type="email" placeholder="abc@gmail.com" class="form-control form-bg-color border-0 pt-2 pb-2" id="user-email" >
 							</div>
 
+							
+							
+							<!--استان-->
+							 <div class="mb-3">
+								<label for="state-register-customer" class="form-label"> استان </label>
+								<select class="form-select form-bg-color" id="state-register-customer">
+								  <option value="0" selected>فارس</option>
+								  <option value="1">تهران</option>
+								  <option value="2">اصفهان</option>
+								</select>
+							  </div>
+							
+							<!--شهرهای مرتبط به هر استان   --  start -->
+							<!--فارس-->
+							<div class="cities mb-3">
+								<label for="city-register-customer-fars" class="form-label">شهر </label> 
+								<select class="form-select form-bg-color" id="city-register-customer-fars">
+									<option value="shiraz">شیراز</option>
+									<option value="tehran">فسا</option>
+									<option value="esfahan">اقلید</option>
+								</select>
+							</div>
+
+							<!--تهران-->
+							<div class="cities mb-3 d-none">
+								<label for="city-register-customer-tehran" class="form-label">شهر </label>
+								<select class="form-select form-bg-color" id="city-register-customer-tehran">
+									<option value="shiraz">تهران</option>
+									<option value="tehran">تهران</option>
+									<option value="esfahan">تهران</option>
+								</select>
+							</div>
+
+							<!--اصفهان-->
+							<div class="cities mb-3 d-none">
+								<label for="city-register-customer-esfahan" class="form-label">شهر </label>
+								<select class="form-select form-bg-color" id="city-register-customer-esfahan">
+									<option value="shiraz">اصفهان</option>
+									<option value="tehran">اصفهان</option>
+									<option value="esfahan">اصفهان</option>
+								</select>
+							</div>
+							<!--شهرهای مرتبط به هر استان   --  end -->
+							
+							
+							
 							<div class="mb-3 w-100">
 								<label for="user-address" class="form-label"> آدرس </label>
 								<input type="text" placeholder="شیراز/ملاصدرا" class="form-control form-bg-color border-0 pt-2 pb-2" id="user-address" >
@@ -847,6 +893,7 @@
 
 	<!--scripts from script folder	-->
 	<script src="script/main.js" type="text/javascript"></script>
+	<script src="script/user-addrs.js" type="text/javascript"></script>
 	
 
 </body>
