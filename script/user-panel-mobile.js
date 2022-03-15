@@ -5,7 +5,7 @@
 var resize = $('#upload-demo').croppie({
 	enableExif: true,
 	enableOrientation: true,    
-	viewport: { // Default { width: 100, height: 100, type: 'square' } 
+	viewport: { 
 		width: 150,
 		height: 150,
 		type: 'square' //square
