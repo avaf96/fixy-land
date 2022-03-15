@@ -796,6 +796,7 @@ footer{
 
 .darkgreen{background-color: #054E4E;}
 .darkgreen:hover{background-color: #054E4Eaa;}
+.darkgreen_nohover{background-color: #054E4E;}
 
 .darkgreen-text{color: #054E4E;}
 

@@ -33,7 +33,7 @@ $(document).ready(function(){
 		
 	
 	
-//custom or automatic addrs selection	
+//	custom or automatic addrs selection	
 	$(".saved_addr input[name=addr-radio]").change(function(){
 		var selected_option = $('input[name=addr-radio]:checked').val()
 		if(selected_option == "custom"){
@@ -45,24 +45,24 @@ $(document).ready(function(){
 })
 
 
-//upload picture
-var output = document.getElementById('output_img');
-output.classList.add("d-none");
-var remove_output = document.getElementById('remove_img');
-remove_output.classList.add("d-none");
+//	upload picture
+	var output_img = document.getElementById('output_img');
+	output_img.classList.add("d-none");
+	var remove_img_btn = document.getElementById('remove_img');
+	remove_img_btn.classList.add("d-none");
 
-var loadFile = function(event) {
-	output.src = URL.createObjectURL(event.target.files[0]);
-	output.classList.remove("d-none");
-	remove_output.classList.remove("d-none");
-	output.onload = function() {
-		URL.revokeObjectURL(output.src) // free memory
+	var loadFile = function(event) {
+		output_img.src = URL.createObjectURL(event.target.files[0]);
+		output_img.classList.remove("d-none");
+		remove_img_btn.classList.remove("d-none");
+		// free memory
+		output_img.onload = function() {
+			URL.revokeObjectURL(output_img.src) 
+		}
+	};
+
+	function remove_picture(){
+		output_img.src = "";
+		remove_img_btn.classList.add("d-none");
+		output_img.classList.add("d-none");
 	}
-};
-		
-function remove_picture(){
-	var output = document.getElementById('output_img');
-	output.src = "";
-	remove_output.classList.add("d-none");
-	output.classList.add("d-none");
-}

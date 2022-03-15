@@ -13,14 +13,22 @@
 <!-- jquery cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	
-	
 <!--swiper css cdn-->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	
+<!--croppie styles and scripts cdn (crop image)-->	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.js"></script>
 	
 <!-- styles -->
 <link href="style/css1.css" rel="stylesheet" type="text/css">
 
-	
+	<style>
+		.test{
+/*			width: 50px; height: 50px;*/
+		}
+	</style>
 </head>
 	
 
@@ -527,10 +535,57 @@
 						<img class="rounded-circle" src="image/pf-pic.png" alt="profile picture" height="150px" width="150px">
 					
 						<div class="position-absolute bottom-0 end-0">
-							<input type="image" src="image/pf-pic-update.png" alt="new pf pic" height="45px" width="45px"/>
-							<input type="file" id="my_file" class="d-none" />
+							<!-- Modal button-->
+							<button id="modal-btn" type="button" class="btn no-shadow p-0 m-0" data-bs-toggle="modal" data-bs-target="#pf_pic_Modal"> 
+								<img src="image/pf-pic-update.png" alt="new pf pic" height="45px" width="45px">
+							</button>
 						</div>
+
+						<!-- Modal for profile picture -->
+						<div class="modal fade" id="pf_pic_Modal" tabindex="-1" aria-labelledby="pf_pic_Modal" aria-hidden="true">
+						  <div class="modal-dialog">
+							<div class="modal-content">
+								
+							  <!--modal header-->
+							  <div class="modal-header d-flex justify-content-between">
+								  <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+								  <h5 class="modal-title" id="pf_modal_label"> Select pic </h5>
+							  </div>
+							
+							  <!--modal body-->
+							  <div class="modal-body p-0">
+									<div class="container">
+										<div class="card">
+											<div class="card-body">
+												<div class="row gy-3">
+													<div class="col-md-4 col-12 d-flex flex-column order-2 order-md-1">
+														<p class="fw-bold"> عکس خود را آپلود کنید: </p>
+														<input type="file" id="image" class="mt-3 mb-4">
+														<button class="btn btn-block btn-upload-image darkYellow">
+															crop img
+														</button>
+													</div>
+
+													<div class="col-md-8 col-12 order-1 order-md-2 text-center">
+														<div id="upload-demo"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							  	</div>
+								
+								<!--modal footer-->
+								<div class="modal-footer text-center">
+									<button type="button" class="btn darkYellow">Save changes</button>
+								</div>
+							
+							 </div>
+						   </div>
+						 </div>
+						
 					</div>
+					
 					<p class="gray-text m-0 mb-1"> نام و نام خانوادگی </p>
 					<p class="gray-text m-0 mb-1"> abc@gmail.com </p>
 					<p class="gray-text m-0 mb-1"> ********091 </p>
@@ -567,8 +622,9 @@
 					<div class="d-flex p-2 ps-3 pe-3 w-100">
 						<i class="fa-solid fa-newspaper ms-3 mt-1"></i>
 						<a href="user-fixy-msgs.html" class="text-decoration-none darkYellow-text_onHover text-black"> پیام های فیکسی </a>
-					</div>	
+					</div>
 					
+					<!-- اشتراک گذاری -->
 					<div class="d-flex p-2 ps-3 pe-3 w-100">
 						<i class="fa-solid fa-share-nodes ms-3 mt-1"></i>
 						<!-- Modal button -->
@@ -832,7 +888,7 @@
 
 	<!--scripts from script folder	-->
 	<script src="script/main.js" type="text/javascript"></script>
-	<script src="script/user-panel.js" type="text/javascript"></script>
+	<script src="script/user-panel-mobile.js" type="text/javascript"></script>
 	
 
 </body>
