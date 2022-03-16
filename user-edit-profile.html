@@ -16,6 +16,10 @@
 <!--swiper css cdn-->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 	
+<!--country code css and scripts cdn-->
+<link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+<script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+	
 <!--croppie styles and scripts cdn (crop image)-->	
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -700,26 +704,36 @@
 				</div>	
 				
 				
-				<div class="h-100 col-12 col-md-9 d-flex flex-column align-items-center pt-3 pt-md-5 pb-5 p-md-5 ">
+				<div class="h-100 col-12 col-md-9 d-flex flex-column align-items-center pt-3 pt-md-5 pb-5 p-2 p-md-5">
 					<h1 class="mb-4"> ویرایش مشخصات </h1>
 					<div class="w-100 h-100 border-gray pt-3 mb-5 d-flex flex-column align-items-center padding-bottom">
 
-						<form class="w-50">
+						<form class="">
 							<div class="mb-3 w-100">
 								<label for="user-first-name" class="form-label"> نام </label>
 								<input type="text" placeholder="abc" class="form-control form-bg-color border-0 pt-2 pb-2" id="user-first-name" >
 							</div>
 
-							<div class="mb-3 w-100">
+							<div class="mb-4 w-100">
 								<label for="user-last-name" class="form-label"> نام خانوادگی </label>
 								<input type="text" placeholder="abc" class="form-control form-bg-color border-0 pt-2 pb-2" id="user-last-name" >
 							</div>
 
+<!--
 							<div class="mb-3 w-100">
 								<label for="user-mob-number" class="form-label"> شماره تماس </label>
 								<input type="tel" placeholder="********091" class="form-control form-bg-color border-0 pt-2 pb-2" id="user-mob-number" >
 							</div>
+-->
+							
+							<div class="mb-3 d-flex justify-content-between w-100 flex-column flex-md-row" >
+								<label for="phone" class="form-label w-50 mt-md-1">شماره موبایل</label>
+								<div class="w-100">
+									 <input name="phone" type="text" id="phone" class="border-gray border-1 rounded-3 pt-2 pb-1 w-100 form-bg-color"/>
+								</div>
+							</div>
 
+							
 							<div class="mb-3 w-100">
 								<label for="user-email" class="form-label"> ایمیل </label>
 								<input type="email" placeholder="abc@gmail.com" class="form-control form-bg-color border-0 pt-2 pb-2" id="user-email" >
@@ -1020,6 +1034,8 @@
 
 	<!--scripts from script folder	-->
 	<script src="script/main.js" type="text/javascript"></script>
+	<script src="script/country_code.js" type="text/javascript">
+	</script>
 	<script src="script/user-addrs.js" type="text/javascript"></script>
 	<script src="script/user-panel.js" type="text/javascript"></script>
 	
