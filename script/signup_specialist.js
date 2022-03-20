@@ -72,23 +72,23 @@
 		let state = $("#state-register-specialist");
 		let cities = $(".cities");
 		$(state).change(function(){
-			let select_value = $(state).val();
+			let selected_state = $(this).children(":selected").attr("id");
 			for(let i=0 ; i< cities.length ; i++){
 				$(cities[i]).addClass("d-none");
-				if((select_value) == i ){
+				if((selected_state) == "state_" +i ){
 					$(cities[i]).removeClass("d-none");
 				}
 			}	
-		})	
+		})		
 		
 //		change work cities based on states		
 		let work_state = $("#work_state-register-specialist");
 		let work_cities = $(".work_cities");
 		$(work_state).change(function(){
-			let work_select_value = $(work_state).val();
+			let work_selected_state = $(this).children(":selected").attr("id");
 			for(let i=0 ; i< work_cities.length ; i++){
 				$(work_cities[i]).addClass("d-none");
-				if((work_select_value) == i ){
+				if((work_selected_state) == "work_state_" +i ){
 					$(work_cities[i]).removeClass("d-none");
 				}
 			}	
@@ -136,3 +136,4 @@
 
 
 
+d

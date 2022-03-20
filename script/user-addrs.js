@@ -8,10 +8,10 @@ $(document).ready(function(){
 		let state = $("#state-register-customer");
 		let cities = $(".cities");
 		$(state).change(function(){
-			let select_value = $(state).val();
+			let selected_state = $(this).children(":selected").attr("id");
 			for(let i=0 ; i< cities.length ; i++){
 				$(cities[i]).addClass("d-none");
-				if((select_value) == i ){
+				if((selected_state) == "state_" +i ){
 					$(cities[i]).removeClass("d-none");
 				}
 			}	
