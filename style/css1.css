@@ -636,13 +636,15 @@ transform: rotate(180deg);
 	height: 75vh;
 }
 
+/*
 .form-control-register-specialist-div2{
 	overflow-y: scroll;
 	overflow-x: hidden;
 	height: 75vh;
 }
+*/
 
-.form-control-register-specialist-div div div:hover{background-color: #FFB82F;}
+/*.form-control-register-specialist-div div div:hover{background-color: #FFB82F;}*/
 
 .form-control-register-specialist-ul i{color: #000;}
 .form-control-register-specialist-ul i:hover{color: #FFB82F;}
