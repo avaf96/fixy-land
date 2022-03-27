@@ -62,6 +62,7 @@
 				}
 				$(catogories_div[i]).removeClass("d-none");
 				$(catogories_div[i]).addClass("col-10");
+				$(catogories_div[i]).addClass("col-md-10");
 				$(catogories_div[i]).addClass("border-0");
 				$(catogories_div[i]).removeClass("darkYellowOnHover");
 				$(catogories_div_p[i]).addClass("d-none");
@@ -134,6 +135,7 @@
 				for(let i = 0 ; i < catogories_div.length ; i++){
 					$(catogories_div[i]).removeClass("d-none");
 					$(catogories_div[i]).removeClass("col-10");
+					$(catogories_div[i]).removeClass("col-md-10");
 					$(catogories_div[i]).removeClass("border-0");
 					$(catogories_div[i]).addClass("darkYellowOnHover");
 					$(catogories_div_p[i]).removeClass("d-none");
