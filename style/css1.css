@@ -740,21 +740,25 @@ footer{
 
 @media screen and (min-width:577px){
 	.body{padding-top: 50px;} 
+	#subcat-selection{width: 25% !important;}
 }
 
 
 @media screen and (min-width:768px){
 	.body{padding-top: 70px;}
+	#subcat-selection{width: 50% !important;}
 }
 
 
 @media screen and (min-width:992px){
     .body{padding-top: 90px;}
+	#subcat-selection{width: 75% !important;}
 }
 
 
 @media screen and (min-width:1200px){
-
+	#subcat-selection{width: 100% !important;}
+/*	.selection{width: 100% !important;}*/
 }
 
 

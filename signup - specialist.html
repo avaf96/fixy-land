@@ -5,8 +5,8 @@
 <title>Fixy Land</title>
 
 <!-- bootstrap styles -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">		
+		
 <!-- font awesome cdn -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
@@ -20,10 +20,12 @@
 <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
 <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> 
 
+
+
 <!-- styles -->
 <link href="style/css1.css" rel="stylesheet" type="text/css">
 
-	
+
 </head>
 
 <body class="body">
@@ -58,12 +60,27 @@
 						</div>	
 						<!-- language selection -->
 						<div class="col-lg-12 d-flex justify-content-center row mb-2" dir="ltr">
-							<div class="col-lg-12 col-5">
-								<select class="form-select form-select-lang col-4" id="form-select-lang" aria-label="Default select example">
-									  <option selected>Fa</option>
-									  <option  value="1">En</option>
-									  <option  value="2">Ar</option>
-								</select>
+							<div class="col-lg-12 col-6">
+								<div id="select_lang_div" class="text-center darkYellow-no-hover rounded-3 pt-1 pb-1 position-relative">
+									<p class="m-0">
+										انتخاب زبان
+										<i class="fa-solid fa-caret-down"></i>
+									</p>
+									
+									<div id="langs_div" class="d-none rounded-bottom darkYellow-no-hover position-absolute start-0 w-100">
+										<ul class="list_style_type p-0 m-0">
+											<hr class="m-0 mt-2">
+											<li class="rounded-top darkYellow-lang text-center mt-1 mb-1">
+												<a href="#" class="text-decoration-none text-black"> AR </a>
+											</li>
+											<hr class="m-0">
+											<li class="rounded-bottom darkYellow-lang text-center mt-1 mb-1">
+												<a href="#" class="text-decoration-none text-black"> EN </a>
+											</li>
+										</ul>
+									</div>
+									
+								</div>
 							</div>		
 						</div>	
 					</div>
@@ -504,7 +521,7 @@
 	
 <!--start main-->
 	<main class="container-fluid p-0">
-	  <section class="row">
+	  <section class="row m-0">
 		<div class="col-12 col-md-8 border border-2 border-dark rounded-3 d-flex flex-column justify-content-center p-5 align-items-center"> 
 		<h1 class="mb-4">ثبت نام متخصص</h1>
 
@@ -706,7 +723,6 @@
 					  <input class="form-control" id="form-control-register-specialist" type="search" placeholder="Search" aria-label="Search">
 					</div>
 
-
 						
 					<!--باکس مهارت ها-->
 					<div class="mt-2 form-control-register-specialist-div ">
@@ -759,6 +775,7 @@
 							</div>
 	
 						</div>
+						
 					
 					<!--زیردسته مهارت ها-->
 					<div class="mt-2  form-control-register-specialist-div2 d-none" >
@@ -770,8 +787,6 @@
 						<button  class="link-dark text-decoration-none  pe-3 ps-3 rounded lightblue darkYellowOnHover" onClick="backToCategories()">بازگشت به دسته</button>
 
 						</div>
-
-
 
 
 							<div class="mb-3 d-flex justify-content-around">
@@ -813,6 +828,7 @@
 
 
 							</div>
+						
 
 
 					</div>
@@ -913,7 +929,7 @@
 		</div>  
 
 	  </section>
-
+		
 
 	</main>
 	
