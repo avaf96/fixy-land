@@ -671,6 +671,9 @@ transform: rotate(180deg);
 }
 
 
+/*--------------------------------------loader page-----------------------------------*/
+
+
 
 /*-----------------------------------footer-----------------------------------*/
 footer{
@@ -741,6 +744,7 @@ footer{
 @media screen and (min-width:577px){
 	.body{padding-top: 50px;} 
 	#subcat-selection{width: 25% !important;}
+	
 }
 
 
@@ -758,7 +762,6 @@ footer{
 
 @media screen and (min-width:1200px){
 	#subcat-selection{width: 100% !important;}
-/*	.selection{width: 100% !important;}*/
 }
 
 

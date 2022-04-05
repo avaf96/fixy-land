@@ -34,10 +34,12 @@
                 $(swiper_slide[i]).addClass("darkYellow");
 			})	
 		}
+	
 		
 		
-			
 		
+		
+//////////////////////////////	//////////////////	//////////////////	
 		
 		for(let i = 0 ; i < form_control_register_specialist_div.length ; i++){
 			$(form_control_register_specialist_div[i]).click( function(){
@@ -46,11 +48,27 @@
 				}
 				$(form_control_register_specialist_div2[i]).removeClass("d-none");
 				$(form_control_register_specialist_main[0]).addClass("d-none");
+				
+				let cat_chekbox = $("input:checkbox.cat"+ [i]);;
+				for (let k=0 ; k<cat_chekbox.length; k++){
+					$(cat_chekbox[k]).change(function(){
+						if($(cat_chekbox[k]).is(':checked')){
+							if(! $(form_control_register_specialist_div[i]).hasClass("current-cat")){
+								$(form_control_register_specialist_div[i]).addClass("current-cat");
+							}	
+						}else{
+							$(form_control_register_specialist_div[i]).removeClass("current-cat");
+						}
+					})
+
+				}
+	
 			})		
 		}
-		
+//////////////////////////////////////////////	///////////// /////////////		
 			
 		
+	
 		
 		
 //		change cities based on states
@@ -86,16 +104,31 @@
 
 
 
-
+	
 	function backToCategories() {
 		$(document).ready(function(){
 			for(let j = 0 ; j < form_control_register_specialist_div2.length ; j++){
 				$(form_control_register_specialist_div2[j]).addClass("d-none");
 			}
 			$(form_control_register_specialist_main[0]).removeClass("d-none");
+			
+			let div_len = form_control_register_specialist_div.length;
+			let div_count = 0;
+			for(let j = 0 ; j < div_len ; j++){
+				if(! $(form_control_register_specialist_div[j]).hasClass("current-cat")){
+					$(form_control_register_specialist_div[j]).addClass("d-none");
+					div_count +=1 ;
+				}
+			}
+			
+			if (div_count==div_len){
+				for(let j = 0 ; j < div_len ; j++){
+					$(form_control_register_specialist_div[j]).removeClass("d-none");
+				}
+			}
 		});
 	}
-
+	
 
 
 
