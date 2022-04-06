@@ -41,7 +41,7 @@ $(document).ready(function(){
 //	short & long description 
 	
 	//	more info button
-	let more_inf_btn = $("#more_inf_btn");	
+	let more_inf_btn = $(".more_inf_btn");	
 	//	go back button
 	let back_btn = $(".go-back-btn");
 	
@@ -49,8 +49,11 @@ $(document).ready(function(){
 	let req_long_dsc = $(".req-long-dsc");
 	
 	for(let i=0;i<more_inf_btn.length;i++){
-		$(more_inf_btn[i]).click(function(){
-			$(req_short_dsc[0]).addClass("d-none");
+		let more_inf_btn_id = $("#more_inf_btn"+[i]);
+		$(more_inf_btn_id).click(function(){
+			for(let j=0;j<req_short_dsc.length;j++){
+				$(req_short_dsc[j]).addClass("d-none");
+			}
 			$(req_long_dsc[i]).removeClass("d-none");
 		});
 	}
@@ -58,7 +61,9 @@ $(document).ready(function(){
 	
 	for(let i=0;i<back_btn.length;i++){
 		$(back_btn[i]).click(function(){
-			$(req_short_dsc[0]).removeClass("d-none");
+			for(let j=0;j<req_short_dsc.length;j++){
+				$(req_short_dsc[j]).removeClass("d-none");
+			}
 			$(req_long_dsc[i]).addClass("d-none");
 		});
 	}
@@ -72,23 +77,40 @@ $(document).ready(function(){
 	let job_long_dsc = $(".job-long-dsc");
 	
 	for(let i=0; i<job_more_inf_btn.length; i++){
-		$(job_more_inf_btn[i]).click(function(){
-			$(job_short_dsc[0]).addClass("d-none");
+		let job_more_inf_btn_id = $("#job_more_inf_btn"+[i]);
+		$(job_more_inf_btn_id).click(function(){
+			for(let j=0;j<job_short_dsc.length;j++){
+				$(job_short_dsc[j]).addClass("d-none");
+			}
 			$(job_long_dsc[i]).removeClass("d-none");
 		});
 	}
 	
+	
+	let runing_job_back = $(".runing-job-back");
+	for(let i=0; i<runing_job_back.length; i++){
+		$(runing_job_back[i]).click(function(){
+			for(let j=0;j<job_short_dsc.length;j++){
+				$(job_short_dsc[j]).removeClass("d-none");
+			}
+			$(job_long_dsc[i]).addClass("d-none");
+		});
+	}
+	
+
 	
 	
 //	 صفحه اتمام کار توسط متخصص
 	let paying_btn = $("#paying_btn");
 	let running_job = $("#running_job");
 	let spc_req_money = $("#spc_req_money");
+	
 	$(paying_btn).click(function(){
 		$(running_job).addClass("d-none");
 		$(spc_req_money).removeClass("d-none");
 	});
 	
+
 	
 	
 })
