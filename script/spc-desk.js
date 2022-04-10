@@ -69,6 +69,38 @@ $(document).ready(function(){
 	}
 	
 	
+//	پیشنهادات من
+//	short & long description 
+	
+	//	more info button
+	let mine_more_inf_btn = $(".mine_more_inf_btn");	
+	//	go back button
+	let mine_back_btn = $(".mine_go-back-btn");
+	
+	let mine_req_short_dsc = $(".mine_req-short-dsc");
+	let mine_req_long_dsc = $(".mine_req-long-dsc");
+	
+	for(let i=0;i<mine_more_inf_btn.length;i++){
+		let mine_more_inf_btn_id = $("#mine_more_inf_btn"+[i]);
+		$(mine_more_inf_btn_id).click(function(){
+			for(let j=0;j<mine_req_short_dsc.length;j++){
+				$(mine_req_short_dsc[j]).addClass("d-none");
+			}
+			$(mine_req_long_dsc[i]).removeClass("d-none");
+		});
+	}
+	
+	for(let i=0;i<mine_back_btn.length;i++){
+		$(mine_back_btn[i]).click(function(){
+			for(let j=0;j<mine_req_short_dsc.length;j++){
+				$(mine_req_short_dsc[j]).removeClass("d-none");
+			}
+			$(mine_req_long_dsc[i]).addClass("d-none");
+		});
+	}	
+	
+	
+
 	
 //	در دست اجرا
 	//	more info button
