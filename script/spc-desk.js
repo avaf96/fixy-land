@@ -133,14 +133,28 @@ $(document).ready(function(){
 	
 	
 //	 صفحه اتمام کار توسط متخصص
-	let paying_btn = $("#paying_btn");
+	let paying_btn = $(".paying_btn");
+	let spc_req_money = $(".spc_req_money");
 	let running_job = $("#running_job");
-	let spc_req_money = $("#spc_req_money");
+//	let job_short_dsc_paying = $(".job-short-dsc");
+//	let job_long_dsc_paying = $(".job-long-dsc");
+	let spc_req_money_back = $(".spc_req_money_back");
 	
-	$(paying_btn).click(function(){
-		$(running_job).addClass("d-none");
-		$(spc_req_money).removeClass("d-none");
-	});
+	for (let i=0 ; i<paying_btn.length; i++){
+		let paying_btn_id = $("#paying_btn"+[i]);
+		$(paying_btn_id).click(function(){
+			$(running_job).addClass("d-none");
+			$(spc_req_money[i]).removeClass("d-none");
+		});
+	}
+	
+	for (let k=0 ; k<spc_req_money_back.length; k++){
+		$(spc_req_money_back[k]).click(function(){
+			$(running_job).removeClass("d-none");
+			$(spc_req_money[k]).addClass("d-none");
+		});
+	}
+	
 	
 
 	
