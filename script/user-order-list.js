@@ -33,18 +33,24 @@ $(document).ready(function(){
 	
 //	toggle running-job page and user-payment page
 	let running_job = $("#running_job");
-	let user_payment = $("#user_payment");
-	let paying_btn = $("#paying_btn");
-	let runing_job_back = $("#runing-job-back");
-	$(paying_btn).click(function(){
-		$(running_job).addClass("d-none");
-		$(user_payment).removeClass("d-none");
-	});
+	let user_payment = $(".user_payment");
+	let paying_btn = $(".paying_btn");
+	let runing_job_back = $(".runing-job-back");
+	for (let i=0; i<paying_btn.length; i++){
+		let paying_btn_id = $("#paying_btn"+[i]);
+		$(paying_btn_id).click(function(){
+			$(running_job).addClass("d-none");
+			$(user_payment[i]).removeClass("d-none");
+		});
+	}
 
-	$(runing_job_back).click(function(){
+	for (let i=0; i<runing_job_back.length; i++){
+		$(runing_job_back).click(function(){
 			$(running_job).removeClass("d-none");
-			$(user_payment).addClass("d-none");
-	});
+			$(user_payment[i]).addClass("d-none");
+		});
+	}
+	
 	
 	
 	
